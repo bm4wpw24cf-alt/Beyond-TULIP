@@ -213,6 +213,40 @@
     html{scroll-behavior:auto;}
     .fade{transition:none;opacity:1;transform:none;}
   }
+
+  /* ---------- COMING SOON STATES ---------- */
+  .nav-card.soon{ cursor:default; }
+  .nav-card.soon:hover{ transform:none; box-shadow:none; border-color:var(--line); }
+  .nav-card.soon:hover::before{ transform:scaleX(0); }
+  .nav-card.soon .nav-icon{ opacity:.55; }
+  .nav-card.soon h3{ color:var(--ink-soft); }
+  .soon-tag{
+    color:var(--ink-soft) !important;
+    font-style:normal !important;
+    font-size:.68rem !important;
+    letter-spacing:.08em;
+    text-transform:uppercase;
+    font-weight:600;
+    border:1px solid var(--line);
+    padding:4px 9px;
+    border-radius:12px;
+    display:inline-block;
+    width:fit-content;
+  }
+  .soon-link{
+    font-size:.85rem;font-weight:500;color:var(--ink-soft);
+    opacity:.55;cursor:default;
+  }
+  .header-links .soon-link{ font-size:.85rem;font-weight:500; }
+  .header-links .soon-link.cta{
+    border:1px solid var(--line);color:var(--ink-soft);
+    padding:9px 18px;border-radius:2px;font-weight:600;opacity:.55;
+  }
+  .footer-grid .soon-link{ font-size:.88rem; opacity:.55; }
+  .gospel-card .soon-link{ font-size:.92rem; opacity:.6; }
+  .soon-btn{
+    opacity:.55;cursor:default;
+  }
 </style>
 </head>
 <body>
@@ -221,11 +255,11 @@
   <div class="header-inner">
     <a href="index.html" class="logo"><span class="beyond">Beyond</span> <span class="tulip">TULIP</span></a>
     <div class="header-links">
-      <a href="gospel.html">Gospel</a>
-      <a href="what-is-calvinism.html">Calvinism</a>
-      <a href="articles.html">Articles</a>
-      <a href="faq.html">FAQ</a>
-      <a href="contact.html" class="cta">Contact</a>
+      <span class="soon-link">Gospel</span>
+      <span class="soon-link">Calvinism</span>
+      <span class="soon-link">Articles</span>
+      <span class="soon-link">FAQ</span>
+      <span class="soon-link cta">Contact</span>
     </div>
   </div>
 </header>
@@ -237,8 +271,8 @@
     <h1>Biblical theology for <em>study</em> and reflection.</h1>
     <p class="lede">Beyond TULIP is a resource for believers who want to study Scripture carefully — a Calvinist theology examined through sound exegesis, historical context, and careful documentation rather than polemics.</p>
     <div class="hero-actions">
-      <a href="gospel.html" class="btn btn-primary">What Is the Gospel?</a>
-      <a href="what-is-calvinism.html" class="btn btn-ghost">Examine Calvinism</a>
+      <span class="btn btn-primary soon-btn">What Is the Gospel? — Coming soon</span>
+      <span class="btn btn-ghost soon-btn">Examine Calvinism — Coming soon</span>
     </div>
   </div>
 </section>
@@ -253,96 +287,96 @@
     </div>
 
     <div class="nav-grid">
-      <a class="nav-card" href="gospel.html">
+      <div class="nav-card soon">
         <div class="nav-icon">✝️</div>
         <h3>The Gospel</h3>
         <p>The good news of salvation through Jesus Christ, explained clearly from Scripture.</p>
-        <span class="nav-arrow">Read more →</span>
-      </a>
+        <span class="nav-arrow soon-tag">Coming soon</span>
+      </div>
 
-      <a class="nav-card" href="how-saved.html">
+      <div class="nav-card soon">
         <div class="nav-icon">📖</div>
         <h3>Doctrine of Salvation</h3>
         <p>Faith, repentance, regeneration, justification, sanctification, and eternal security.</p>
-        <span class="nav-arrow">Read more →</span>
-      </a>
+        <span class="nav-arrow soon-tag">Coming soon</span>
+      </div>
 
-      <a class="nav-card" href="what-is-calvinism.html">
+      <div class="nav-card soon">
         <div class="nav-icon">🌷</div>
         <h3>Examining Calvinism</h3>
         <p>Its history, core claims, and a careful, biblical evaluation of the system.</p>
-        <span class="nav-arrow">Read more →</span>
-      </a>
+        <span class="nav-arrow soon-tag">Coming soon</span>
+      </div>
 
-      <a class="nav-card" href="understanding-tulip.html">
+      <div class="nav-card soon">
         <div class="nav-icon">🌷</div>
         <h3>Understanding TULIP</h3>
         <p>Each of the five points explained, then weighed against the biblical text.</p>
-        <span class="nav-arrow">Read more →</span>
-      </a>
+        <span class="nav-arrow soon-tag">Coming soon</span>
+      </div>
 
-      <a class="nav-card" href="key-passages.html">
+      <div class="nav-card soon">
         <div class="nav-icon">📚</div>
         <h3>Key Biblical Passages</h3>
         <p>John 6, Romans 9, Ephesians 1, and the other texts central to this debate.</p>
-        <span class="nav-arrow">Read more →</span>
-      </a>
+        <span class="nav-arrow soon-tag">Coming soon</span>
+      </div>
 
-      <a class="nav-card" href="claims.html">
+      <div class="nav-card soon">
         <div class="nav-icon">💬</div>
         <h3>Responding to Calvinist Claims</h3>
         <p>Common arguments, stated fairly and answered from the text.</p>
-        <span class="nav-arrow">Read more →</span>
-      </a>
+        <span class="nav-arrow soon-tag">Coming soon</span>
+      </div>
 
-      <a class="nav-card" href="misinterpreted.html">
+      <div class="nav-card soon">
         <div class="nav-icon">🔍</div>
         <h3>Commonly Misinterpreted Passages</h3>
         <p>A closer look at texts often read out of their original context.</p>
-        <span class="nav-arrow">Read more →</span>
-      </a>
+        <span class="nav-arrow soon-tag">Coming soon</span>
+      </div>
 
-      <a class="nav-card" href="dictionary.html">
+      <div class="nav-card soon">
         <div class="nav-icon">🎓</div>
         <h3>Theological Dictionary</h3>
         <p>Clear definitions of predestination, election, grace, calling, and more.</p>
-        <span class="nav-arrow">Read more →</span>
-      </a>
+        <span class="nav-arrow soon-tag">Coming soon</span>
+      </div>
 
-      <a class="nav-card" href="series.html">
+      <div class="nav-card soon">
         <div class="nav-icon">📑</div>
         <h3>Featured Article Series</h3>
         <p>Longer series, including 50 Arguments Against Calvinism and 100 Passages That Challenge TULIP.</p>
-        <span class="nav-arrow">Read more →</span>
-      </a>
+        <span class="nav-arrow soon-tag">Coming soon</span>
+      </div>
 
-      <a class="nav-card" href="resources.html">
+      <div class="nav-card soon">
         <div class="nav-icon">📂</div>
         <h3>Resources</h3>
         <p>Free eBooks, downloadable PDFs, charts, infographics, and videos.</p>
-        <span class="nav-arrow">Read more →</span>
-      </a>
+        <span class="nav-arrow soon-tag">Coming soon</span>
+      </div>
 
-      <a class="nav-card" href="faq.html">
+      <div class="nav-card soon">
         <div class="nav-icon">❓</div>
         <h3>FAQ</h3>
         <p>Straight answers to the questions readers ask most often.</p>
-        <span class="nav-arrow">Read more →</span>
-      </a>
+        <span class="nav-arrow soon-tag">Coming soon</span>
+      </div>
 
-      <a class="nav-card" href="about.html">
+      <div class="nav-card soon">
         <div class="nav-icon">👥</div>
         <h3>About</h3>
         <p>Our mission, our statement of faith, and why this site exists.</p>
-        <span class="nav-arrow">Read more →</span>
-      </a>
+        <span class="nav-arrow soon-tag">Coming soon</span>
+      </div>
 
-      <a class="nav-card" href="contact.html">
+      <div class="nav-card soon">
         <div class="nav-icon">📩</div>
         <h3>Contact</h3>
         <p>Questions, corrections, or feedback — we would like to hear from you.</p>
-        <span class="nav-arrow">Read more →</span>
-      </a>
+        <span class="nav-arrow soon-tag">Coming soon</span>
+      </div>
     </div>
   </div>
 </section>
@@ -391,10 +425,10 @@
       <div class="gospel-card">
         <h4>Continue reading:</h4>
         <ul>
-          <li><a href="how-saved.html">How Is a Person Saved?</a></li>
-          <li><a href="faith-and-repentance.html">Faith and Repentance</a></li>
-          <li><a href="regeneration.html">Regeneration</a></li>
-          <li><a href="justification.html">Justification</a></li>
+          <li><span class="soon-link">How Is a Person Saved?</span></li>
+          <li><span class="soon-link">Faith and Repentance</span></li>
+          <li><span class="soon-link">Regeneration</span></li>
+          <li><span class="soon-link">Justification</span></li>
         </ul>
       </div>
     </div>
@@ -436,7 +470,7 @@
       </div>
     </div>
     <div class="claims-more">
-      <a href="claims.html" class="btn btn-ghost">See all claims and responses</a>
+      <span class="btn btn-ghost soon-btn">See all claims and responses — Coming soon</span>
     </div>
   </div>
 </section>
@@ -452,26 +486,26 @@
       <div>
         <h5>Explore</h5>
         <ul>
-          <li><a href="gospel.html">The Gospel</a></li>
-          <li><a href="what-is-calvinism.html">Examining Calvinism</a></li>
-          <li><a href="claims.html">Claims Answered</a></li>
-          <li><a href="dictionary.html">Theological Dictionary</a></li>
+          <li><span class="soon-link">The Gospel</span></li>
+          <li><span class="soon-link">Examining Calvinism</span></li>
+          <li><span class="soon-link">Claims Answered</span></li>
+          <li><span class="soon-link">Theological Dictionary</span></li>
         </ul>
       </div>
       <div>
         <h5>Content</h5>
         <ul>
-          <li><a href="articles.html">Articles</a></li>
-          <li><a href="faq.html">FAQ</a></li>
-          <li><a href="resources.html">Resources</a></li>
+          <li><span class="soon-link">Articles</span></li>
+          <li><span class="soon-link">FAQ</span></li>
+          <li><span class="soon-link">Resources</span></li>
         </ul>
       </div>
       <div>
         <h5>About</h5>
         <ul>
-          <li><a href="about.html">Our Mission</a></li>
-          <li><a href="about.html#statement-of-faith">Statement of Faith</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><span class="soon-link">Our Mission</span></li>
+          <li><span class="soon-link">Statement of Faith</span></li>
+          <li><span class="soon-link">Contact</span></li>
         </ul>
       </div>
     </div>
