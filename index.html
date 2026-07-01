@@ -123,18 +123,19 @@
   /* ---------- MAIN NAVIGATION GRID (signature element) ---------- */
   .nav-grid{
     display:grid;
-    grid-template-columns:repeat(4, 1fr);
-    gap:18px;
+    grid-template-columns:repeat(3, 1fr);
+    gap:26px;
   }
   .nav-card{
     background:var(--paper);
     border:1px solid var(--line);
-    border-radius:3px;
-    padding:26px 22px;
+    border-radius:4px;
+    padding:40px 34px;
     display:flex;
     flex-direction:column;
-    gap:12px;
-    transition:border-color .2s ease, transform .2s ease, box-shadow .2s ease;
+    gap:16px;
+    min-height:260px;
+    transition:border-color .25s ease, transform .25s ease, box-shadow .25s ease;
     position:relative;
     overflow:hidden;
   }
@@ -148,27 +149,26 @@
   }
   .nav-card:hover{
     border-color:var(--gold);
-    transform:translateY(-3px);
-    box-shadow:0 10px 24px rgba(44,36,23,.07);
+    transform:translateY(-4px);
+    box-shadow:0 14px 30px rgba(44,36,23,.09);
   }
   .nav-card:hover::before{transform:scaleX(1);}
   .nav-icon{
-    width:42px;height:42px;
+    width:56px;height:56px;
     display:flex;align-items:center;justify-content:center;
-    font-size:1.3rem;
+    font-size:1.7rem;
     background:var(--parchment);
     border:1px solid var(--line);
     border-radius:50%;
   }
-  .nav-card h3{font-size:1.08rem;line-height:1.3;}
-  .nav-card p{font-size:.83rem;color:var(--ink-soft);margin:0;flex-grow:1;}
+  .nav-card h3{font-size:1.4rem;line-height:1.32;}
+  .nav-card p{font-size:.94rem;color:var(--ink-soft);margin:0;flex-grow:1;line-height:1.55;}
   .nav-arrow{
     font-family:'EB Garamond',serif;font-style:italic;color:var(--gold-deep);
-    font-size:.85rem;
+    font-size:.95rem;
   }
-  @media (max-width:1020px){ .nav-grid{grid-template-columns:repeat(3, 1fr);} }
-  @media (max-width:720px){ .nav-grid{grid-template-columns:repeat(2, 1fr);} }
-  @media (max-width:460px){ .nav-grid{grid-template-columns:1fr;} }
+  @media (max-width:900px){ .nav-grid{grid-template-columns:repeat(2, 1fr);} }
+  @media (max-width:560px){ .nav-grid{grid-template-columns:1fr;} .nav-card{min-height:0;padding:32px 26px;} }
 
   /* Why This Website Exists — three principles */
   .principles{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:28px;}
@@ -286,9 +286,9 @@
 <section>
   <div class="wrap fade">
     <div class="section-head center">
-      <span class="eyebrow">Explore the Site</span>
+      <span class="eyebrow">Explore the Library</span>
       <h2>Everything starts here.</h2>
-      <p>Sixteen doors into the library — from the gospel itself to a detailed, Scripture-first examination of Calvinism.</p>
+      <p>Enter a Scripture-first theological library devoted to the gospel, biblical theology, and a careful examination of Calvinism.</p>
     </div>
 
     <div class="nav-grid">
@@ -296,13 +296,6 @@
         <div class="nav-icon">✝️</div>
         <h3>The Gospel</h3>
         <p>The good news of salvation through Jesus Christ, explained clearly from Scripture.</p>
-        <span class="nav-arrow soon-tag">Coming soon</span>
-      </div>
-
-      <div class="nav-card soon">
-        <div class="nav-icon">📖</div>
-        <h3>Doctrine of Salvation</h3>
-        <p>Faith, repentance, regeneration, justification, sanctification, and eternal security.</p>
         <span class="nav-arrow soon-tag">Coming soon</span>
       </div>
 
@@ -327,33 +320,12 @@
         <span class="nav-arrow soon-tag">Coming soon</span>
       </div>
 
-      <div class="nav-card soon">
+      <a class="nav-card" href="claim01.html">
         <div class="nav-icon">💬</div>
         <h3>Responding to Calvinist Claims</h3>
         <p>Common arguments, stated fairly and answered from the text.</p>
-        <span class="nav-arrow soon-tag">Coming soon</span>
-      </div>
-
-      <div class="nav-card soon">
-        <div class="nav-icon">🔍</div>
-        <h3>Commonly Misinterpreted Passages</h3>
-        <p>A closer look at texts often read out of their original context.</p>
-        <span class="nav-arrow soon-tag">Coming soon</span>
-      </div>
-
-      <div class="nav-card soon">
-        <div class="nav-icon">🎓</div>
-        <h3>Theological Dictionary</h3>
-        <p>Clear definitions of predestination, election, grace, calling, and more.</p>
-        <span class="nav-arrow soon-tag">Coming soon</span>
-      </div>
-
-      <div class="nav-card soon">
-        <div class="nav-icon">📑</div>
-        <h3>Featured Article Series</h3>
-        <p>Longer series, including 50 Arguments Against Calvinism and 100 Passages That Challenge TULIP.</p>
-        <span class="nav-arrow soon-tag">Coming soon</span>
-      </div>
+        <span class="nav-arrow">Read more →</span>
+      </a>
 
       <a class="nav-card" href="resources.html">
         <div class="nav-icon">📂</div>
@@ -361,27 +333,6 @@
         <p>Free eBooks, downloadable PDFs, charts, infographics, and videos.</p>
         <span class="nav-arrow">Read more →</span>
       </a>
-
-      <div class="nav-card soon">
-        <div class="nav-icon">❓</div>
-        <h3>FAQ</h3>
-        <p>Straight answers to the questions readers ask most often.</p>
-        <span class="nav-arrow soon-tag">Coming soon</span>
-      </div>
-
-      <div class="nav-card soon">
-        <div class="nav-icon">👥</div>
-        <h3>About</h3>
-        <p>Our mission, our statement of faith, and why this site exists.</p>
-        <span class="nav-arrow soon-tag">Coming soon</span>
-      </div>
-
-      <div class="nav-card soon">
-        <div class="nav-icon">📩</div>
-        <h3>Contact</h3>
-        <p>Questions, corrections, or feedback — we would like to hear from you.</p>
-        <span class="nav-arrow soon-tag">Coming soon</span>
-      </div>
     </div>
   </div>
 </section>
@@ -455,6 +406,7 @@
           <p class="claim-text">"The spiritually dead cannot believe."</p>
           <p class="answer-label">Response</p>
           <p class="answer-text">Scripture uses "death" as a picture of serious separation from God, not an inability to respond — otherwise no call to faith or repentance addressed to the lost would make sense.</p>
+          <a href="claim01.html" style="font-size:.82rem;font-weight:600;color:var(--gold-deep);display:inline-block;margin-top:10px;">Read the full response →</a>
         </div>
       </div>
       <div class="claim-card">
@@ -475,7 +427,7 @@
       </div>
     </div>
     <div class="claims-more">
-      <span class="btn btn-ghost soon-btn">See all claims and responses — Coming soon</span>
+      <a href="claim01.html" class="btn btn-ghost">See all claims and responses</a>
     </div>
   </div>
 </section>
@@ -492,8 +444,9 @@
         <h5>Explore</h5>
         <ul>
           <li><span class="soon-link">The Gospel</span></li>
+          <li><span class="soon-link">Doctrine of Salvation</span></li>
           <li><span class="soon-link">Examining Calvinism</span></li>
-          <li><span class="soon-link">Claims Answered</span></li>
+          <li><a href="claim01.html">Claims Answered</a></li>
           <li><span class="soon-link">Theological Dictionary</span></li>
         </ul>
       </div>
@@ -501,6 +454,8 @@
         <h5>Content</h5>
         <ul>
           <li><span class="soon-link">Articles</span></li>
+          <li><span class="soon-link">Commonly Misinterpreted Passages</span></li>
+          <li><span class="soon-link">Featured Article Series</span></li>
           <li><span class="soon-link">FAQ</span></li>
           <li><a href="resources.html">Resources</a></li>
         </ul>

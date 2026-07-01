@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>"The Spiritually Dead Cannot Believe" — Beyond TULIP</title>
+<meta name="description" content="Does spiritual death mean people cannot believe the gospel? A biblical examination of what spiritual death actually means in Scripture.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --parchment:#f6f0e1;
+    --paper:#fffdf8;
+    --ink:#2c2417;
+    --ink-soft:#5b5142;
+    --gold:#b08d57;
+    --gold-deep:#8a6a3c;
+    --wine:#6e2f2f;
+    --line:#ddd0b3;
+    --line-soft:#e9e0c9;
+    --max:760px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--parchment);
+    color:var(--ink);
+    font-family:'Inter',sans-serif;
+    line-height:1.7;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3{
+    font-family:'EB Garamond',serif;
+    font-weight:600;
+    color:var(--ink);
+    margin:0;
+  }
+  a{color:inherit;text-decoration:none;}
+  .eyebrow{
+    font-family:'Inter',sans-serif;
+    font-size:.72rem;
+    font-weight:600;
+    letter-spacing:.14em;
+    text-transform:uppercase;
+    color:var(--gold-deep);
+  }
+  .wrap{max-width:var(--max);margin:0 auto;padding:0 24px;}
+
+  /* ---------- HEADER ---------- */
+  header{
+    position:sticky;top:0;z-index:60;
+    background:rgba(246,240,225,.92);
+    backdrop-filter:blur(6px);
+    border-bottom:1px solid var(--line);
+  }
+  .header-inner{
+    max-width:1180px;margin:0 auto;padding:16px 24px;
+    display:flex;align-items:center;justify-content:space-between;
+  }
+  .logo{
+    font-family:'EB Garamond',serif;
+    font-size:1.45rem;font-weight:600;
+    letter-spacing:.01em;
+    color:var(--ink);
+    display:flex;align-items:baseline;gap:8px;
+  }
+  .logo .beyond{color:var(--ink);}
+  .logo .tulip{color:var(--gold-deep);font-style:italic;}
+  .back-link{
+    font-size:.85rem;font-weight:600;color:var(--ink-soft);
+    display:flex;align-items:center;gap:6px;
+  }
+  .back-link:hover{color:var(--wine);}
+
+  /* ---------- ARTICLE HERO ---------- */
+  .article-hero{padding:56px 0 40px;border-bottom:1px solid var(--line);}
+  .claim-badge{
+    display:inline-flex;align-items:center;gap:8px;
+    font-size:.7rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;
+    color:var(--wine);border:1px solid var(--line-soft);
+    padding:6px 12px;border-radius:20px;margin-bottom:22px;
+  }
+  .claim-badge .n{color:var(--gold-deep);}
+  .claim-quote{
+    font-family:'EB Garamond',serif;font-style:italic;font-size:1.9rem;
+    line-height:1.35;color:var(--ink);max-width:640px;
+  }
+  .article-hero h1.subhead{
+    font-size:1.05rem;font-family:'Inter',sans-serif;font-weight:600;
+    color:var(--gold-deep);margin-top:22px;letter-spacing:.02em;
+  }
+
+  /* ---------- CONTENT ---------- */
+  main{padding:52px 0 60px;}
+  .lede{
+    font-family:'EB Garamond',serif;font-size:1.12rem;color:var(--ink-soft);
+    border-left:2px solid var(--gold);padding-left:20px;margin-bottom:44px;
+  }
+  article h2{
+    font-size:1.35rem;margin:44px 0 16px;
+  }
+  article h2:first-of-type{margin-top:0;}
+  article p{
+    color:var(--ink-soft);margin:0 0 16px;font-size:.98rem;
+  }
+  article p:last-child{margin-bottom:0;}
+  blockquote{
+    margin:22px 0;padding:18px 22px;
+    background:var(--paper);border-left:3px solid var(--gold);
+    font-family:'EB Garamond',serif;font-style:italic;color:var(--ink);
+    font-size:1.08rem;border-radius:0 3px 3px 0;
+  }
+  blockquote cite{
+    display:block;font-family:'Inter',sans-serif;font-style:normal;
+    font-size:.78rem;color:var(--gold-deep);margin-top:8px;font-weight:600;
+    letter-spacing:.02em;
+  }
+  .lead-in{
+    font-weight:600;color:var(--ink);
+  }
+  .conclusion{
+    margin-top:48px;padding:30px 26px;
+    background:var(--paper);border:1px solid var(--line);border-top:3px solid var(--gold);
+    border-radius:3px;
+  }
+  .conclusion h2{margin-top:0;}
+  .conclusion p{color:var(--ink-soft);}
+  .conclusion p:last-of-type{
+    font-family:'EB Garamond',serif;font-style:italic;font-size:1.1rem;color:var(--ink);
+    margin-top:18px;
+  }
+
+  .nav-footer{
+    margin-top:56px;padding-top:28px;border-top:1px solid var(--line);
+    display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px;
+  }
+  .nav-footer a{
+    font-size:.85rem;font-weight:600;color:var(--ink-soft);
+  }
+  .nav-footer a:hover{color:var(--wine);}
+
+  /* ---------- FOOTER ---------- */
+  footer{padding:40px 0;border-top:1px solid var(--line);margin-top:40px;}
+  .footer-bottom{
+    max-width:1180px;margin:0 auto;padding:0 24px;
+    font-size:.78rem;color:var(--ink-soft);
+    display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;
+  }
+
+  @media (max-width:600px){
+    .claim-quote{font-size:1.5rem;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="logo"><span class="beyond">Beyond</span> <span class="tulip">TULIP</span></a>
+    <a href="index.html" class="back-link">← Back to Home</a>
+  </div>
+</header>
+
+<section class="article-hero">
+  <div class="wrap">
+    <span class="claim-badge"><span class="n">Claim 01</span> · Responding to Calvinist Claims</span>
+    <p class="claim-quote">"The spiritually dead cannot believe."</p>
+    <p class="article-hero h1.subhead" style="font-family:'Inter',sans-serif;font-weight:600;color:var(--gold-deep);font-size:1.05rem;margin-top:22px;">Response: Does Spiritual Death Mean People Cannot Believe?</p>
+  </div>
+</section>
+
+<main>
+  <div class="wrap">
+    <article>
+
+      <p class="lede">One of the most common assumptions in discussions about salvation is that spiritually dead people are incapable of believing the gospel. This claim is often summarized by the slogan, "Dead means dead." While Scripture unquestionably teaches that fallen humanity is spiritually dead, the real question is not whether people are spiritually dead, but what spiritual death actually means.</p>
+
+      <p>The Bible consistently presents spiritual death as separation from the life of God because of sin. It never defines spiritual death as the loss of the ability to hear God's Word, understand the gospel, or respond in faith when God calls through His appointed means.</p>
+
+      <h2>Words Must Be Interpreted by Context</h2>
+      <p>Every biblical term must be understood according to its context rather than by importing the meaning of another category.</p>
+      <p>For example, the word <em>all</em> does not always refer to every individual without exception. Its meaning is determined by the surrounding context. The same principle applies to the word <em>dead</em>.</p>
+      <p>Scripture speaks of physical death, spiritual death, being dead to sin, and the second death. Although the same word is used, these expressions describe different realities. Treating every occurrence of "death" as though it carried exactly the same meaning ignores how language functions throughout the Bible.</p>
+
+      <h2>Spiritual Death Is Not Physical Death</h2>
+      <p>A common assumption is that spiritual death should be understood as though sinners were spiritual corpses — completely incapable of hearing or responding to God.</p>
+      <p class="lead-in">Scripture never defines spiritual death in this manner.</p>
+      <p>Physical death is the end of earthly life, whereas spiritual death is separation from the life of God because of sin.</p>
+      <p>The biblical problem is therefore alienation from God, condemnation under sin, and spiritual lostness — not an inability to respond when God speaks through His Word.</p>
+
+      <h2>The Prodigal Son Explains Spiritual Death</h2>
+      <p>Jesus provides one of Scripture's clearest explanations in the Parable of the Prodigal Son.</p>
+      <p>When the son returned in repentance, his father declared:</p>
+      <blockquote>"This my son was dead and is alive again; he was lost and is found."<cite>Luke 15:24</cite></blockquote>
+      <p>Jesus Himself interprets the metaphor.</p>
+      <p>The son who was "dead" is immediately described as having been "lost." His death did not describe physical lifelessness or an inability to return. Rather, it described separation from his father. After recognizing his condition, he returned home, confessed his sin, and was joyfully restored.</p>
+      <p>If spiritual death meant complete inability to respond, the central point of the parable would collapse. Instead, Jesus uses death to describe alienation and restoration, not incapacity.</p>
+
+      <h2>Dead While Still Living</h2>
+      <p>The same principle appears in 1 Timothy 5:6:</p>
+      <blockquote>"She who lives for pleasure is dead even while she lives."<cite>1 Timothy 5:6</cite></blockquote>
+      <p>The woman is obviously alive physically. Her death is spiritual.</p>
+      <p>She lives under God's judgment and remains separated from the life of God, yet she continues to live biologically. Once again, the emphasis is relational and judicial rather than functional incapacity.</p>
+
+      <h2>Ephesians 2 Describes Separation</h2>
+      <p>Ephesians 2 begins by describing unbelievers as "dead in trespasses and sins." However, Paul's own explanation appears later in the same chapter.</p>
+      <p>He describes the Gentiles as:</p>
+      <ul style="color:var(--ink-soft);padding-left:22px;margin-bottom:16px;">
+        <li>separated from Christ,</li>
+        <li>excluded from the commonwealth of Israel,</li>
+        <li>strangers to the covenants of promise,</li>
+        <li>having no hope,</li>
+        <li>without God in the world,</li>
+        <li>far away from God.</li>
+      </ul>
+      <p>Then Paul announces the good news:</p>
+      <blockquote>"But now in Christ Jesus you who once were far off have been brought near by the blood of Christ."<cite>Ephesians 2:13</cite></blockquote>
+      <p>The movement throughout the chapter is from separation to reconciliation — from being far away to being brought near.</p>
+      <p>Nothing in the passage states that spiritual death is the inability to believe the gospel.</p>
+
+      <h2>Jesus Invites the Spiritually Dead</h2>
+      <p>Jesus declared:</p>
+      <blockquote>"You are unwilling to come to Me so that you may have life."<cite>John 5:40</cite></blockquote>
+      <p class="lead-in">The obstacle is not inability. The obstacle is unwillingness.</p>
+      <p>Earlier in the same chapter Jesus said:</p>
+      <blockquote>"Whoever hears My word and believes Him who sent Me has eternal life… He has passed from death into life."<cite>John 5:24</cite></blockquote>
+      <p>The sequence is significant. First, the sinner hears. Then the sinner believes. Finally, the believer passes from death into life.</p>
+      <p>Life is received through faith in Christ rather than possessed before coming to Him.</p>
+
+      <h2>God Calls the Lost Through the Gospel</h2>
+      <p>Throughout the New Testament, God repeatedly commands spiritually dead sinners to repent and believe.</p>
+      <p>Jesus proclaimed: <em>"Repent and believe in the gospel."</em> (Mark 1:15)</p>
+      <p>Peter preached: <em>"Repent…"</em> (Acts 2:38)</p>
+      <p>Paul declared: <em>"God now commands all people everywhere to repent."</em> (Acts 17:30)</p>
+      <p>These commands are meaningful because God accomplishes His saving work through the proclamation of His Word.</p>
+      <p>Romans 1:16 calls the gospel "the power of God for salvation." Romans 10:17 teaches that faith comes through hearing the message concerning Christ.</p>
+      <p>The Holy Spirit works through the gospel to convict, persuade, and bring sinners to faith.</p>
+
+      <h2>Does "Dead" Always Mean Inability?</h2>
+      <p>Paul also teaches that believers are "dead to sin."</p>
+      <blockquote>"Consider yourselves dead to sin but alive to God in Christ Jesus."<cite>Romans 6:11</cite></blockquote>
+      <p>Does this mean Christians are incapable of responding to temptation? Certainly not.</p>
+      <p>Believers continue to struggle with sin, demonstrating that the word <em>dead</em> does not automatically signify total inability. Its meaning must always be determined by context.</p>
+
+      <h2>The Second Death</h2>
+      <p>Scripture also speaks of "the second death" (Revelation 20:6).</p>
+      <p>The second death does not describe nonexistence or unconsciousness. Rather, it describes eternal separation from the life of God under His righteous judgment.</p>
+      <p>Again, death communicates separation rather than incapacity.</p>
+
+      <h2>God Seeks Those Who Do Not Seek Him</h2>
+      <p>Romans 3 teaches that fallen humanity does not naturally seek God. Yet Scripture equally emphasizes that God graciously seeks sinners.</p>
+      <p>Paul told the Athenians that God is "not far from each one of us" so that people might seek Him (Acts 17:27).</p>
+      <p>God takes the initiative by sending His Son, proclaiming the gospel, convicting through the Holy Spirit, and calling all people to repentance and faith.</p>
+
+      <h2>The Gospel Is God's Power to Give Life</h2>
+      <p>The apostles consistently proclaimed one remedy for humanity's lost condition: Jesus Christ crucified and risen.</p>
+      <p>They preached repentance. They preached faith. They preached the gospel as God's power for salvation.</p>
+      <p>Nowhere do they proclaim that people must first receive spiritual life before they are able to believe the gospel. Rather, they consistently call sinners to hear God's Word, believe in Christ, and receive the eternal life that He freely gives.</p>
+
+      <div class="conclusion">
+        <h2>Conclusion</h2>
+        <p>Spiritual death is a biblical reality. However, Scripture defines it as alienation from God, condemnation because of sin, and separation from the life of God — not as the inability to respond to God's gracious call through the gospel.</p>
+        <p>The sinner is spiritually dead because he is separated from the life of God. Christ alone is the source of life. Through the proclamation of the gospel, the Holy Spirit calls sinners to repentance and faith, and everyone who believes in Christ passes from death into life.</p>
+        <p>This understanding preserves the biblical meaning of spiritual death, the universal call of the gospel, and the consistent testimony of Scripture that eternal life is found in Jesus Christ alone.</p>
+      </div>
+
+      <div class="nav-footer">
+        <a href="index.html">← Back to Home</a>
+        <a href="index.html">More Claims Answered (coming soon) →</a>
+      </div>
+
+    </article>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-bottom">
+    <span>© 2026 Beyond TULIP</span>
+    <span>"Search the Scriptures" — John 5:39</span>
+  </div>
+</footer>
+
+</body>
+</html>
