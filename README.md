@@ -1,2 +1,2 @@
-# Theologia2
+# Beyond TULIP
 Teologi fra Eirik Storesletten
