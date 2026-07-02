@@ -123,6 +123,41 @@
     margin-bottom:16px;padding-bottom:10px;border-bottom:1px solid var(--line-soft);
   }
 
+  /* ---------- FEATURED MINISTRY CHANNELS ---------- */
+  .channel-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:22px;}
+  .channel-card{
+    background:var(--paper);border:1px solid var(--line);border-radius:3px;
+    overflow:hidden;transition:border-color .2s ease, transform .2s ease, box-shadow .2s ease;
+    display:flex;flex-direction:column;
+  }
+  .channel-card:hover{border-color:var(--gold);transform:translateY(-3px);box-shadow:0 10px 22px rgba(44,36,23,.07);}
+  .channel-banner{
+    height:70px;
+    background:linear-gradient(120deg, var(--ink) 0%, #4a3c26 100%);
+    position:relative;
+  }
+  .channel-avatar{
+    width:58px;height:58px;border-radius:50%;
+    background:var(--parchment);border:3px solid var(--paper);
+    display:flex;align-items:center;justify-content:center;
+    font-family:'EB Garamond',serif;font-weight:600;color:var(--gold-deep);font-size:1.3rem;
+    position:absolute;left:20px;bottom:-29px;
+    box-shadow:0 2px 6px rgba(44,36,23,.15);
+  }
+  .channel-body{padding:38px 20px 20px;flex:1;display:flex;flex-direction:column;}
+  .channel-name{font-size:1.05rem;font-weight:600;margin-bottom:8px;}
+  .channel-desc{font-size:.85rem;color:var(--ink-soft);line-height:1.55;margin-bottom:8px;flex:1;}
+  .channel-subs{font-size:.74rem;color:var(--ink-soft);margin-bottom:14px;font-style:italic;}
+  .channel-actions{display:flex;gap:10px;flex-wrap:wrap;}
+  .channel-btn{
+    font-size:.78rem;font-weight:600;padding:9px 15px;border-radius:2px;
+    text-align:center;flex:1;min-width:120px;
+  }
+  .channel-btn.primary{background:var(--ink);color:var(--parchment);}
+  .channel-btn.primary:hover{background:var(--wine);}
+  .channel-btn.secondary{border:1px solid var(--gold);color:var(--ink);}
+  .channel-btn.secondary:hover{background:var(--gold);color:var(--paper);}
+
   /* ---------- WEBSITE CARDS ---------- */
   .site-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:18px;}
   .site-card{
@@ -293,6 +328,12 @@
       <div class="icon-title"><span class="glyph">🎥</span><h2>Videos</h2></div>
       <p>Recommended lectures, documentaries, and debates. All videos open on YouTube in a new tab.</p>
     </div>
+
+    <div class="category-block">
+      <div class="category-title">Featured Ministry Channels</div>
+      <div id="channelsContainer"></div>
+    </div>
+
     <div id="videosContainer"></div>
   </div>
 </section>
@@ -362,6 +403,27 @@ const websitesData = {
   ]
 };
 
+const channelsData = [
+  {
+    name: "Provisionist Perspective",
+    url: "https://www.youtube.com/@ProvisionistPerspective",
+    description: "Biblical discussions, debates, interviews, and responses that present and defend a Provisionist understanding of salvation while engaging respectfully with Calvinist theology.",
+    playlist: ""
+  },
+  {
+    name: "Soteriology 101",
+    url: "https://www.youtube.com/@Soteriology101",
+    description: "Hosted by Dr. Leighton Flowers, this channel explores biblical soteriology through Scripture-first teaching, theological discussions, debates, and responses to Calvinism.",
+    playlist: ""
+  },
+  {
+    name: "Idol Killer",
+    url: "https://www.youtube.com/channel/UCr3qEYb55BghYLiy_v72ixA",
+    description: "A ministry focused on biblical theology, apologetics, and critical interaction with Calvinist doctrines through verse-by-verse analysis, debates, and theological discussions.",
+    playlist: "https://www.youtube.com/watch?v=6aYzwe9ZNuY&list=PLHjVR-mjXyvEQCWrVRUIksZf-owmBC7dJ"
+  }
+];
+
 const videosData = {
   "Calvinism Examined": [],
   "Reformed Perspectives": [],
@@ -423,6 +485,34 @@ function renderWebsites(){
     });
     html += `</div></div>`;
   }
+  container.innerHTML = html;
+}
+
+function renderChannels(){
+  // Note: live subscriber counts require an authenticated YouTube Data API
+  // call, which a static page cannot make securely (it would expose an API
+  // key). To keep the numbers here always accurate rather than guessed or
+  // stale, subscriber counts are left out — visit the channel link to see
+  // the current count on YouTube itself.
+  const container = document.getElementById('channelsContainer');
+  let html = `<div class="channel-grid">`;
+  channelsData.forEach(ch => {
+    html += `
+      <div class="channel-card">
+        <div class="channel-banner">
+          <div class="channel-avatar">${initials(ch.name)}</div>
+        </div>
+        <div class="channel-body">
+          <div class="channel-name">${ch.name}</div>
+          <div class="channel-desc">${ch.description}</div>
+          <div class="channel-actions">
+            <a class="channel-btn primary" href="${ch.url}" target="_blank" rel="noopener noreferrer">Visit Channel</a>
+            ${ch.playlist ? `<a class="channel-btn secondary" href="${ch.playlist}" target="_blank" rel="noopener noreferrer">Featured Playlist</a>` : ''}
+          </div>
+        </div>
+      </div>`;
+  });
+  html += `</div>`;
   container.innerHTML = html;
 }
 
@@ -514,6 +604,7 @@ function renderJournals(){
   container.innerHTML = html;
 }
 
+renderChannels();
 renderWebsites();
 renderVideos();
 renderBooks();
