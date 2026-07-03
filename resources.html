@@ -178,7 +178,7 @@
   .ext-icon{font-size:.72rem;color:var(--gold-deep);flex-shrink:0;}
   .site-desc{font-size:.85rem;color:var(--ink-soft);line-height:1.5;}
 
-  /* ---------- VIDEO CARDS ---------- */
+  /* ---------- VIDEO CARDS (category grids) ---------- */
   .video-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:22px;}
   .video-card{
     background:var(--paper);border:1px solid var(--line);border-radius:3px;
@@ -186,9 +186,24 @@
   }
   .video-card:hover{border-color:var(--gold);transform:translateY(-2px);}
   .video-thumb{
-    aspect-ratio:16/9;background:var(--parchment);
-    display:flex;align-items:center;justify-content:center;
+    aspect-ratio:16/9;background:var(--parchment);position:relative;
+    display:flex;align-items:center;justify-content:center;overflow:hidden;
     font-size:1.8rem;color:var(--gold-deep);border-bottom:1px solid var(--line);
+  }
+  .video-thumb img{width:100%;height:100%;object-fit:cover;display:block;}
+  .video-thumb .play-overlay{
+    position:absolute;inset:0;
+    display:flex;align-items:center;justify-content:center;
+    background:rgba(44,36,23,.18);
+    transition:background .2s ease;
+  }
+  .video-card:hover .play-overlay{background:rgba(44,36,23,.32);}
+  .play-circle{
+    width:46px;height:46px;border-radius:50%;
+    background:rgba(255,253,248,.92);
+    display:flex;align-items:center;justify-content:center;
+    font-size:.95rem;color:var(--ink);
+    box-shadow:0 3px 10px rgba(0,0,0,.25);
   }
   .video-body{padding:18px 20px;}
   .video-title{font-size:1.02rem;font-weight:600;margin-bottom:4px;line-height:1.35;}
@@ -201,6 +216,78 @@
     border:1px solid var(--line);padding:6px 12px;border-radius:20px;
   }
   .video-watch:hover{background:var(--gold);color:var(--paper);border-color:var(--gold);}
+  .video-watch.disabled{opacity:.5;pointer-events:none;}
+
+  /* ---------- EDITOR'S PICKS (larger, prominent) ---------- */
+  .picks-intro{font-size:.88rem;color:var(--ink-soft);font-style:italic;font-family:'EB Garamond',serif;margin:-8px 0 18px;}
+  .picks-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:26px;}
+  .pick-card{
+    background:var(--paper);border:1px solid var(--line);border-radius:4px;
+    overflow:hidden;transition:border-color .25s ease, transform .25s ease, box-shadow .25s ease;
+    position:relative;
+  }
+  .pick-card::before{
+    content:"";position:absolute;top:0;left:0;right:0;height:3px;background:var(--gold);
+    transform:scaleX(0);transform-origin:left;transition:transform .25s ease;
+  }
+  .pick-card:hover{border-color:var(--gold);transform:translateY(-4px);box-shadow:0 14px 28px rgba(44,36,23,.09);}
+  .pick-card:hover::before{transform:scaleX(1);}
+  .pick-thumb{
+    aspect-ratio:16/9;background:linear-gradient(135deg, var(--ink) 0%, #4a3c26 100%);
+    position:relative;display:flex;align-items:center;justify-content:center;overflow:hidden;
+  }
+  .pick-thumb img{width:100%;height:100%;object-fit:cover;display:block;}
+  .pick-thumb .play-overlay{
+    position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
+    background:rgba(44,36,23,.2);transition:background .2s ease;
+  }
+  .pick-card:hover .pick-thumb .play-overlay{background:rgba(44,36,23,.35);}
+  .play-circle-lg{
+    width:62px;height:62px;border-radius:50%;
+    background:rgba(255,253,248,.94);
+    display:flex;align-items:center;justify-content:center;
+    font-size:1.3rem;color:var(--ink);
+    box-shadow:0 4px 14px rgba(0,0,0,.28);
+  }
+  .pick-duration-badge{
+    position:absolute;bottom:10px;right:10px;
+    background:rgba(44,36,23,.85);color:var(--parchment);
+    font-size:.72rem;font-weight:600;padding:3px 8px;border-radius:3px;
+  }
+  .pick-body{padding:22px 22px;}
+  .pick-title{font-size:1.18rem;font-weight:600;margin-bottom:6px;line-height:1.35;}
+  .pick-speaker{font-size:.8rem;color:var(--gold-deep);font-weight:600;margin-bottom:10px;}
+  .pick-desc{font-size:.9rem;color:var(--ink-soft);margin-bottom:18px;line-height:1.5;}
+
+  /* ---------- DEBATE CARDS ---------- */
+  .debate-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:22px;}
+  .debate-card{
+    background:var(--paper);border:1px solid var(--line);border-radius:3px;
+    overflow:hidden;transition:border-color .2s ease, transform .2s ease;
+  }
+  .debate-card:hover{border-color:var(--gold);transform:translateY(-2px);}
+  .debate-thumb{
+    aspect-ratio:16/9;background:var(--parchment);position:relative;overflow:hidden;
+    display:flex;align-items:center;justify-content:center;
+    font-size:1.6rem;color:var(--gold-deep);border-bottom:1px solid var(--line);
+  }
+  .debate-thumb img{width:100%;height:100%;object-fit:cover;display:block;}
+  .debate-thumb .play-overlay{
+    position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
+    background:rgba(44,36,23,.18);transition:background .2s ease;
+  }
+  .debate-card:hover .play-overlay{background:rgba(44,36,23,.32);}
+  .debate-vs-badge{
+    position:absolute;top:10px;left:10px;
+    background:var(--wine);color:var(--parchment);
+    font-size:.68rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;
+    padding:4px 9px;border-radius:3px;
+  }
+  .debate-body{padding:18px 20px;}
+  .debate-participants{font-size:.78rem;color:var(--gold-deep);font-weight:600;margin-bottom:6px;}
+  .debate-title{font-size:1.02rem;font-weight:600;margin-bottom:10px;line-height:1.35;}
+  .debate-meta-row{display:flex;align-items:center;justify-content:space-between;}
+  .debate-runtime{font-size:.75rem;color:var(--ink-soft);}
 
   .coming-soon-note{
     font-family:'EB Garamond',serif;font-style:italic;color:var(--ink-soft);
@@ -326,15 +413,22 @@
     <div class="lib-section-head">
       <span class="eyebrow">Section 02</span>
       <div class="icon-title"><span class="glyph">🎥</span><h2>Videos</h2></div>
-      <p>Recommended lectures, documentaries, and debates. All videos open on YouTube in a new tab.</p>
+      <p>Explore carefully selected YouTube channels, lectures, debates, documentaries, and Bible teaching that encourage thoughtful, Scripture-first study. All videos open on YouTube in a new tab.</p>
     </div>
 
     <div class="category-block">
-      <div class="category-title">Featured Ministry Channels</div>
+      <div class="category-title">⭐ Featured Ministry Channels</div>
       <div id="channelsContainer"></div>
     </div>
 
-    <div id="videosContainer"></div>
+    <div class="category-block">
+      <div class="category-title">⭐ Editor's Picks</div>
+      <p class="picks-intro">A short starting point for first-time visitors — begin here.</p>
+      <div id="picksContainer"></div>
+    </div>
+
+    <div id="videoCategoriesContainer"></div>
+
   </div>
 </section>
 
@@ -392,7 +486,9 @@ const websitesData = {
   "Calvinism Examined": [
     { name: "Soteriology 101", url: "https://soteriology101.com", description: "Articles and podcasts examining Calvinism from a biblical, non-Calvinist perspective." },
     { name: "Bible vs. Calvinism", url: "https://biblevscalvinism.org", description: "A verse-by-verse case against Calvinist determinism from a biblical standpoint." },
-    { name: "Evangelical Arminians", url: "https://evangelicalarminians.org", description: "The website of the Society of Evangelical Arminians, defending classical Arminian theology." }
+    { name: "Evangelical Arminians", url: "https://evangelicalarminians.org", description: "The website of the Society of Evangelical Arminians, defending classical Arminian theology." },
+    { name: "Beyond The Fundamentals", url: "https://www.beyondthefundamentals.com/calvinism.html", description: "Kevin Thompson's collection of videos, proof-text studies, and topical resources examining Calvinist doctrine." },
+    { name: "Be a Good Berean", url: "https://beagoodberean.com/", description: "A ministry devoted to helping the church grow in knowledge of God's Word through biblical exegesis, biblical counseling, and practical teaching." }
   ],
   "Reformed Perspectives": [
     { name: "Ligonier Ministries", url: "https://www.ligonier.org", description: "A teaching ministry founded by R.C. Sproul, presenting Reformed theology for a broad audience." },
@@ -418,19 +514,46 @@ const channelsData = [
   },
   {
     name: "Idol Killer",
-    url: "https://www.youtube.com/channel/UCr3qEYb55BghYLiy_v72ixA",
+    url: "https://www.youtube.com/channel/UCh8NcWbRDzwszrgvZ6nmVcw",
     description: "A ministry focused on biblical theology, apologetics, and critical interaction with Calvinist doctrines through verse-by-verse analysis, debates, and theological discussions.",
     playlist: "https://www.youtube.com/watch?v=6aYzwe9ZNuY&list=PLHjVR-mjXyvEQCWrVRUIksZf-owmBC7dJ"
+  },
+  {
+    name: "Beyond The Fundamentals",
+    url: "https://www.youtube.com/channel/UCr3qEYb55BghYLiy_v72ixA",
+    description: "Kevin Thompson's channel presents talks dissecting Calvinistic theology alongside other well-researched, Bible-centered teaching.",
+    playlist: "https://www.youtube.com/playlist?list=PLY2G1Gk_v1wOFzOk5PogZnPCioanrblrz"
+  },
+  {
+    name: "Be a Good Berean",
+    url: "https://www.youtube.com/@BeAGoodBerean",
+    description: "Biblical exegesis, theological teaching, and practical instruction to help believers examine what they hear against Scripture, following the example of the Bereans in Acts 17.",
+    playlist: ""
   }
 ];
 
-const videosData = {
-  "Calvinism Examined": [],
-  "Reformed Perspectives": [],
-  "Church History": [],
-  "Biblical Theology": [],
-  "Debates": []
-};
+/* Each video object follows a consistent schema so new videos can be added
+   without touching any HTML: title, speaker, category, description, url,
+   thumbnail, duration, playlist (optional), featured (true/false).
+   Categories in use: "Calvinism Examined", "Church History",
+   "Biblical Theology", "Debates". Entries are only added once verified —
+   empty categories display an honest "coming soon" note rather than
+   placeholder or invented videos. */
+const videosData = [
+  {
+    title: "The John 6:44 Debate: Does John 6:44 Teach Unconditional Election?",
+    speaker: "Leighton Flowers vs. James White",
+    category: "Debates",
+    description: "A focused, verse-by-verse debate on whether John 6:44 teaches the Calvinist doctrine of unconditional election.",
+    url: "https://www.youtube.com/watch?v=R8hFJJawS2M",
+    thumbnail: "https://img.youtube.com/vi/R8hFJJawS2M/hqdefault.jpg",
+    duration: "",
+    playlist: "",
+    featured: true
+  }
+];
+
+const videoCategories = ["Calvinism Examined", "Church History", "Biblical Theology", "Debates"];
 
 const booksData = [
   {
@@ -516,38 +639,101 @@ function renderChannels(){
   container.innerHTML = html;
 }
 
-function renderVideos(){
-  const container = document.getElementById('videosContainer');
+function renderPicks(){
+  const container = document.getElementById('picksContainer');
+  const picks = videosData.filter(v => v.featured);
+  if(picks.length === 0){
+    container.innerHTML = `<p class="coming-soon-note">Introductory picks for first-time visitors are being reviewed and will be added soon.</p>`;
+    return;
+  }
+  let html = `<div class="picks-grid">`;
+  picks.forEach(v => {
+    html += `
+      <a class="pick-card" href="${v.url}" target="_blank" rel="noopener noreferrer">
+        <div class="pick-thumb">
+          ${v.thumbnail ? `<img src="${v.thumbnail}" alt="${v.title}" loading="lazy">` : ''}
+          <div class="play-overlay"><div class="play-circle-lg">▶</div></div>
+          ${v.duration ? `<span class="pick-duration-badge">${v.duration}</span>` : ''}
+        </div>
+        <div class="pick-body">
+          <div class="pick-title">${v.title}</div>
+          <div class="pick-speaker">${v.speaker}</div>
+          <div class="pick-desc">${v.description}</div>
+        </div>
+      </a>`;
+  });
+  html += `</div>`;
+  container.innerHTML = html;
+}
+
+function renderVideoCategories(){
+  const container = document.getElementById('videoCategoriesContainer');
   let html = '';
-  for(const category in videosData){
-    const videos = videosData[category];
+  videoCategories.forEach(category => {
+    const items = videosData.filter(v => v.category === category);
     html += `<div class="category-block">
-      <div class="category-title">${category}</div>`;
-    if(videos.length === 0){
+      <div class="category-title">${categoryGlyph(category)} ${category}</div>`;
+
+    if(items.length === 0){
       html += `<p class="coming-soon-note">Recommended videos for this category are being reviewed and will be added soon.</p>`;
+    } else if(category === "Debates"){
+      html += `<div class="debate-grid">`;
+      items.forEach(v => {
+        html += `
+          <a class="debate-card" href="${v.url}" target="_blank" rel="noopener noreferrer">
+            <div class="debate-thumb">
+              ${v.thumbnail ? `<img src="${v.thumbnail}" alt="${v.title}" loading="lazy">` : ''}
+              <span class="debate-vs-badge">Debate</span>
+              <div class="play-overlay"><div class="play-circle">▶</div></div>
+            </div>
+            <div class="debate-body">
+              <div class="debate-participants">${v.speaker}</div>
+              <div class="debate-title">${v.title}</div>
+              <div class="debate-meta-row">
+                <span class="debate-runtime">${v.duration || ''}</span>
+                <span class="video-watch">Watch on YouTube</span>
+              </div>
+            </div>
+          </a>`;
+      });
+      html += `</div>`;
     } else {
       html += `<div class="video-grid">`;
-      videos.forEach(v => {
+      items.forEach(v => {
         html += `
-          <div class="video-card">
-            <div class="video-thumb">🎬</div>
+          <a class="video-card" href="${v.url}" target="_blank" rel="noopener noreferrer">
+            <div class="video-thumb">
+              ${v.thumbnail ? `<img src="${v.thumbnail}" alt="${v.title}" loading="lazy">` : ''}
+              <div class="play-overlay"><div class="play-circle">▶</div></div>
+            </div>
             <div class="video-body">
               <div class="video-title">${v.title}</div>
               <div class="video-speaker">${v.speaker}</div>
               <div class="video-desc">${v.description}</div>
               <div class="video-meta-row">
                 <span class="video-duration">${v.duration || ''}</span>
-                <a class="video-watch" href="${v.url}" target="_blank" rel="noopener noreferrer">Watch on YouTube</a>
+                <span class="video-watch">Watch on YouTube</span>
               </div>
             </div>
-          </div>`;
+          </a>`;
       });
       html += `</div>`;
     }
     html += `</div>`;
-  }
+  });
   container.innerHTML = html;
 }
+
+function categoryGlyph(category){
+  const glyphs = {
+    "Calvinism Examined": "📚",
+    "Church History": "🏛",
+    "Biblical Theology": "📖",
+    "Debates": "⚔"
+  };
+  return glyphs[category] || "";
+}
+
 
 function renderBooks(){
   const container = document.getElementById('booksContainer');
@@ -606,7 +792,8 @@ function renderJournals(){
 
 renderChannels();
 renderWebsites();
-renderVideos();
+renderPicks();
+renderVideoCategories();
 renderBooks();
 renderJournals();
 </script>
