@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>"The Spiritually Dead Cannot Believe" — Beyond TULIP</title>
-<meta name="description" content="Does spiritual death mean people cannot believe the gospel? A biblical examination of what spiritual death actually means in Scripture.">
+<meta name="description" content="Does spiritual death mean people cannot believe the gospel? Two biblical responses to this common Calvinist claim, side by side.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -48,7 +48,6 @@
   }
   .wrap{max-width:var(--max);margin:0 auto;padding:0 24px;}
 
-  /* ---------- HEADER ---------- */
   header{
     position:sticky;top:0;z-index:60;
     background:rgba(246,240,225,.92);
@@ -74,8 +73,7 @@
   }
   .back-link:hover{color:var(--wine);}
 
-  /* ---------- ARTICLE HERO ---------- */
-  .article-hero{padding:56px 0 40px;border-bottom:1px solid var(--line);}
+  .article-hero{padding:56px 0 36px;border-bottom:1px solid var(--line);}
   .claim-badge{
     display:inline-flex;align-items:center;gap:8px;
     font-size:.7rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;
@@ -87,12 +85,35 @@
     font-family:'EB Garamond',serif;font-style:italic;font-size:1.9rem;
     line-height:1.35;color:var(--ink);max-width:640px;
   }
-  .article-hero h1.subhead{
+  .article-subhead{
     font-size:1.05rem;font-family:'Inter',sans-serif;font-weight:600;
     color:var(--gold-deep);margin-top:22px;letter-spacing:.02em;
+    transition:opacity .2s ease;
   }
 
-  /* ---------- CONTENT ---------- */
+  .alt-switcher{
+    margin-top:34px;
+    display:inline-flex;
+    background:var(--paper);
+    border:1px solid var(--line);
+    border-radius:26px;
+    padding:4px;
+    gap:4px;
+  }
+  .alt-btn{
+    font-family:'Inter',sans-serif;
+    font-size:.85rem;font-weight:600;
+    color:var(--ink-soft);
+    background:none;border:none;cursor:pointer;
+    padding:10px 22px;border-radius:22px;
+    transition:background .25s ease, color .25s ease;
+  }
+  .alt-btn:hover{color:var(--ink);}
+  .alt-btn.active{
+    background:var(--ink);color:var(--parchment);
+  }
+  .alt-btn:focus-visible{outline:2px solid var(--gold-deep);outline-offset:2px;}
+
   main{padding:52px 0 60px;}
   .lede{
     font-family:'EB Garamond',serif;font-size:1.12rem;color:var(--ink-soft);
@@ -136,12 +157,31 @@
     margin-top:56px;padding-top:28px;border-top:1px solid var(--line);
     display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px;
   }
-  .nav-footer a{
+  .nav-footer a, .nav-footer button{
+    font-family:'Inter',sans-serif;
     font-size:.85rem;font-weight:600;color:var(--ink-soft);
+    background:none;border:none;cursor:pointer;padding:0;
   }
-  .nav-footer a:hover{color:var(--wine);}
+  .nav-footer a:hover, .nav-footer button:hover{color:var(--wine);}
 
-  /* ---------- FOOTER ---------- */
+  .alt-panel{
+    display:none;
+    opacity:0;
+    transform:translateY(8px);
+    transition:opacity .35s ease, transform .35s ease;
+  }
+  .alt-panel.visible{
+    display:block;
+  }
+  .alt-panel.visible.in{
+    opacity:1;
+    transform:translateY(0);
+  }
+
+  @media (prefers-reduced-motion:reduce){
+    .alt-panel{transition:none;}
+  }
+
   footer{padding:40px 0;border-top:1px solid var(--line);margin-top:40px;}
   .footer-bottom{
     max-width:1180px;margin:0 auto;padding:0 24px;
@@ -151,6 +191,8 @@
 
   @media (max-width:600px){
     .claim-quote{font-size:1.5rem;}
+    .alt-switcher{width:100%;}
+    .alt-btn{flex:1;}
   }
 </style>
 </head>
@@ -165,15 +207,21 @@
 
 <section class="article-hero">
   <div class="wrap">
-    <span class="claim-badge"><span class="n">Claim 01 · Alternative 1</span> · Responding to Calvinist Claims</span>
+    <span class="claim-badge"><span class="n">Claim 01</span> · Responding to Calvinist Claims</span>
     <p class="claim-quote">"The spiritually dead cannot believe."</p>
-    <p class="article-hero h1.subhead" style="font-family:'Inter',sans-serif;font-weight:600;color:var(--gold-deep);font-size:1.05rem;margin-top:22px;">Response: Does Spiritual Death Mean People Cannot Believe?</p>
+    <p class="article-subhead" id="subhead">Response: Does Spiritual Death Mean People Cannot Believe?</p>
+
+    <div class="alt-switcher" role="tablist" aria-label="Choose response version">
+      <button class="alt-btn active" id="btn-alt1" role="tab" aria-selected="true" aria-controls="panel-alt1">Alternative 1</button>
+      <button class="alt-btn" id="btn-alt2" role="tab" aria-selected="false" aria-controls="panel-alt2">Alternative 2</button>
+    </div>
   </div>
 </section>
 
 <main>
   <div class="wrap">
-    <article>
+
+    <article class="alt-panel visible in" id="panel-alt1" role="tabpanel" aria-labelledby="btn-alt1">
 
       <p class="lede">One of the most common assumptions in discussions about salvation is that spiritually dead people are incapable of believing the gospel. This claim is often summarized by the slogan, "Dead means dead." While Scripture unquestionably teaches that fallen humanity is spiritually dead, the real question is not whether people are spiritually dead, but what spiritual death actually means.</p>
 
@@ -268,10 +316,73 @@
 
       <div class="nav-footer">
         <a href="index.html">← Back to Home</a>
-        <a href="claim01-v2.html">Read Alternative 2 →</a>
+        <button type="button" data-switch-to="alt2">Read Alternative 2 →</button>
       </div>
 
     </article>
+
+    <article class="alt-panel" id="panel-alt2" role="tabpanel" aria-labelledby="btn-alt2" hidden>
+
+      <p class="lede">The biblical doctrine of spiritual death is foundational to understanding humanity's fallen condition and God's work of salvation. The question is not whether people are spiritually dead — Scripture plainly teaches that they are. The real question is what Scripture means by spiritual death.</p>
+
+      <p>Does the Bible define spiritual death as the complete inability to respond to God's gracious call, or does it describe separation from the life that God alone gives? The answer has profound implications for how we understand the gospel itself.</p>
+
+      <h2>Spiritual Death Is Separation from the Life of God</h2>
+      <p>Throughout Scripture, spiritual death is consistently presented as separation from God because of sin.</p>
+      <p>Paul describes unbelievers as being "dead in trespasses and sins" (Ephesians 2:1), yet these same individuals are portrayed as actively walking according to the course of this world, following sinful desires, making decisions, and living in rebellion against God. They are not inactive. Their problem is not the absence of all human faculties but separation from the life of God.</p>
+      <p>This understanding is confirmed later in Ephesians, where Paul describes unbelievers as being "alienated from the life of God" (Ephesians 4:18).</p>
+      <p class="lead-in">Spiritual death, therefore, is fundamentally relational. It describes alienation from the God who alone is the source of life.</p>
+
+      <h2>Sin Separates Humanity from God</h2>
+      <p>Isaiah explains the nature of this separation:</p>
+      <blockquote>"Your iniquities have made a separation between you and your God."<cite>Isaiah 59:2</cite></blockquote>
+      <p>Sin creates estrangement between God and humanity.</p>
+      <p>The emphasis is not that sinners cease to function as rational, moral beings, but that they stand separated from fellowship with their Creator and under His righteous judgment.</p>
+      <p>This principle can already be seen in Genesis. God warned Adam that he would surely die if he ate from the forbidden tree (Genesis 2:17). Yet Adam did not physically die that very day. Instead, he was immediately alienated from God, driven from His presence, and became subject to corruption and eventual physical death.</p>
+      <p>Even after the Fall, Adam heard God's voice, answered His questions, confessed his actions, and was held accountable.</p>
+      <p>The biblical narrative therefore illustrates spiritual death as separation rather than incapacity.</p>
+
+      <h2>God Gives Life Through His Word and His Spirit</h2>
+      <p>Scripture repeatedly presents God's Word as the means through which He brings life to those who are spiritually dead.</p>
+      <p>One of the clearest illustrations appears in Ezekiel 37. God commands Ezekiel to prophesy to a valley filled with dry bones. As God's Word is proclaimed and God's Spirit breathes life into them, the bones live. The imagery demonstrates that God's life-giving power operates through His spoken Word.</p>
+      <p>Jesus teaches the same principle.</p>
+      <blockquote>"The hour is coming, and now is here, when the dead will hear the voice of the Son of God, and those who hear will live."<cite>John 5:25</cite></blockquote>
+      <p class="lead-in">Notice the sequence. The dead hear. Those who hear live. Jesus does not reverse the order.</p>
+      <p>Likewise, Jesus declares:</p>
+      <blockquote>"The Spirit gives life… The words that I have spoken to you are spirit and life."<cite>John 6:63</cite></blockquote>
+      <p>James writes: <em>"He brought us forth by the word of truth."</em> (James 1:18)</p>
+      <p>Peter likewise says believers have been born again <em>"through the living and abiding word of God."</em> (1 Peter 1:23)</p>
+      <p>The consistent biblical pattern is that God gives life through His Word as the Holy Spirit works in those who hear the gospel.</p>
+
+      <h2>The Universal Call of the Gospel</h2>
+      <p>Throughout the New Testament, God addresses spiritually dead people with genuine commands to repent and believe.</p>
+      <p>Jesus proclaimed: <em>"Repent and believe in the gospel."</em> (Mark 1:15)</p>
+      <p>Peter called the crowds: <em>"Repent."</em> (Acts 2:38)</p>
+      <p>Paul declared: <em>"God commands all people everywhere to repent."</em> (Acts 17:30)</p>
+      <p>These invitations are not empty announcements. They are God's own gracious summons, accompanied by the convicting ministry of the Holy Spirit through the proclamation of the gospel.</p>
+      <p>Romans 1:16 describes the gospel itself as "the power of God for salvation." Romans 10:17 explains that faith comes through hearing the Word of Christ.</p>
+      <p>Scripture consistently presents the gospel — not a prior hidden work — as God's appointed means of bringing sinners to saving faith.</p>
+
+      <h2>The Burden of Proof</h2>
+      <p>No Christian disputes that salvation begins entirely with God's grace.</p>
+      <p>The question is whether Scripture itself defines spiritual death as the inability to respond to God's gracious call. The passages commonly cited in support of that conclusion deserve careful examination.</p>
+      <p>Yet none explicitly state that being "dead in sin" means a person cannot hear God's Word, be convicted by the Holy Spirit, or respond in repentance and faith.</p>
+      <p>By contrast, Scripture repeatedly portrays God addressing spiritually dead people through His Word, calling them to repentance, and giving them life through the gospel.</p>
+
+      <div class="conclusion">
+        <h2>Conclusion</h2>
+        <p>The biblical picture of spiritual death is clear. Spiritual death is separation from the life of God because of sin. It is a condition of alienation, condemnation, and lostness.</p>
+        <p>The remedy is not found within fallen humanity but in God's gracious initiative through Jesus Christ. By the proclamation of the gospel and the work of the Holy Spirit, God calls sinners to Himself, grants life through His Son, and reconciles all who believe.</p>
+        <p>The emphasis of Scripture is therefore not that spiritual death removes every capacity to respond, but that those separated from the life of God are graciously invited to receive that life through faith in Jesus Christ.</p>
+      </div>
+
+      <div class="nav-footer">
+        <a href="index.html">← Back to Home</a>
+        <button type="button" data-switch-to="alt1">Read Alternative 1 →</button>
+      </div>
+
+    </article>
+
   </div>
 </main>
 
@@ -281,6 +392,88 @@
     <span>"Search the Scriptures" — John 5:39</span>
   </div>
 </footer>
+
+<script>
+  const subheads = {
+    alt1: "Response: Does Spiritual Death Mean People Cannot Believe?",
+    alt2: "Response: Spiritual Death — Separation from God, Not the Loss of All Ability"
+  };
+
+  const btn1 = document.getElementById('btn-alt1');
+  const btn2 = document.getElementById('btn-alt2');
+  const panel1 = document.getElementById('panel-alt1');
+  const panel2 = document.getElementById('panel-alt2');
+  const subhead = document.getElementById('subhead');
+
+  const panels = { alt1: panel1, alt2: panel2 };
+  const buttons = { alt1: btn1, alt2: btn2 };
+
+  function showAlternative(which, updateHash){
+    try{
+      const other = which === 'alt1' ? 'alt2' : 'alt1';
+
+      panels[other].classList.remove('in');
+      panels[which].hidden = false;
+      panels[which].classList.add('visible');
+
+      void panels[which].offsetWidth;
+      panels[which].classList.add('in');
+
+      buttons[which].classList.add('active');
+      buttons[which].setAttribute('aria-selected', 'true');
+      buttons[other].classList.remove('active');
+      buttons[other].setAttribute('aria-selected', 'false');
+
+      subhead.style.opacity = 0;
+      setTimeout(() => {
+        subhead.textContent = subheads[which];
+        subhead.style.opacity = 1;
+      }, 150);
+
+      setTimeout(() => {
+        if(!panels[which].classList.contains('in')) return;
+        panels[other].classList.remove('visible');
+        panels[other].hidden = true;
+      }, 350);
+
+      if(updateHash !== false){
+        history.replaceState(null, '', '#' + (which === 'alt1' ? 'alternative1' : 'alternative2'));
+      }
+    } catch(err){
+      // Fail safe: if anything goes wrong, just show the requested panel
+      // directly with no animation rather than leaving the page blank.
+      panels.alt1.hidden = which !== 'alt1';
+      panels.alt2.hidden = which !== 'alt2';
+      panels.alt1.classList.toggle('visible', which === 'alt1');
+      panels.alt1.classList.toggle('in', which === 'alt1');
+      panels.alt2.classList.toggle('visible', which === 'alt2');
+      panels.alt2.classList.toggle('in', which === 'alt2');
+    }
+  }
+
+  btn1.addEventListener('click', () => showAlternative('alt1', true));
+  btn2.addEventListener('click', () => showAlternative('alt2', true));
+  document.querySelectorAll('[data-switch-to]').forEach(el => {
+    el.addEventListener('click', () => showAlternative(el.getAttribute('data-switch-to'), true));
+  });
+
+  function initFromHash(){
+    const hash = window.location.hash.replace('#', '');
+    if(hash === 'alternative2'){
+      panel1.hidden = true;
+      panel1.classList.remove('visible', 'in');
+      panel2.hidden = false;
+      panel2.classList.add('visible', 'in');
+      btn2.classList.add('active');
+      btn2.setAttribute('aria-selected', 'true');
+      btn1.classList.remove('active');
+      btn1.setAttribute('aria-selected', 'false');
+      subhead.textContent = subheads.alt2;
+    }
+  }
+  initFromHash();
+  window.addEventListener('hashchange', initFromHash);
+</script>
 
 </body>
 </html>
