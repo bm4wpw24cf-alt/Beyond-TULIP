@@ -57,18 +57,21 @@
     border-bottom:1px solid var(--line);
   }
   .header-inner{
-    max-width:1180px;margin:0 auto;padding:20px 24px 0;
+    max-width:1180px;margin:0 auto;padding:14px 24px 0;
   }
   .header-top{
     display:flex;align-items:center;justify-content:center;
-    padding-bottom:16px;
+    padding-bottom:11px;
   }
   .logo{
     font-family:'EB Garamond',serif;
     font-size:1.7rem;font-weight:600;
     letter-spacing:.01em;
     color:var(--ink);
-    display:flex;align-items:baseline;gap:9px;
+    display:flex;align-items:center;gap:11px;
+  }
+  .logo-icon{
+    width:42px;height:42px;flex-shrink:0;display:block;
   }
   .logo .beyond{color:var(--ink);}
   .logo .tulip{color:var(--gold-deep);font-style:italic;}
@@ -91,6 +94,25 @@
   @media (max-width:600px){ .header-links{flex-wrap:wrap;gap:14px 22px;} }
 
   /* ---------- HERO ---------- */
+  /* ---------- HERO LOGO LOCKUP ---------- */
+  .hero-logo{
+    display:flex;flex-direction:column;align-items:center;gap:14px;
+    margin-bottom:30px;
+  }
+  .hero-logo img{
+    width:76px;height:76px;
+  }
+  .hero-logo .hero-wordmark{
+    font-family:'EB Garamond',serif;font-weight:600;font-size:1.9rem;
+    letter-spacing:.01em;color:var(--ink);
+    display:flex;align-items:baseline;gap:10px;
+  }
+  .hero-logo .hero-wordmark .tulip{color:var(--gold-deep);font-style:italic;}
+  .hero-logo .hero-tagline{
+    font-size:.72rem;font-weight:600;letter-spacing:.22em;text-transform:uppercase;
+    color:var(--gold-deep);
+  }
+
   .hero{padding:66px 0 52px;border-bottom:1px solid var(--line);}
   .hero .eyebrow{margin-bottom:18px;display:block;text-align:center;}
   .hero h1{font-size:2.7rem;line-height:1.18;text-align:center;max-width:760px;margin:0 auto;}
@@ -257,7 +279,10 @@
 <header>
   <div class="header-inner">
     <div class="header-top">
-      <a href="index.html" class="logo"><span class="beyond">Beyond</span> <span class="tulip">TULIP</span></a>
+      <a href="index.html" class="logo">
+        <img src="assets/logo/tulip-icon.svg" alt="Beyond TULIP" class="logo-icon" width="42" height="42">
+        <span class="beyond">Beyond</span> <span class="tulip">TULIP</span>
+      </a>
     </div>
     <div class="header-links">
       <span class="soon-link">Gospel</span>
@@ -272,6 +297,11 @@
 <!-- ============ HERO ============ -->
 <section class="hero">
   <div class="wrap fade">
+    <div class="hero-logo">
+      <img src="assets/logo/tulip-icon.svg" alt="" width="76" height="76">
+      <div class="hero-wordmark"><span class="beyond">Beyond</span> <span class="tulip">TULIP</span></div>
+      <div class="hero-tagline">Truth &bull; Grace &bull; Scripture</div>
+    </div>
     <span class="eyebrow">What We Believe</span>
     <h1>Examining the doctrines of <em>grace</em> in the light of Scripture.</h1>
     <p class="lede">Beyond TULIP is a resource for believers who want to study Scripture carefully — a Calvinist theology examined through sound exegesis, historical context, and careful documentation rather than polemics.</p>
