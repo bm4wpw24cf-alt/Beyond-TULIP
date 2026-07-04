@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Repent and Believe the Gospel — Beyond TULIP</title>
+<meta name="description" content="The gospel is not merely information to be understood—it is God's invitation to respond. Throughout the New Testament, people are called to turn from sin, trust in Jesus Christ, and follow Him.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --parchment:#f6f0e1;
+    --paper:#fffdf8;
+    --ink:#2c2417;
+    --ink-soft:#5b5142;
+    --gold:#b08d57;
+    --gold-deep:#8a6a3c;
+    --wine:#6e2f2f;
+    --line:#ddd0b3;
+    --line-soft:#e9e0c9;
+    --max:760px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;background:var(--parchment);color:var(--ink);
+    font-family:'Inter',sans-serif;line-height:1.7;-webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3{font-family:'EB Garamond',serif;font-weight:600;color:var(--ink);margin:0;}
+  a{color:inherit;text-decoration:none;}
+  .eyebrow{
+    font-family:'Inter',sans-serif;font-size:.72rem;font-weight:600;
+    letter-spacing:.14em;text-transform:uppercase;color:var(--gold-deep);
+  }
+  .wrap{max-width:var(--max);margin:0 auto;padding:0 24px;}
+
+  header{
+    position:sticky;top:0;z-index:60;background:rgba(246,240,225,.92);
+    backdrop-filter:blur(6px);border-bottom:1px solid var(--line);
+  }
+  .header-inner{
+    max-width:1180px;margin:0 auto;padding:16px 24px;
+    display:flex;align-items:center;justify-content:space-between;
+  }
+  .logo{
+    font-family:'EB Garamond',serif;font-size:1.45rem;font-weight:600;
+    letter-spacing:.01em;color:var(--ink);display:flex;align-items:baseline;gap:8px;
+  }
+  .logo .beyond{color:var(--ink);}
+  .logo .tulip{color:var(--gold-deep);font-style:italic;}
+  .back-link{font-size:.85rem;font-weight:600;color:var(--ink-soft);display:flex;align-items:center;gap:6px;}
+  .back-link:hover{color:var(--wine);}
+
+  .article-hero{padding:56px 0 40px;border-bottom:1px solid var(--line);}
+  .claim-badge{
+    display:inline-flex;align-items:center;gap:8px;
+    font-size:.7rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;
+    color:var(--wine);border:1px solid var(--line-soft);padding:6px 12px;border-radius:20px;
+    margin-bottom:22px;
+  }
+  .claim-badge .n{color:var(--gold-deep);}
+  .article-hero h1{font-size:2.3rem;line-height:1.25;max-width:680px;}
+
+  main{padding:52px 0 60px;}
+  .lede{
+    font-family:'EB Garamond',serif;font-size:1.15rem;color:var(--ink-soft);
+    border-left:2px solid var(--gold);padding-left:20px;margin-bottom:44px;
+  }
+  article h2{font-size:1.4rem;margin:44px 0 16px;}
+  article h2:first-of-type{margin-top:0;}
+  article p{color:var(--ink-soft);margin:0 0 16px;font-size:.98rem;}
+  article p:last-child{margin-bottom:0;}
+
+  blockquote{
+    margin:22px 0;padding:18px 22px;
+    background:var(--paper);border-left:3px solid var(--gold);
+    font-family:'EB Garamond',serif;font-style:italic;color:var(--ink);
+    font-size:1.08rem;border-radius:0 3px 3px 0;
+  }
+  blockquote cite{
+    display:block;font-family:'Inter',sans-serif;font-style:normal;
+    font-size:.78rem;color:var(--gold-deep);margin-top:8px;font-weight:600;
+    letter-spacing:.02em;
+  }
+
+  .conclusion{
+    margin-top:48px;padding:30px 26px;
+    background:var(--paper);border:1px solid var(--line);border-top:3px solid var(--gold);
+    border-radius:3px;
+  }
+  .conclusion h2{margin-top:0;}
+  .conclusion p{color:var(--ink-soft);margin:0 0 8px;}
+  .conclusion p:last-of-type{
+    font-family:'EB Garamond',serif;font-style:italic;font-size:1.1rem;color:var(--ink);
+    margin-top:18px;
+  }
+
+  .nav-footer{
+    margin-top:56px;padding-top:28px;border-top:1px solid var(--line);
+    display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px;
+  }
+  .nav-footer a{font-size:.85rem;font-weight:600;color:var(--ink-soft);}
+  .nav-footer a:hover{color:var(--wine);}
+
+  footer{padding:40px 0;border-top:1px solid var(--line);margin-top:40px;}
+  .footer-bottom{
+    max-width:1180px;margin:0 auto;padding:0 24px;font-size:.78rem;color:var(--ink-soft);
+    display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;
+  }
+
+  @media (max-width:600px){
+    .article-hero h1{font-size:1.8rem;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="logo"><span class="beyond">Beyond</span> <span class="tulip">TULIP</span></a>
+    <a href="gospel.html" class="back-link">← The Gospel</a>
+  </div>
+</header>
+
+<section class="article-hero">
+  <div class="wrap">
+    <span class="claim-badge"><span class="n">The Gospel</span> · IV</span>
+    <h1>Repent and Believe the Gospel</h1>
+  </div>
+</section>
+
+<main>
+  <div class="wrap">
+    <article>
+
+      <p class="lede">When Jesus began His public ministry, His message was simple and urgent:</p>
+      <blockquote>"Repent and believe the gospel."<cite>Mark 1:15</cite></blockquote>
+      <p>The gospel is not merely information to be understood—it is God's invitation to respond. Throughout the New Testament, people are called to turn from sin, trust in Jesus Christ, and follow Him.</p>
+
+      <h2>What Is Repentance?</h2>
+      <p>Repentance is a change of mind that results in a changed direction of life. It is turning away from sin and turning toward God.</p>
+      <p>True repentance is more than feeling remorse. It is recognizing our need for God's mercy and willingly submitting to Jesus Christ as Lord.</p>
+      <p>Repentance and faith belong together. One turns from sin; the other turns to Christ.</p>
+
+      <h2>What Is Saving Faith?</h2>
+      <p>Saving faith is wholehearted trust in Jesus Christ.</p>
+      <p>It is believing that Jesus is the Son of God, that He died for our sins, was buried, rose again, and now reigns as Lord.</p>
+      <p>Faith is not merely agreeing with facts about Jesus. It is personally relying on Him alone for forgiveness, reconciliation with God, and eternal life.</p>
+
+      <h2>The Biblical Response to the Gospel</h2>
+      <p>Throughout the New Testament, those who received the gospel responded in faith by repenting, confessing Christ, and being baptized.</p>
+      <p>On the Day of Pentecost, after the crowd asked what they should do, Peter answered:</p>
+      <blockquote>"Repent and be baptized, every one of you, in the name of Jesus Christ for the forgiveness of your sins. And you will receive the gift of the Holy Spirit."<cite>Acts 2:38</cite></blockquote>
+      <p>Peter did not present repentance, faith, and baptism as competing alternatives. Rather, they formed one unified response to the gospel.</p>
+      <p>This same pattern appears throughout Acts. Those who believed the gospel were baptized without unnecessary delay (Acts 8:12; Acts 8:35–38; Acts 10:47–48; Acts 16:30–33; Acts 18:8; Acts 22:16).</p>
+
+      <h2>Jesus United Faith and Baptism</h2>
+      <p>Jesus Himself connected faith and baptism when He declared:</p>
+      <blockquote>"Whoever believes and is baptized will be saved, but whoever does not believe will be condemned."<cite>Mark 16:16</cite></blockquote>
+      <p>Notice that condemnation is based on unbelief. The absence of baptism is not presented as a separate ground for condemnation. Instead, Jesus describes the normal response to the gospel: believing disciples are baptized.</p>
+
+      <h2>Baptism Is the Response of Faith</h2>
+      <p>When Ananias met Saul after his encounter with Christ, he said:</p>
+      <blockquote>"Rise and be baptized and wash away your sins, calling on His name."<cite>Acts 22:16</cite></blockquote>
+      <p>The emphasis is not on water possessing saving power, but on calling upon the Lord. Baptism is the visible expression of faith in Christ, as the believer appeals to God for cleansing through Jesus.</p>
+      <p>Likewise, Peter explains:</p>
+      <blockquote>"Baptism… now saves you—not as a removal of dirt from the body, but as an appeal to God for a good conscience, through the resurrection of Jesus Christ."<cite>1 Peter 3:21</cite></blockquote>
+      <p>Peter carefully clarifies that baptism is not an external washing. Its significance lies in the believer's appeal to God, made effective through the resurrection of Jesus Christ.</p>
+
+      <h2>United with Christ</h2>
+      <p>Paul teaches that baptism identifies believers with Christ's death, burial, and resurrection.</p>
+      <p>Through baptism, believers publicly confess that their old life has died with Christ and that they have been raised to walk in newness of life (Romans 6:3–4).</p>
+      <p>Similarly, Paul describes believers as having been buried with Christ in baptism and raised through faith in the powerful working of God (Colossians 2:12). The emphasis is not on the act itself but on God's power, received through faith.</p>
+
+      <h2>Salvation Is by Grace Through Faith</h2>
+      <p>The Bible is equally clear that salvation is entirely the gift of God's grace.</p>
+      <blockquote>"For by grace you have been saved through faith… not a result of works."<cite>Ephesians 2:8–9</cite></blockquote>
+      <p>No one earns salvation through good works, religious rituals, or personal merit (Titus 3:5).</p>
+      <p>This truth does not conflict with the call to repent and be baptized. Rather, it explains why these responses do not earn salvation. Faith itself is not a meritorious work, and neither is baptism. Baptism is the God-appointed expression of faith in the risen Christ.</p>
+      <p>Throughout Scripture, God attaches His promises to responses of faith. Naaman was instructed to wash in the Jordan, not because the water possessed magical power, but because obedient faith trusted God's promise (2 Kings 5:1–14). In the same way, Christian baptism has no saving power apart from Christ, yet God has appointed it as the ordinary response of faith to the gospel.</p>
+      <p>The power that saves is never found in the water. The power is found in Jesus Christ—His death, His burial, and His resurrection.</p>
+
+      <h2>A New Life in Christ</h2>
+      <p>Those who respond to the gospel receive the forgiveness of sins, reconciliation with God, the gift of the Holy Spirit, adoption into God's family, and the hope of eternal life.</p>
+      <p>Following Christ does not end at conversion. The Christian life is one of continual faith, obedience, and growth in holiness through the work of the Holy Spirit.</p>
+
+      <div class="conclusion">
+        <h2>Conclusion</h2>
+        <p>The gospel calls every person to respond.</p>
+        <p>Repent.</p>
+        <p>Believe in Jesus Christ.</p>
+        <p>Confess Him as Lord.</p>
+        <p>Be baptized in His name.</p>
+        <p>None of these responses earn salvation. Salvation is entirely God's gracious gift, accomplished through the death and resurrection of Jesus Christ.</p>
+        <p>Repentance, faith, confession, and baptism are not human achievements that merit God's favor. They are the biblical response to the grace God freely offers in the gospel.</p>
+        <p>The gospel proclaims that everyone who comes to Christ in obedient faith will receive the forgiveness of sins, the gift of the Holy Spirit, and the promise of eternal life.</p>
+      </div>
+
+      <div class="nav-footer">
+        <a href="salvation-by-grace-through-faith.html">← Salvation by Grace Through Faith</a>
+        <a href="does-god-love-the-whole-world.html">Next: Does God Love the Whole World? →</a>
+      </div>
+
+    </article>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-bottom">
+    <span>© 2026 Beyond TULIP</span>
+    <span>"Search the Scriptures" — John 5:39</span>
+  </div>
+</footer>
+
+</body>
+</html>
