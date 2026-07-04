@@ -96,10 +96,14 @@
     font-size:.76rem;font-weight:600;letter-spacing:.03em;
     padding:7px 14px;border:1px solid var(--line);border-radius:20px;
     color:var(--ink-soft);
+    background:none;cursor:pointer;font-family:'Inter',sans-serif;
+    transition:border-color .2s ease, color .2s ease, background .2s ease;
   }
+  .filter-tag:hover{border-color:var(--gold);color:var(--ink);}
   .filter-tag.active{
     border-color:var(--gold);color:var(--ink);background:var(--paper);
   }
+  .filter-tag:focus-visible{outline:2px solid var(--gold-deep);outline-offset:2px;}
 
   /* ---------- CONTENT ---------- */
   main{padding:52px 0 60px;}
@@ -167,21 +171,32 @@
 
     <div class="filter-bar">
       <div class="sort-note">Sorted by: <strong style="color:var(--ink);">Newest first</strong></div>
-      <div class="filter-tags">
-        <span class="filter-tag active">All</span>
-        <span class="filter-tag">Calvinist Claims Answered</span>
-        <span class="filter-tag">Bible Studies</span>
-        <span class="filter-tag">Apologetics</span>
-        <span class="filter-tag">Church History</span>
+      <div class="filter-tags" role="group" aria-label="Filter articles by category">
+        <button type="button" class="filter-tag active" data-category="all">All</button>
+        <button type="button" class="filter-tag" data-category="the-gospel">The Gospel</button>
+        <button type="button" class="filter-tag" data-category="examining-calvinism">Examining Calvinism</button>
+        <button type="button" class="filter-tag" data-category="understanding-tulip">Understanding TULIP</button>
+        <button type="button" class="filter-tag" data-category="key-biblical-passages">Key Biblical Passages</button>
+        <button type="button" class="filter-tag" data-category="responding-to-calvinist-claims">Responding to Calvinist Claims</button>
       </div>
     </div>
 
-    <div class="article-list">
+    <div class="article-list" id="articleList">
 
-      <div class="article-row">
+      <div class="article-row" data-category="examining-calvinism">
         <div class="article-date">Jul 2026</div>
         <div>
-          <span class="article-cat">Calvinist Claims Answered · Claim 01</span>
+          <span class="article-cat">Examining Calvinism · Bible Study</span>
+          <h2><a href="predestination.html">Predestination — What Does the Bible Really Teach?</a></h2>
+          <p>A four-chapter study of every occurrence of "predestine" in the New Testament — examining Ephesians 1, Romans 8, Romans 9, and John 6 in their own context.</p>
+          <a class="article-readmore" href="predestination.html">Read article →</a>
+        </div>
+      </div>
+
+      <div class="article-row" data-category="responding-to-calvinist-claims">
+        <div class="article-date">Jul 2026</div>
+        <div>
+          <span class="article-cat">Responding to Calvinist Claims · Claim 01</span>
           <h2><a href="claim01.html">"The Spiritually Dead Cannot Believe"</a></h2>
           <p>Does spiritual death mean people cannot believe the gospel? Two biblical responses, side by side — switch between Alternative 1 and Alternative 2 on the same page.</p>
           <a class="article-readmore" href="claim01.html">Read article →</a>
@@ -190,7 +205,8 @@
 
     </div>
 
-    <p class="empty-note">More articles — on the gospel, Calvinism, key biblical passages, church history, and further claims answered — will appear here as they are published.</p>
+    <p class="empty-note" id="emptyNote" hidden>No articles have been published in this category yet — check back soon.</p>
+    <p class="empty-note" id="defaultNote">More articles — on the gospel, Calvinism, key biblical passages, and further claims answered — will appear here as they are published.</p>
 
   </div>
 </main>
@@ -201,6 +217,44 @@
     <span>"Search the Scriptures" — John 5:39</span>
   </div>
 </footer>
+
+<script>
+  const filterButtons = document.querySelectorAll('.filter-tag');
+  const articleRows = document.querySelectorAll('.article-row');
+  const emptyNote = document.getElementById('emptyNote');
+  const defaultNote = document.getElementById('defaultNote');
+
+  function applyFilter(category){
+    let visibleCount = 0;
+
+    articleRows.forEach(row => {
+      const matches = category === 'all' || row.getAttribute('data-category') === category;
+      row.style.display = matches ? '' : 'none';
+      if(matches) visibleCount++;
+    });
+
+    // "All" always keeps the standing note about more articles coming;
+    // any other category with zero matches shows the empty-category note instead.
+    if(category === 'all'){
+      emptyNote.hidden = true;
+      defaultNote.hidden = false;
+    } else if(visibleCount === 0){
+      emptyNote.hidden = false;
+      defaultNote.hidden = true;
+    } else {
+      emptyNote.hidden = true;
+      defaultNote.hidden = true;
+    }
+  }
+
+  filterButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filterButtons.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      applyFilter(btn.getAttribute('data-category'));
+    });
+  });
+</script>
 
 </body>
 </html>
