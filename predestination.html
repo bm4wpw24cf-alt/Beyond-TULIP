@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Predestination — What Does the Bible Really Teach? — Beyond TULIP</title>
+<meta name="description" content="A biblical study of God's redemptive plan, election, and human responsibility — examining every occurrence of predestination in the New Testament.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --parchment:#f6f0e1;
+    --paper:#fffdf8;
+    --ink:#2c2417;
+    --ink-soft:#5b5142;
+    --gold:#b08d57;
+    --gold-deep:#8a6a3c;
+    --wine:#6e2f2f;
+    --line:#ddd0b3;
+    --line-soft:#e9e0c9;
+    --max:760px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--parchment);
+    color:var(--ink);
+    font-family:'Inter',sans-serif;
+    line-height:1.7;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3{
+    font-family:'EB Garamond',serif;
+    font-weight:600;
+    color:var(--ink);
+    margin:0;
+  }
+  a{color:inherit;text-decoration:none;}
+  .eyebrow{
+    font-family:'Inter',sans-serif;
+    font-size:.72rem;
+    font-weight:600;
+    letter-spacing:.14em;
+    text-transform:uppercase;
+    color:var(--gold-deep);
+  }
+  .wrap{max-width:var(--max);margin:0 auto;padding:0 24px;}
+
+  header{
+    position:sticky;top:0;z-index:60;
+    background:rgba(246,240,225,.92);
+    backdrop-filter:blur(6px);
+    border-bottom:1px solid var(--line);
+  }
+  .header-inner{
+    max-width:1180px;margin:0 auto;padding:16px 24px;
+    display:flex;align-items:center;justify-content:space-between;
+  }
+  .logo{
+    font-family:'EB Garamond',serif;
+    font-size:1.45rem;font-weight:600;
+    letter-spacing:.01em;
+    color:var(--ink);
+    display:flex;align-items:baseline;gap:8px;
+  }
+  .logo .beyond{color:var(--ink);}
+  .logo .tulip{color:var(--gold-deep);font-style:italic;}
+  .back-link{
+    font-size:.85rem;font-weight:600;color:var(--ink-soft);
+    display:flex;align-items:center;gap:6px;
+  }
+  .back-link:hover{color:var(--wine);}
+
+  .article-hero{padding:56px 0 40px;border-bottom:1px solid var(--line);}
+  .claim-badge{
+    display:inline-flex;align-items:center;gap:8px;
+    font-size:.7rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;
+    color:var(--wine);border:1px solid var(--line-soft);
+    padding:6px 12px;border-radius:20px;margin-bottom:22px;
+  }
+  .claim-badge .n{color:var(--gold-deep);}
+  .article-hero h1{
+    font-size:2.2rem;line-height:1.25;max-width:680px;
+  }
+  .article-hero .subtitle{
+    font-family:'EB Garamond',serif;font-style:italic;font-size:1.15rem;
+    color:var(--ink-soft);margin-top:16px;max-width:600px;
+  }
+
+  .chapter-nav{
+    position:sticky;top:65px;z-index:50;
+    background:rgba(246,240,225,.96);
+    backdrop-filter:blur(6px);
+    border-bottom:1px solid var(--line);
+    padding:14px 0;
+  }
+  .chapter-nav .wrap{
+    display:flex;gap:22px;overflow-x:auto;
+    scrollbar-width:none;
+  }
+  .chapter-nav .wrap::-webkit-scrollbar{display:none;}
+  .chapter-nav a{
+    font-size:.8rem;font-weight:600;color:var(--ink-soft);white-space:nowrap;
+    transition:color .2s ease;
+  }
+  .chapter-nav a:hover{color:var(--wine);}
+
+  main{padding:52px 0 60px;}
+  .lede{
+    font-family:'EB Garamond',serif;font-size:1.12rem;color:var(--ink-soft);
+    border-left:2px solid var(--gold);padding-left:20px;margin-bottom:44px;
+  }
+
+  .chapter-marker{
+    display:flex;align-items:center;gap:14px;
+    margin:64px 0 8px;
+  }
+  .chapter-marker:first-of-type{margin-top:0;}
+  .chapter-marker .num{
+    font-family:'EB Garamond',serif;font-style:italic;color:var(--gold-deep);
+    font-size:2rem;line-height:1;
+  }
+  .chapter-marker h2{font-size:1.7rem;}
+
+  article h3{
+    font-size:1.2rem;margin:36px 0 14px;
+  }
+  article p{
+    color:var(--ink-soft);margin:0 0 16px;font-size:.98rem;
+  }
+  article p:last-child{margin-bottom:0;}
+
+  .scripture-list{
+    background:var(--paper);border:1px solid var(--line);border-left:3px solid var(--gold);
+    border-radius:0 3px 3px 0;padding:20px 24px;margin:20px 0;
+  }
+  .scripture-list ul{margin:0;padding-left:0;list-style:none;}
+  .scripture-list li{
+    font-size:.92rem;color:var(--ink-soft);padding:8px 0;
+    border-bottom:1px dotted var(--line-soft);
+  }
+  .scripture-list li:last-child{border-bottom:none;}
+  .scripture-list li strong{color:var(--ink);font-weight:600;}
+
+  blockquote{
+    margin:22px 0;padding:18px 22px;
+    background:var(--paper);border-left:3px solid var(--gold);
+    font-family:'EB Garamond',serif;font-style:italic;color:var(--ink);
+    font-size:1.08rem;border-radius:0 3px 3px 0;
+  }
+  blockquote cite{
+    display:block;font-family:'Inter',sans-serif;font-style:normal;
+    font-size:.78rem;color:var(--gold-deep);margin-top:8px;font-weight:600;
+    letter-spacing:.02em;
+  }
+
+  .short-conclusion{
+    margin:24px 0 8px;padding:16px 20px;
+    background:rgba(176,141,87,.08);border-radius:3px;
+    border-left:2px solid var(--gold-deep);
+  }
+  .short-conclusion .label{
+    font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;
+    color:var(--gold-deep);font-weight:600;margin-bottom:6px;display:block;
+  }
+  .short-conclusion p{margin:0;font-size:.92rem;color:var(--ink-soft);}
+
+  .conclusion{
+    margin-top:56px;padding:32px 28px;
+    background:var(--paper);border:1px solid var(--line);border-top:3px solid var(--gold);
+    border-radius:3px;
+  }
+  .conclusion h2{margin-top:0;font-size:1.5rem;}
+  .conclusion p{color:var(--ink-soft);}
+  .conclusion p:last-of-type{
+    font-family:'EB Garamond',serif;font-style:italic;font-size:1.1rem;color:var(--ink);
+    margin-top:18px;
+  }
+
+  .word-study{margin-top:56px;}
+  .word-grid{display:flex;flex-direction:column;gap:14px;margin-top:24px;}
+  .word-card{
+    background:var(--paper);border:1px solid var(--line);border-radius:3px;
+    padding:20px 24px;
+  }
+  .word-greek{
+    font-family:'EB Garamond',serif;font-size:1.25rem;color:var(--ink);
+    display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:8px;
+  }
+  .word-greek .transliteration{font-style:italic;color:var(--gold-deep);font-size:1.05rem;}
+  .word-greek .strongs{
+    font-family:'Inter',sans-serif;font-size:.7rem;color:var(--ink-soft);
+    font-weight:600;letter-spacing:.03em;
+  }
+  .word-card p{font-size:.9rem;margin:0;color:var(--ink-soft);}
+
+  .nav-footer{
+    margin-top:56px;padding-top:28px;border-top:1px solid var(--line);
+    display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px;
+  }
+  .nav-footer a{
+    font-size:.85rem;font-weight:600;color:var(--ink-soft);
+  }
+  .nav-footer a:hover{color:var(--wine);}
+
+  footer{padding:40px 0;border-top:1px solid var(--line);margin-top:40px;}
+  .footer-bottom{
+    max-width:1180px;margin:0 auto;padding:0 24px;
+    font-size:.78rem;color:var(--ink-soft);
+    display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;
+  }
+
+  @media (max-width:600px){
+    .article-hero h1{font-size:1.7rem;}
+    .chapter-marker h2{font-size:1.4rem;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="logo"><span class="beyond">Beyond</span> <span class="tulip">TULIP</span></a>
+    <a href="index.html" class="back-link">← Back to Home</a>
+  </div>
+</header>
+
+<section class="article-hero">
+  <div class="wrap">
+    <span class="claim-badge"><span class="n">Bible Study</span> · Examining Calvinism</span>
+    <h1>Predestination — What Does the Bible Really Teach?</h1>
+    <p class="subtitle">A Biblical Study of God's Redemptive Plan, Election, and Human Responsibility</p>
+  </div>
+</section>
+
+<nav class="chapter-nav" aria-label="Chapters">
+  <div class="wrap">
+    <a href="#ch1">Ch. 1 — What Is Predestination?</a>
+    <a href="#ch2">Ch. 2 — Ephesians 1 &amp; Romans 8</a>
+    <a href="#ch3">Ch. 3 — Romans 9 &amp; John 6</a>
+    <a href="#ch4">Ch. 4 — The Whole Bible</a>
+    <a href="#word-study">Word Study</a>
+  </div>
+</nav>
+
+<main>
+  <div class="wrap">
+    <article>
+
+      <p class="lede">Predestination is one of the most debated doctrines in Christian theology. Throughout church history, Christians have interpreted the key biblical passages in different ways, especially regarding the relationship between God's sovereignty, human responsibility, and the nature of salvation. Many associate predestination with the idea that God chose certain individuals for salvation before the foundation of the world, while others believe that Scripture primarily speaks of God's eternal redemptive plan in Christ and the destiny He has prepared for all who believe.</p>
+
+      <p>The purpose of this study is not to defend a particular theological tradition, but to examine what the Bible itself teaches. Rather than beginning with theological systems or historical traditions, we will begin with Scripture. We will examine how the Bible uses the term predestination, where it appears, and how those passages harmonize with the Bible's broader teaching concerning God's love, Christ's atoning work, and the universal call of the gospel.</p>
+
+      <p>Our goal is to let the biblical text speak for itself and to follow its argument step by step. As we do so, we will see that the doctrine of predestination is inseparably connected with God's eternal purpose in Jesus Christ.</p>
+
+      <div class="chapter-marker" id="ch1">
+        <span class="num">I.</span>
+        <h2>What Is Predestination?</h2>
+      </div>
+
+      <h3>What Does the Word "Predestination" Mean?</h3>
+      <p>Predestination is one of the most discussed subjects in Christian theology. Yet a biblical study should begin, not with theological systems, but with Scripture itself. Before asking whom God has predestined, we must first ask what the Bible means by the word <em>predestine</em>.</p>
+      <p>The English word <em>predestination</em> comes from the Latin <em>praedestinatio</em>, meaning "to determine beforehand" or "to ordain beforehand." It translates the Greek verb προορίζω (<em>proorizō</em>), the word used by the New Testament writers.</p>
+      <p>The verb is formed from two parts: <em>pro</em> (πρό) — "before" or "in advance" — and <em>horizō</em> (ὁρίζω) — "to determine," "to appoint," or "to establish." Literally, <em>proorizō</em> means "to determine beforehand" or "to appoint in advance."</p>
+      <p>The word itself, however, does not tell us <em>what</em> has been predetermined. That must be determined by its context. Just as the word "choose" does not reveal what is being chosen until we read the rest of the sentence, <em>proorizō</em> does not, by itself, tell us whether God is predestining people, events, a plan, or a future destiny. Therefore, we must examine every occurrence of the word in the New Testament.</p>
+
+      <div class="scripture-list">
+        <span class="eyebrow" style="margin-bottom:10px;display:block;">Biblical Documentation</span>
+        <ul>
+          <li><strong>Acts 4:27–28</strong> — God predetermined Christ's suffering and crucifixion.</li>
+          <li><strong>1 Corinthians 2:7</strong> — God predetermined His hidden wisdom and redemptive plan for our glory.</li>
+          <li><strong>Ephesians 1:5</strong> — Believers are predestined for adoption as sons through Jesus Christ.</li>
+          <li><strong>Ephesians 1:11</strong> — Believers are predestined to receive an inheritance in Christ.</li>
+          <li><strong>Romans 8:29</strong> — Believers are predestined to be conformed to the image of God's Son.</li>
+          <li><strong>Romans 8:30</strong> — Those whom God predestined are called, justified, and glorified.</li>
+        </ul>
+      </div>
+
+      <p>When these six passages are examined together, a clear pattern emerges. None of them explicitly states that God predetermined certain individuals to believe or predetermined others to eternal condemnation. Instead, they consistently focus on Christ's redemptive work, God's eternal purpose, and the future He has prepared for His people.</p>
+      <p>In Acts, the object of predestination is Christ's crucifixion. In First Corinthians, it is God's eternal plan of salvation. In Ephesians, it concerns adoption and inheritance in Christ. In Romans, it concerns conformity to Christ and final glorification.</p>
+      <p>The common thread is therefore not the selection of particular individuals for salvation, but God's predetermined purpose accomplished in Christ and fulfilled in those who belong to Him.</p>
+
+      <div class="short-conclusion">
+        <span class="label">Short Conclusion</span>
+        <p>This observation does not settle every question about election, but it establishes an essential foundation. Whenever the New Testament uses the word <em>predestine</em>, its primary emphasis falls on what God has determined beforehand, not explicitly on who will believe.</p>
+      </div>
+
+      <h3>Predestination and Foreknowledge</h3>
+      <p>One of the most important questions in the discussion of predestination concerns the relationship between foreknowledge and predestination. These two concepts are often treated as though they mean the same thing. However, the New Testament uses two different Greek words, suggesting that they should not automatically be understood as identical.</p>
+      <p>A careful reading of Scripture requires us to distinguish between what God <em>knows</em> beforehand and what He <em>determines</em> beforehand.</p>
+
+      <div class="scripture-list">
+        <span class="eyebrow" style="margin-bottom:10px;display:block;">Biblical Documentation</span>
+        <ul>
+          <li><strong>προγινώσκω (proginōskō)</strong> — "to know beforehand" or "to foreknow" (Romans 8:29; 1 Peter 1:2).</li>
+          <li><strong>προορίζω (proorizō)</strong> — "to determine beforehand" or "to predestine" (Acts 4:28; 1 Corinthians 2:7; Ephesians 1:5, 11; Romans 8:29–30).</li>
+        </ul>
+      </div>
+
+      <p>The fact that Scripture employs two different words is significant. God's foreknowledge is not identical to His predestination.</p>
+      <p>God possesses perfect knowledge of all things — past, present, and future. Nothing has ever surprised Him, and nothing ever will. His knowledge extends to every event, every decision, and every human response. Yet God's perfect knowledge should not automatically be equated with His determining every event.</p>
+      <p>This distinction becomes especially important in Romans 8:29, where Paul writes:</p>
+      <blockquote>"For those whom He foreknew, He also predestined…"<cite>Romans 8:29</cite></blockquote>
+      <p>Paul deliberately uses two different verbs. First, he speaks of those whom God foreknew; then he speaks of those whom God predestined. If both words carried exactly the same meaning, Paul's wording would be unnecessarily repetitive. Instead, he presents two closely related but distinct aspects of God's saving purpose.</p>
+      <p>Throughout Scripture, God is revealed as both omniscient and sovereign. He knows the end from the beginning (Isaiah 46:9–10), yet He also actively accomplishes His redemptive purposes in history. His foreknowledge speaks of His perfect knowledge; His predestination speaks of His predetermined purpose.</p>
+
+      <div class="short-conclusion">
+        <span class="label">Short Conclusion</span>
+        <p>The New Testament does not treat foreknowledge and predestination as interchangeable terms. God's foreknowledge describes His perfect knowledge, while predestination describes His sovereign purpose. Keeping this distinction in mind provides an essential foundation for understanding the passages that follow.</p>
+      </div>
+
+      <h3>What Is the Object of Predestination?</h3>
+      <p>Once we understand what the word <em>predestine</em> means, the next question naturally follows: what exactly has God predestined? Has God predetermined certain individuals to believe and others to perish? Or has He predetermined specific events, purposes, and blessings within His redemptive plan?</p>
+
+      <div class="scripture-list">
+        <span class="eyebrow" style="margin-bottom:10px;display:block;">Biblical Documentation</span>
+        <ul>
+          <li><strong>Christ's crucifixion and redemptive work</strong> (Acts 4:27–28)</li>
+          <li><strong>His eternal plan of redemption</strong> (1 Corinthians 2:7)</li>
+          <li><strong>Adoption as sons for believers</strong> (Ephesians 1:5)</li>
+          <li><strong>An inheritance in Christ</strong> (Ephesians 1:11)</li>
+          <li><strong>Conformity to the image of Christ</strong> (Romans 8:29)</li>
+          <li><strong>The final glorification of God's people</strong> (Romans 8:30)</li>
+        </ul>
+      </div>
+
+      <p>When these passages are examined together, one fact becomes immediately apparent. Every occurrence of <em>proorizō</em> focuses on God's redemptive purpose rather than on an explicit decree determining who will or will not believe.</p>
+      <p>Acts 4 presents Christ's crucifixion as part of God's eternal plan. The cross was not an accident of history but the fulfillment of God's predetermined purpose. Yet those who participated in Christ's death acted willingly and remained fully responsible for their actions.</p>
+      <p>In every case, predestination points toward God's eternal purpose and the destiny He has established for those who belong to Christ. This observation does not deny the biblical doctrine of election. Rather, it recognizes that the New Testament's use of <em>proorizō</em> consistently emphasizes what God has determined beforehand — His redemptive plan and its glorious outcome — rather than explicitly identifying predestination as God's determination of who will believe.</p>
+
+      <div class="short-conclusion">
+        <span class="label">Short Conclusion</span>
+        <p>The New Testament consistently presents predestination as God's predetermined purpose in Christ. Its focus is the accomplishment of redemption and the future prepared for God's people.</p>
+      </div>
+
+      <h3>Does This Harmonize with the Rest of Scripture?</h3>
+      <p>The understanding that emerges from the six occurrences of <em>proorizō</em> should not stand in isolation. Every biblical doctrine must harmonize with the broader teaching of Scripture.</p>
+
+      <div class="scripture-list">
+        <span class="eyebrow" style="margin-bottom:10px;display:block;">Biblical Documentation</span>
+        <ul>
+          <li><strong>1 Timothy 2:4</strong> — God desires all people to be saved and to come to the knowledge of the truth.</li>
+          <li><strong>2 Peter 3:9</strong> — God is not willing that any should perish but that all should come to repentance.</li>
+          <li><strong>1 John 2:2</strong> — Christ is the atoning sacrifice not only for our sins but also for the sins of the whole world.</li>
+          <li><strong>John 3:16</strong> — God loved the world and promises eternal life to whoever believes in His Son.</li>
+          <li><strong>Romans 10:13</strong> — Everyone who calls upon the name of the Lord will be saved.</li>
+        </ul>
+      </div>
+
+      <p>Taken together, these passages present a consistent picture of God's saving purpose. He loves the world, desires the salvation of all people, and has provided salvation through His Son. Those who are united with Christ by faith become heirs of everything God determined beforehand for His people: adoption, holiness, conformity to Christ, and final glorification.</p>
+      <p>This does not diminish God's sovereignty. On the contrary, it magnifies it. At the same time, this understanding preserves the sincerity of the gospel invitation. Because Christ died for the world and God's saving purpose is proclaimed to all, the gospel can be offered genuinely to every person without reservation.</p>
+
+      <div class="short-conclusion">
+        <span class="label">Short Conclusion</span>
+        <p>Predestination is presented primarily as God's eternal redemptive purpose in Christ and the glorious destiny He has prepared for His people. This foundation enables us to approach the major predestination passages in Ephesians and Romans without imposing meanings that the word itself does not explicitly carry.</p>
+      </div>
+
+      <div class="chapter-marker" id="ch2">
+        <span class="num">II.</span>
+        <h2>Ephesians 1 and Romans 8</h2>
+      </div>
+      <p>Are believers predestined, or is God's redemptive plan predestined? Having established how the New Testament uses the word <em>proorizō</em>, we are now ready to examine the two passages that stand at the center of nearly every discussion of predestination: Ephesians 1:3–14 and Romans 8:29–30.</p>
+      <p>The question is not whether God predestines — Scripture clearly says that He does. The real question is: <strong style="color:var(--ink);">what has God predestined?</strong></p>
+
+      <h3>Ephesians 1 — Chosen in Christ</h3>
+      <p>Ephesians 1:3–14 is not a philosophical discussion about predestination. It is a magnificent doxology celebrating God's work of redemption through Jesus Christ. Throughout the passage, one expression appears repeatedly: <em>in Christ</em>, <em>in Him</em>, <em>through Him</em>, <em>in the Beloved</em>.</p>
+      <p>These repeated phrases provide the key to understanding the entire chapter. Every spiritual blessing described by Paul is found in Christ.</p>
+
+      <div class="scripture-list">
+        <span class="eyebrow" style="margin-bottom:10px;display:block;">Biblical Documentation</span>
+        <ul>
+          <li><strong>Ephesians 1:4</strong> — God chose us in Him before the foundation of the world to be holy and blameless.</li>
+          <li><strong>Ephesians 1:5</strong> — He predestined us for adoption as sons through Jesus Christ.</li>
+          <li><strong>Ephesians 1:7</strong> — In Him we have redemption through His blood.</li>
+          <li><strong>Ephesians 1:11</strong> — In Him we have obtained an inheritance, having been predestined according to His purpose.</li>
+          <li><strong>Ephesians 1:13</strong> — In Him you also believed after hearing the word of truth, the gospel of your salvation, and were sealed with the Holy Spirit.</li>
+        </ul>
+      </div>
+
+      <p>One observation stands above all others: Paul repeatedly locates every blessing <em>in Christ</em>. Significantly, Paul does not write that believers were chosen to be placed into Christ. Rather, he says they were chosen <em>in</em> Christ. The emphasis falls on Christ as the sphere of God's eternal purpose. All who are united with Him share in the blessings God determined beforehand.</p>
+      <p>It is equally important to notice what believers are chosen <em>for</em>. Paul states that they were chosen to be holy and blameless before God, and predestined for adoption as sons. The emphasis is therefore not primarily on the origin of faith, but on the glorious purpose God established for those who belong to Christ.</p>
+      <p>Ephesians 1:13 reinforces this observation. Paul reminds his readers that they heard the gospel, believed it, and were then sealed with the Holy Spirit. Rather than pointing to an eternal decree explaining why they believed, Paul points to the proclamation of the gospel and their response of faith before describing the blessings God had prepared for them in Christ.</p>
+
+      <div class="short-conclusion">
+        <span class="label">Short Conclusion</span>
+        <p>Ephesians 1 consistently presents predestination as God's eternal purpose in Christ — holiness, adoption, inheritance, and every spiritual blessing — rather than explicitly teaching that certain individuals were predestined to believe before the foundation of the world.</p>
+      </div>
+
+      <h3>Romans 8 — The Golden Chain of Redemption</h3>
+      <p>The second major passage dealing with predestination is Romans 8:29–30, often called "the golden chain of redemption" because Paul presents an unbroken sequence of God's saving work from beginning to end.</p>
+
+      <blockquote>"For those whom He foreknew He also predestined to be conformed to the image of His Son, so that He would be the firstborn among many brothers."<cite>Romans 8:29</cite></blockquote>
+      <blockquote>"And those whom He predestined He also called; and those whom He called He also justified; and those whom He justified He also glorified."<cite>Romans 8:30</cite></blockquote>
+
+      <p>Romans 8 explicitly states the purpose of predestination. Paul does not merely say that God predestined people. He tells us what they were predestined to <em>become</em>: "to be conformed to the image of His Son." The goal of predestination is therefore Christlikeness.</p>
+      <p>This observation fits the broader context of Romans 8. Throughout the chapter, Paul is encouraging believers who suffer. He assures them that God is working all things together for good, that nothing can separate them from the love of Christ, and that the God who began His saving work will certainly bring it to completion. Paul's concern is pastoral before it is theological.</p>
+
+      <div class="short-conclusion">
+        <span class="label">Short Conclusion</span>
+        <p>Romans 8 presents predestination as God's guarantee that those who belong to Christ will ultimately be conformed to His image and glorified — emphasizing the certainty of God's saving purpose rather than explicitly teaching that God predetermined which individuals would believe.</p>
+      </div>
+
+      <h3>How Do Ephesians 1 and Romans 8 Complement One Another?</h3>
+      <p>When read together, Ephesians 1 and Romans 8 present a remarkably consistent picture. Neither chapter explicitly states that God predestined certain individuals to believe before the foundation of the world. Instead, both chapters consistently describe the blessings and destiny that God determined beforehand for those who are united with Christ.</p>
+      <p>In Ephesians, the repeated expression "in Christ" serves as the controlling theme. In Romans, the focus is the certainty of God's saving purpose. Rather than presenting two different doctrines, these chapters reinforce one another.</p>
+
+      <div class="short-conclusion">
+        <span class="label">Short Conclusion</span>
+        <p>Ephesians 1 and Romans 8 present a unified picture of predestination. God's eternal purpose is centered in Christ, and all who belong to Him share in the blessings He determined before the foundation of the world.</p>
+      </div>
+
+      <div class="chapter-marker" id="ch3">
+        <span class="num">III.</span>
+        <h2>Romans 9 and John 6</h2>
+      </div>
+      <p>Do these passages teach unconditional individual election? Having examined the principal predestination passages in Ephesians 1 and Romans 8, we now turn to the two chapters most frequently cited in support of unconditional individual election: Romans 9 and John 6.</p>
+
+      <h3>Romans 9 — God's Faithfulness to His Covenant Promises</h3>
+      <p>Romans 9 begins with Paul's deep sorrow over Israel's widespread rejection of the Messiah. This raises a crucial question: has God's word failed? That question governs Romans 9–11.</p>
+
+      <div class="scripture-list">
+        <span class="eyebrow" style="margin-bottom:10px;display:block;">Biblical Documentation</span>
+        <ul>
+          <li><strong>Romans 9:6–9</strong> — Isaac, not Ishmael, was chosen as the child of promise.</li>
+          <li><strong>Romans 9:10–13</strong> — Jacob was chosen instead of Esau.</li>
+          <li><strong>Romans 9:14–18</strong> — God shows mercy and used Pharaoh to accomplish His purpose.</li>
+          <li><strong>Romans 9:19–24</strong> — The illustration of the potter and the clay.</li>
+          <li><strong>Romans 9:30–33</strong> — Israel stumbled because they did not pursue righteousness by faith.</li>
+        </ul>
+      </div>
+
+      <p>Paul first points to Isaac and Ishmael. Both were Abraham's sons, yet God chose Isaac as the one through whom the covenant promise would continue. The choice concerned the covenant line leading to the Messiah, not the eternal destiny of the two sons.</p>
+      <p>The same principle appears in the account of Jacob and Esau. Paul quotes Malachi — "Jacob I loved, but Esau I hated" — a passage written more than a thousand years after Jacob and Esau had died. In its original context, God is speaking of the <em>nations</em> of Israel and Edom, not making a statement about the eternal destiny of two unborn individuals.</p>
+      <p>Paul's discussion of Pharaoh likewise emphasizes God's sovereign freedom to accomplish His purposes through human history. Yet the book of Exodus repeatedly states that Pharaoh hardened his own heart before Scripture speaks of God hardening it. God's judicial hardening confirmed Pharaoh in the course he had already chosen.</p>
+      <p>The illustration of the potter and the clay is drawn from Jeremiah 18, where God explicitly teaches that nations may experience either judgment or mercy depending on their response. The image emphasizes God's sovereign authority, but it does not eliminate human responsibility.</p>
+      <p>The chapter concludes with Paul's own explanation of Israel's failure:</p>
+      <blockquote>"Because they did not pursue it by faith."<cite>Romans 9:32</cite></blockquote>
+      <p>Paul himself identifies unbelief — not an explicit eternal decree of reprobation — as the reason Israel stumbled.</p>
+
+      <div class="short-conclusion">
+        <span class="label">Short Conclusion</span>
+        <p>Romans 9 highlights God's sovereign freedom to accomplish His covenant purposes and remain faithful to His promises. Paul concludes that Israel's failure resulted from unbelief rather than from an explicit decree determining individual destinies apart from faith.</p>
+      </div>
+
+      <h3>John 6 — The Father's Drawing</h3>
+      <p>The second passage frequently associated with unconditional election is John 6. Jesus declares that no one can come to Him unless the Father draws that person. The central question, however, is not <em>whether</em> the Father draws people, but <em>how</em> He does so.</p>
+
+      <div class="scripture-list">
+        <span class="eyebrow" style="margin-bottom:10px;display:block;">Biblical Documentation</span>
+        <ul>
+          <li><strong>John 6:37</strong> — "All that the Father gives Me will come to Me."</li>
+          <li><strong>John 6:44</strong> — "No one can come to Me unless the Father who sent Me draws him."</li>
+          <li><strong>John 6:45</strong> — "Everyone who has heard and learned from the Father comes to Me."</li>
+          <li><strong>John 12:32</strong> — "And I, when I am lifted up from the earth, will draw all people to Myself."</li>
+        </ul>
+      </div>
+
+      <p>John 6 clearly teaches that salvation begins with God's initiative. No one comes to Christ by independent human effort. Yet Jesus also explains <em>how</em> the Father draws people. Immediately after saying that no one can come unless drawn by the Father, He quotes Isaiah: "They shall all be taught by God," then adds, "Everyone who has heard and learned from the Father comes to Me." The Father's drawing is therefore connected with His self-revelation and teaching, ultimately fulfilled in Christ Himself.</p>
+      <p>John 12 provides an important parallel. Using the same verb for "draw," Jesus declares that through His crucifixion He will draw <em>all people</em> to Himself. This broadens the picture beyond a limited group and presents the cross as the center of God's universal saving invitation.</p>
+      <p>The Gospel of John also makes clear that people may resist God's gracious call. Jesus tells His opponents:</p>
+      <blockquote>"You refuse to come to Me that you may have life."<cite>John 5:40</cite></blockquote>
+      <p>The problem is not the absence of God's initiative, but humanity's unwillingness to respond.</p>
+
+      <div class="short-conclusion">
+        <span class="label">Short Conclusion</span>
+        <p>John 6 teaches that salvation originates with God and that no one comes to Christ apart from the Father's gracious initiative — while presenting that divine drawing as connected with God's revelation in Christ, culminating in the cross through which He draws all people to Himself.</p>
+      </div>
+
+      <h3>How Do Romans 9 and John 6 Fit Together?</h3>
+      <p>When read together, Romans 9 and John 6 present a coherent picture of God's sovereignty without overturning the Bible's universal call to faith. Neither chapter diminishes God's sovereignty, nor do they eliminate human responsibility. God directs history according to His eternal purpose, yet Scripture consistently holds people accountable for their response to His revelation.</p>
+
+      <div class="short-conclusion">
+        <span class="label">Short Conclusion</span>
+        <p>Read within their context, Romans 9 and John 6 magnify God's sovereignty while preserving the Bible's consistent teaching that salvation is offered through Christ and received by faith.</p>
+      </div>
+
+      <div class="chapter-marker" id="ch4">
+        <span class="num">IV.</span>
+        <h2>Predestination in Light of the Whole Bible</h2>
+      </div>
+      <p>Having examined the principal passages concerning predestination, we are now in a position to consider the doctrine in light of the whole of Scripture. No biblical doctrine should be built upon a single passage in isolation.</p>
+
+      <h3>God's Saving Desire Extends to All People</h3>
+      <div class="scripture-list">
+        <span class="eyebrow" style="margin-bottom:10px;display:block;">Biblical Documentation</span>
+        <ul>
+          <li><strong>1 Timothy 2:4</strong> — God desires all people to be saved and to come to the knowledge of the truth.</li>
+          <li><strong>2 Peter 3:9</strong> — God is not willing that any should perish but that all should come to repentance.</li>
+          <li><strong>Ezekiel 18:23</strong> — God takes no pleasure in the death of the wicked but desires that they turn and live.</li>
+          <li><strong>Ezekiel 18:32</strong> — "Turn and live!"</li>
+          <li><strong>Matthew 23:37</strong> — Jesus laments over Jerusalem: "How often I wanted to gather your children together… but you were unwilling."</li>
+        </ul>
+      </div>
+      <p>These passages consistently portray God's heart toward humanity. He delights in mercy rather than judgment and sincerely calls people to repentance. Christ's lament over Jerusalem demonstrates that God's gracious desire may be resisted.</p>
+
+      <div class="short-conclusion">
+        <span class="label">Short Conclusion</span>
+        <p>The unified testimony of Scripture presents God as sincerely desiring the salvation of all people while allowing them to respond freely to His gracious invitation.</p>
+      </div>
+
+      <h3>Christ's Atonement Is Sufficient for the Whole World</h3>
+      <div class="scripture-list">
+        <span class="eyebrow" style="margin-bottom:10px;display:block;">Biblical Documentation</span>
+        <ul>
+          <li><strong>1 John 2:2</strong> — Christ is the atoning sacrifice not only for our sins but also for the sins of the whole world.</li>
+          <li><strong>John 1:29</strong> — "Behold, the Lamb of God who takes away the sin of the world."</li>
+          <li><strong>2 Corinthians 5:14–15</strong> — Christ died for all.</li>
+          <li><strong>Hebrews 2:9</strong> — By the grace of God, Christ tasted death for everyone.</li>
+        </ul>
+      </div>
+      <p>These passages do not teach universal salvation — Scripture consistently teaches that salvation is received through faith. They do, however, affirm that Christ's sacrifice is sufficient for every person and that the gospel can therefore be proclaimed sincerely to the entire world.</p>
+
+      <div class="short-conclusion">
+        <span class="label">Short Conclusion</span>
+        <p>Christ's atonement is sufficient for the whole world, providing the foundation for the universal proclamation of the gospel.</p>
+      </div>
+
+      <h3>The Gospel Is a Genuine Invitation to Everyone</h3>
+      <div class="scripture-list">
+        <span class="eyebrow" style="margin-bottom:10px;display:block;">Biblical Documentation</span>
+        <ul>
+          <li><strong>John 3:16</strong> — God loved the world and gives eternal life to whoever believes.</li>
+          <li><strong>Romans 10:13</strong> — Everyone who calls upon the name of the Lord will be saved.</li>
+          <li><strong>Acts 17:30</strong> — God commands all people everywhere to repent.</li>
+          <li><strong>Mark 16:15</strong> — The gospel is to be preached to all creation.</li>
+        </ul>
+      </div>
+      <p>The apostles did not preach selectively, attempting to identify those secretly chosen before inviting them to believe. Instead, they proclaimed Christ openly to everyone, calling all people to repentance and faith.</p>
+
+      <div class="short-conclusion">
+        <span class="label">Short Conclusion</span>
+        <p>Scripture consistently presents the gospel as a genuine invitation extended to all people without distinction.</p>
+      </div>
+
+      <h3>God's Sovereignty and Human Responsibility</h3>
+      <div class="scripture-list">
+        <span class="eyebrow" style="margin-bottom:10px;display:block;">Biblical Documentation</span>
+        <ul>
+          <li><strong>John 6:44</strong> — No one comes to Christ unless drawn by the Father.</li>
+          <li><strong>John 5:40</strong> — "You refuse to come to Me that you may have life."</li>
+          <li><strong>Philippians 2:12–13</strong> — Believers are commanded to work out their salvation because God is at work within them.</li>
+          <li><strong>2 Thessalonians 2:10</strong> — People perish because they refused to love the truth.</li>
+        </ul>
+      </div>
+      <p>Salvation always begins with God. The Father sends the Son. The Holy Spirit convicts the world. The gospel is proclaimed through God's appointed messengers. Yet Scripture consistently holds people accountable for their response. Those who reject Christ are never described as victims of an inability imposed upon them by God.</p>
+
+      <div class="short-conclusion">
+        <span class="label">Short Conclusion</span>
+        <p>God's sovereignty establishes salvation; human responsibility explains humanity's response. Scripture teaches both truths together without contradiction.</p>
+      </div>
+
+      <h3>What, Then, Is Predestination?</h3>
+      <div class="scripture-list">
+        <span class="eyebrow" style="margin-bottom:10px;display:block;">Scripture teaches that God predetermined:</span>
+        <ul>
+          <li>Christ's coming and atoning death</li>
+          <li>His eternal plan of redemption</li>
+          <li>Adoption for believers</li>
+          <li>The inheritance prepared in Christ</li>
+          <li>Conformity to the image of His Son</li>
+          <li>The final glorification of His people</li>
+        </ul>
+      </div>
+      <p>Predestination is therefore best understood as God's eternal determination concerning His redemptive purpose and the destiny He has prepared for all who are united with Christ. Before the foundation of the world, God established His redemptive plan, centered in Christ, and determined that all who belong to Him would be adopted, sanctified, conformed to His image, and ultimately glorified.</p>
+
+      <div class="conclusion">
+        <h2>Conclusion</h2>
+        <p>The doctrine of predestination is thoroughly biblical, yet it must be understood according to the way Scripture itself presents it. Throughout the New Testament, predestination consistently points to God's eternal purpose accomplished in Jesus Christ and to the glorious future He has prepared for His redeemed people.</p>
+        <p>At the same time, Scripture repeatedly affirms that God loves the world, desires the salvation of all people, and has provided His Son as the atoning sacrifice for the sins of the whole world. The gospel is therefore proclaimed to every person, and everyone who repents and believes in Jesus Christ receives eternal life.</p>
+        <p>Rather than presenting predestination primarily as a decree determining who may come to Christ, the New Testament presents it as God's unwavering commitment to accomplish His redemptive purpose through His Son. Before the foundation of the world, God determined that all who are united with Christ by faith would become His children, be transformed into the likeness of His Son, and ultimately share His eternal glory.</p>
+        <p>The doctrine of predestination is therefore not first a message about exclusion, but about the certainty of God's saving purpose — assuring believers that the God who planned redemption before the ages is the same God who will faithfully complete His work until the day of Jesus Christ.</p>
+      </div>
+
+      <div class="word-study" id="word-study">
+        <div class="chapter-marker" style="margin-top:0;">
+          <h2 style="font-size:1.5rem;">A Brief Word Study</h2>
+        </div>
+        <p>A proper understanding of predestination begins with the words the New Testament actually uses. Several Greek terms are central to this study, and each highlights a distinct aspect of God's saving work.</p>
+
+        <div class="word-grid">
+          <div class="word-card">
+            <div class="word-greek">προορίζω <span class="transliteration">(proorizō)</span> — "to predestine" <span class="strongs">Strong's G4309</span></div>
+            <p>This verb means "to determine beforehand," "to appoint beforehand," or "to ordain beforehand." It appears only six times in the New Testament (Acts 4:28; 1 Corinthians 2:7; Ephesians 1:5, 11; Romans 8:29–30). In every occurrence, the word describes God's eternal purpose concerning Christ's redemptive work and the future He has determined for His people.</p>
+          </div>
+          <div class="word-card">
+            <div class="word-greek">προγινώσκω <span class="transliteration">(proginōskō)</span> — "to foreknow" <span class="strongs">Strong's G4267</span></div>
+            <p>This verb means "to know beforehand" or "to have foreknowledge." It is used, among other places, in Romans 8:29 and 1 Peter 1:2. The New Testament distinguishes between God's foreknowledge (<em>proginōskō</em>) and His predestination (<em>proorizō</em>); therefore, the two terms should not be treated as synonyms.</p>
+          </div>
+          <div class="word-card">
+            <div class="word-greek">ἐκλέγομαι <span class="transliteration">(eklegomai)</span> — "to choose" or "to elect" <span class="strongs">Strong's G1586</span></div>
+            <p>This verb refers to God's act of choosing and appears in several New Testament passages, including Ephesians 1:4. It describes the act of election itself, whereas <em>proorizō</em> describes what God has determined beforehand for those who belong to Christ. Although the two concepts are closely related, they are not identical.</p>
+          </div>
+          <div class="word-card">
+            <div class="word-greek">καλέω <span class="transliteration">(kaleō)</span> — "to call" <span class="strongs">Strong's G2564</span></div>
+            <p>This verb means "to call," "to summon," "to invite," or "to call into fellowship." In Romans 8:30 it refers to God's call within the order of salvation. However, the verb is also used of the general invitation of the gospel (e.g., Matthew 22:3, 14) as well as Jesus' calling of His disciples. Its precise meaning must therefore be determined by its context.</p>
+          </div>
+          <div class="word-card">
+            <div class="word-greek">κλητός <span class="transliteration">(klētos)</span> — "called" <span class="strongs">Strong's G2822</span></div>
+            <p>This adjective means "called," "invited," or "summoned." Paul frequently uses it to describe those who have responded to God's call and now belong to Christ (Romans 1:6–7; 1 Corinthians 1:24). Whereas <em>kaleō</em> describes the act of calling, <em>klētos</em> describes the people who have been called.</p>
+          </div>
+          <div class="word-card">
+            <div class="word-greek">πρόθεσις <span class="transliteration">(prothesis)</span> — "purpose" or "plan" <span class="strongs">Strong's G4286</span></div>
+            <p>This noun means "purpose," "plan," or "intention." It describes God's eternal purpose (Romans 8:28; Ephesians 1:11; 3:11). Predestination is therefore not an isolated doctrine but part of God's eternal redemptive purpose centered in Jesus Christ.</p>
+          </div>
+        </div>
+
+        <h3 style="margin-top:40px;">Why Are These Words Important?</h3>
+        <p>These Greek terms demonstrate that the New Testament employs a precise and nuanced vocabulary when describing salvation. Foreknowledge (<em>proginōskō</em>), election (<em>eklegomai</em>), predestination (<em>proorizō</em>), calling (<em>kaleō</em>), the called (<em>klētos</em>), and God's purpose (<em>prothesis</em>) each describe different aspects of the same redemptive plan. They are closely related, but they are not interchangeable.</p>
+        <p>A biblical understanding of predestination therefore requires that each term be interpreted according to its own literary and theological context rather than assuming that all of these words carry the same meaning. This distinction is especially important in Paul's writings, where he carefully differentiates between the verb <em>kaleō</em> ("to call") and the adjective <em>klētos</em> ("those who are called") — a distinction that is often overlooked, but contributes significantly to a careful reading of Romans and 1 Corinthians.</p>
+      </div>
+
+      <div class="nav-footer">
+        <a href="index.html">← Back to Home</a>
+        <a href="articles.html">More Articles →</a>
+      </div>
+
+    </article>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-bottom">
+    <span>© 2026 Beyond TULIP</span>
+    <span>"Search the Scriptures" — John 5:39</span>
+  </div>
+</footer>
+
+</body>
+</html>
