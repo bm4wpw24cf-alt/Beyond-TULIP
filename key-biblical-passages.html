@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Key Biblical Passages — Beyond TULIP</title>
+<meta name="description" content="John 6, Romans 9, Ephesians 1, and the other texts central to this debate — studied in canonical Scripture order.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --parchment:#f6f0e1;
+    --paper:#fffdf8;
+    --ink:#2c2417;
+    --ink-soft:#5b5142;
+    --gold:#b08d57;
+    --gold-deep:#8a6a3c;
+    --wine:#6e2f2f;
+    --line:#ddd0b3;
+    --line-soft:#e9e0c9;
+    --max:1180px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;background:var(--parchment);color:var(--ink);
+    font-family:'Inter',sans-serif;line-height:1.65;-webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3{font-family:'EB Garamond',serif;font-weight:600;color:var(--ink);margin:0;}
+  a{color:inherit;text-decoration:none;}
+  .eyebrow{
+    font-family:'Inter',sans-serif;font-size:.72rem;font-weight:600;
+    letter-spacing:.14em;text-transform:uppercase;color:var(--gold-deep);
+  }
+  .wrap{max-width:var(--max);margin:0 auto;padding:0 24px;}
+
+  header{
+    position:sticky;top:0;z-index:60;background:rgba(246,240,225,.92);
+    backdrop-filter:blur(6px);border-bottom:1px solid var(--line);
+  }
+  .header-inner{
+    max-width:1180px;margin:0 auto;padding:16px 24px;
+    display:flex;align-items:center;justify-content:space-between;
+  }
+  .logo{
+    font-family:'EB Garamond',serif;font-size:1.45rem;font-weight:600;
+    letter-spacing:.01em;color:var(--ink);display:flex;align-items:baseline;gap:8px;
+  }
+  .logo .beyond{color:var(--ink);}
+  .logo .tulip{color:var(--gold-deep);font-style:italic;}
+  .back-link{font-size:.85rem;font-weight:600;color:var(--ink-soft);display:flex;align-items:center;gap:6px;}
+  .back-link:hover{color:var(--wine);}
+
+  .page-hero{padding:64px 0 48px;border-bottom:1px solid var(--line);text-align:center;}
+  .page-hero h1{font-size:2.3rem;margin-top:14px;}
+  .page-hero p{
+    font-family:'EB Garamond',serif;font-style:italic;color:var(--ink-soft);
+    font-size:1.1rem;max-width:640px;margin:16px auto 0;
+  }
+
+  main{padding:56px 0 60px;}
+
+  .nav-grid{
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:26px;
+  }
+  .nav-card{
+    background:var(--paper);
+    border:1px solid var(--line);
+    border-radius:4px;
+    padding:40px 34px;
+    display:flex;
+    flex-direction:column;
+    gap:16px;
+    min-height:260px;
+    transition:border-color .25s ease, transform .25s ease, box-shadow .25s ease;
+    position:relative;
+    overflow:hidden;
+  }
+  .nav-card::before{
+    content:"";
+    position:absolute;top:0;left:0;right:0;height:3px;
+    background:var(--gold);
+    transform:scaleX(0);
+    transform-origin:left;
+    transition:transform .25s ease;
+  }
+  .nav-card:hover{
+    border-color:var(--gold);
+    transform:translateY(-4px);
+    box-shadow:0 14px 30px rgba(44,36,23,.09);
+  }
+  .nav-card:hover::before{transform:scaleX(1);}
+  .nav-icon{
+    width:56px;height:56px;
+    display:flex;align-items:center;justify-content:center;
+    font-size:1.7rem;
+    background:var(--parchment);
+    border:1px solid var(--line);
+    border-radius:50%;
+  }
+  .nav-card h3{font-size:1.4rem;line-height:1.32;}
+  .nav-card p{font-size:.94rem;color:var(--ink-soft);margin:0;flex-grow:1;line-height:1.55;}
+  .nav-arrow{
+    font-family:'EB Garamond',serif;font-style:italic;color:var(--gold-deep);
+    font-size:.95rem;
+  }
+  @media (max-width:900px){ .nav-grid{grid-template-columns:repeat(2, 1fr);} }
+  @media (max-width:560px){ .nav-grid{grid-template-columns:1fr;} .nav-card{min-height:0;padding:32px 26px;} }
+
+  .nav-card.soon{ cursor:default; }
+  .nav-card.soon:hover{ transform:none; box-shadow:none; border-color:var(--line); }
+  .nav-card.soon:hover::before{ transform:scaleX(0); }
+  .nav-card.soon .nav-icon{ opacity:.55; }
+  .nav-card.soon h3{ color:var(--ink-soft); }
+  .soon-tag{
+    color:var(--ink-soft) !important;
+    font-style:normal !important;
+    font-size:.68rem !important;
+    letter-spacing:.08em;
+    text-transform:uppercase;
+    font-weight:600;
+    border:1px solid var(--line);
+    padding:4px 9px;
+    border-radius:12px;
+    display:inline-block;
+    width:fit-content;
+  }
+
+  footer{padding:40px 0;border-top:1px solid var(--line);margin-top:40px;}
+  .footer-bottom{
+    max-width:1180px;margin:0 auto;padding:0 24px;font-size:.78rem;color:var(--ink-soft);
+    display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="logo"><span class="beyond">Beyond</span> <span class="tulip">TULIP</span></a>
+    <a href="index.html" class="back-link">← Back to Home</a>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="wrap">
+    <span class="eyebrow">Key Biblical Passages</span>
+    <h1>Scripture in Canonical Order</h1>
+    <p>John 6, Romans 9, Ephesians 1, and the other texts central to this debate.</p>
+  </div>
+</section>
+
+<main>
+  <div class="wrap">
+    <!-- Each card needs data-bible-ref (e.g. "Romans 9", "Psalm 51:5"). bible-sort.js keeps canonical order when new cards are added. -->
+    <div class="nav-grid" id="passageGrid">
+
+      <div class="nav-card soon" data-bible-ref="Genesis 1">
+        <div class="nav-icon">📚</div>
+        <h3>Genesis 1</h3>
+        <span class="nav-arrow soon-tag">Coming soon</span>
+      </div>
+
+      <div class="nav-card soon" data-bible-ref="Genesis 3">
+        <div class="nav-icon">📚</div>
+        <h3>Genesis 3</h3>
+        <span class="nav-arrow soon-tag">Coming soon</span>
+      </div>
+
+      <div class="nav-card soon" data-bible-ref="Exodus 20">
+        <div class="nav-icon">📚</div>
+        <h3>Exodus 20</h3>
+        <span class="nav-arrow soon-tag">Coming soon</span>
+      </div>
+
+      <a class="nav-card" href="does-psalm-51-5-teach-original-sin.html" data-bible-ref="Psalm 51:5" data-series-order="1">
+        <div class="nav-icon">📚</div>
+        <h3>Does Psalm 51:5 Teach Original Sin?</h3>
+        <p>Psalm 51:5 is often cited as evidence for Original Sin and inherited guilt. Many argue that David teaches every person is born guilty before God because of Adam's sin — but does the passage actually say that?</p>
+        <span class="nav-arrow">Read more →</span>
+      </a>
+
+      <a class="nav-card" href="does-psalm-51-5-teach-total-depravity.html" data-bible-ref="Psalm 51:5" data-series-order="2">
+        <div class="nav-icon">📚</div>
+        <h3>Does Psalm 51:5 Teach Total Depravity?</h3>
+        <p>Does Psalm 51:5 actually teach Total Depravity? This article examines David's prayer in its historical, literary, and poetic context, showing why it should not be treated as a proof text for moral inability or regeneration before faith.</p>
+        <span class="nav-arrow">Read more →</span>
+      </a>
+
+      <div class="nav-card soon" data-bible-ref="Isaiah 53">
+        <div class="nav-icon">📚</div>
+        <h3>Isaiah 53</h3>
+        <span class="nav-arrow soon-tag">Coming soon</span>
+      </div>
+
+      <div class="nav-card soon" data-bible-ref="Matthew 5">
+        <div class="nav-icon">📚</div>
+        <h3>Matthew 5</h3>
+        <span class="nav-arrow soon-tag">Coming soon</span>
+      </div>
+
+      <div class="nav-card soon" data-bible-ref="Matthew 24">
+        <div class="nav-icon">📚</div>
+        <h3>Matthew 24</h3>
+        <span class="nav-arrow soon-tag">Coming soon</span>
+      </div>
+
+      <div class="nav-card soon" data-bible-ref="John 1">
+        <div class="nav-icon">📚</div>
+        <h3>John 1</h3>
+        <span class="nav-arrow soon-tag">Coming soon</span>
+      </div>
+
+      <div class="nav-card soon" data-bible-ref="John 3">
+        <div class="nav-icon">📚</div>
+        <h3>John 3</h3>
+        <span class="nav-arrow soon-tag">Coming soon</span>
+      </div>
+
+      <div class="nav-card soon" data-bible-ref="John 6">
+        <div class="nav-icon">📚</div>
+        <h3>John 6</h3>
+        <span class="nav-arrow soon-tag">Coming soon</span>
+      </div>
+
+      <div class="nav-card soon" data-bible-ref="Acts 13">
+        <div class="nav-icon">📚</div>
+        <h3>Acts 13</h3>
+        <span class="nav-arrow soon-tag">Coming soon</span>
+      </div>
+
+      <div class="nav-card soon" data-bible-ref="Romans 3">
+        <div class="nav-icon">📚</div>
+        <h3>Romans 3</h3>
+        <span class="nav-arrow soon-tag">Coming soon</span>
+      </div>
+
+      <div class="nav-card soon" data-bible-ref="Romans 8">
+        <div class="nav-icon">📚</div>
+        <h3>Romans 8</h3>
+        <span class="nav-arrow soon-tag">Coming soon</span>
+      </div>
+
+      <div class="nav-card soon" data-bible-ref="Romans 9">
+        <div class="nav-icon">📚</div>
+        <h3>Romans 9</h3>
+        <span class="nav-arrow soon-tag">Coming soon</span>
+      </div>
+
+      <div class="nav-card soon" data-bible-ref="1 Corinthians 2">
+        <div class="nav-icon">📚</div>
+        <h3>1 Corinthians 2</h3>
+        <span class="nav-arrow soon-tag">Coming soon</span>
+      </div>
+
+      <div class="nav-card soon" data-bible-ref="Ephesians 1">
+        <div class="nav-icon">📚</div>
+        <h3>Ephesians 1</h3>
+        <span class="nav-arrow soon-tag">Coming soon</span>
+      </div>
+
+      <div class="nav-card soon" data-bible-ref="Ephesians 2">
+        <div class="nav-icon">📚</div>
+        <h3>Ephesians 2</h3>
+        <span class="nav-arrow soon-tag">Coming soon</span>
+      </div>
+
+      <div class="nav-card soon" data-bible-ref="Titus 3">
+        <div class="nav-icon">📚</div>
+        <h3>Titus 3</h3>
+        <span class="nav-arrow soon-tag">Coming soon</span>
+      </div>
+
+      <div class="nav-card soon" data-bible-ref="Hebrews">
+        <div class="nav-icon">📚</div>
+        <h3>Hebrews</h3>
+        <span class="nav-arrow soon-tag">Coming soon</span>
+      </div>
+
+      <div class="nav-card soon" data-bible-ref="James">
+        <div class="nav-icon">📚</div>
+        <h3>James</h3>
+        <span class="nav-arrow soon-tag">Coming soon</span>
+      </div>
+
+      <div class="nav-card soon" data-bible-ref="1 Peter">
+        <div class="nav-icon">📚</div>
+        <h3>1 Peter</h3>
+        <span class="nav-arrow soon-tag">Coming soon</span>
+      </div>
+
+      <div class="nav-card soon" data-bible-ref="1 John">
+        <div class="nav-icon">📚</div>
+        <h3>1 John</h3>
+        <span class="nav-arrow soon-tag">Coming soon</span>
+      </div>
+
+      <div class="nav-card soon" data-bible-ref="Revelation">
+        <div class="nav-icon">📚</div>
+        <h3>Revelation</h3>
+        <span class="nav-arrow soon-tag">Coming soon</span>
+      </div>
+
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-bottom">
+    <span>© 2026 Beyond TULIP</span>
+    <span>"Search the Scriptures" — John 5:39</span>
+  </div>
+</footer>
+
+<script src="bible-sort.js"></script>
+<script>
+  BibleSort.sortContainer(document.getElementById('passageGrid'), '.nav-card[data-bible-ref]');
+</script>
+
+</body>
+</html>
