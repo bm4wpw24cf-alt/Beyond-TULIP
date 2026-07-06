@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Examining Calvinism — Beyond TULIP</title>
+<meta name="description" content="Understanding Calvinism through Scripture, history, and careful theological examination.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --parchment:#f6f0e1;
+    --paper:#fffdf8;
+    --ink:#2c2417;
+    --ink-soft:#5b5142;
+    --gold:#b08d57;
+    --gold-deep:#8a6a3c;
+    --wine:#6e2f2f;
+    --line:#ddd0b3;
+    --line-soft:#e9e0c9;
+    --max:1180px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;background:var(--parchment);color:var(--ink);
+    font-family:'Inter',sans-serif;line-height:1.65;-webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3,h4,h5{
+    font-family:'EB Garamond',serif;font-weight:600;color:var(--ink);margin:0;
+  }
+  a{color:inherit;text-decoration:none;}
+  .eyebrow{
+    font-family:'Inter',sans-serif;font-size:.72rem;font-weight:600;
+    letter-spacing:.14em;text-transform:uppercase;color:var(--gold-deep);
+  }
+  .wrap{max-width:var(--max);margin:0 auto;padding:0 24px;}
+
+  header{
+    position:sticky;top:0;z-index:60;background:rgba(246,240,225,.92);
+    backdrop-filter:blur(6px);border-bottom:1px solid var(--line);
+  }
+  .header-inner{
+    max-width:1180px;margin:0 auto;padding:14px 24px 0;
+  }
+  .header-top{
+    display:flex;align-items:center;justify-content:center;
+    padding-bottom:11px;
+  }
+  .logo{
+    font-family:'EB Garamond',serif;font-size:1.7rem;font-weight:600;
+    letter-spacing:.01em;color:var(--ink);
+    display:flex;align-items:center;gap:11px;
+  }
+  .logo .beyond{color:var(--ink);}
+  .logo .tulip{color:var(--gold-deep);font-style:italic;}
+  .header-links{
+    display:flex;align-items:center;justify-content:center;gap:30px;
+    padding:14px 0;border-top:1px solid var(--line);
+  }
+  .header-links a, .header-links .soon-link{
+    font-size:.85rem;font-weight:500;color:var(--ink-soft);
+    transition:color .2s ease;
+  }
+  .header-links a:hover{color:var(--wine);}
+  .header-links a.active{color:var(--ink);font-weight:600;}
+  .header-links a.cta{
+    border:1px solid var(--gold) !important;
+    color:var(--ink) !important;
+    opacity:1 !important;
+    padding:9px 18px;border-radius:2px;font-weight:600;
+  }
+  .header-links a.cta:hover{background:var(--gold);color:var(--paper) !important;}
+  .soon-link{opacity:.55;cursor:default;}
+  @media (max-width:600px){ .header-links{flex-wrap:wrap;gap:14px 22px;} }
+
+  .page-hero{
+    padding:64px 0 48px;border-bottom:1px solid var(--line);text-align:center;
+  }
+  .page-hero h1{font-size:2.5rem;margin-top:14px;line-height:1.2;}
+  .page-hero .subtitle{
+    font-family:'EB Garamond',serif;font-style:italic;color:var(--ink-soft);
+    font-size:1.15rem;max-width:680px;margin:18px auto 0;
+  }
+  .page-hero .intro{
+    font-size:.98rem;color:var(--ink-soft);max-width:720px;
+    margin:28px auto 0;line-height:1.7;
+  }
+
+  main{padding:56px 0 60px;}
+
+  .topic-grid{
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:18px;
+  }
+  .topic-btn{
+    display:flex;align-items:center;justify-content:center;
+    min-height:76px;padding:18px 22px;
+    font-size:.9rem;font-weight:600;letter-spacing:.03em;
+    border-radius:2px;border:1px solid var(--gold);
+    color:var(--ink);background:var(--paper);
+    text-align:center;line-height:1.35;
+    transition:background .2s ease, color .2s ease, border-color .2s ease, transform .2s ease;
+  }
+  .topic-btn:hover{
+    background:var(--gold);color:var(--paper);border-color:var(--gold);
+    transform:translateY(-2px);
+  }
+  @media (max-width:900px){ .topic-grid{grid-template-columns:repeat(2, 1fr);} }
+  @media (max-width:560px){ .topic-grid{grid-template-columns:1fr;} }
+
+  footer{padding:56px 0 40px;border-top:1px solid var(--line);margin-top:40px;}
+  .footer-grid{
+    display:grid;grid-template-columns:1.3fr repeat(3,1fr);
+    gap:32px;margin-bottom:40px;
+  }
+  .footer-grid h5{
+    font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;
+    color:var(--gold-deep);margin-bottom:14px;
+  }
+  .footer-grid ul{list-style:none;margin:0;padding:0;}
+  .footer-grid li{margin-bottom:8px;}
+  .footer-grid a{font-size:.88rem;color:var(--ink-soft);}
+  .footer-grid a:hover{color:var(--wine);}
+  .footer-brand p{
+    font-family:'EB Garamond',serif;font-style:italic;color:var(--ink-soft);
+    font-size:.95rem;max-width:280px;
+  }
+  .footer-bottom{
+    border-top:1px solid var(--line);padding-top:24px;font-size:.78rem;
+    color:var(--ink-soft);display:flex;justify-content:space-between;
+    flex-wrap:wrap;gap:10px;
+  }
+  @media (max-width:780px){ .footer-grid{grid-template-columns:1fr 1fr;} }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <div class="header-top">
+      <a href="index.html" class="logo">
+        <span class="beyond">Beyond</span> <span class="tulip">TULIP</span>
+      </a>
+    </div>
+    <nav class="header-links" aria-label="Main navigation">
+      <a href="gospel.html">Gospel</a>
+      <a href="calvinism.html" class="active" aria-current="page">Calvinism</a>
+      <a href="articles.html">Articles</a>
+      <a href="faq.html">FAQ</a>
+      <a href="about.html#contact" class="cta">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="wrap">
+    <span class="eyebrow">Examining Calvinism</span>
+    <h1>Examining Calvinism</h1>
+    <p class="subtitle">Understanding Calvinism through Scripture, history, and careful theological examination.</p>
+    <p class="intro">Calvinism has profoundly influenced Protestant theology for centuries. This section seeks to present Calvinism accurately and fairly before examining its teachings in the light of Scripture. Begin by exploring the topics below.</p>
+  </div>
+</section>
+
+<main>
+  <div class="wrap">
+    <div class="topic-grid" aria-label="Calvinism topics">
+      <a class="topic-btn" href="#">📖 What Is Calvinism?</a>
+      <a class="topic-btn" href="#">📜 History of Calvinism</a>
+      <a class="topic-btn" href="#">👤 John Calvin</a>
+      <a class="topic-btn" href="#">⚖️ The Synod of Dort</a>
+      <a class="topic-btn" href="#">🌷 The Five Points</a>
+      <a class="topic-btn" href="#">🤝 Covenant Theology and Calvinism</a>
+      <a class="topic-btn" href="#">❓ Common Misunderstandings</a>
+      <a class="topic-btn" href="#">✝️ Calvinism and the Gospel</a>
+      <a class="topic-btn" href="#">⚖️ Strengths and Criticisms</a>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <span class="logo" style="font-size:1.25rem;"><span class="beyond">Beyond</span> <span class="tulip">TULIP</span></span>
+        <p>An English-language resource for biblical theology and apologetics — built on Scripture, open to examination.</p>
+      </div>
+      <div>
+        <h5>Explore</h5>
+        <ul>
+          <li><a href="gospel.html">The Gospel</a></li>
+          <li><span class="soon-link">Doctrine of Salvation</span></li>
+          <li><a href="calvinism.html">Examining Calvinism</a></li>
+          <li><a href="claim01.html">Claims Answered</a></li>
+          <li><a href="theological-dictionary.html">Theological Dictionary</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Content</h5>
+        <ul>
+          <li><a href="articles.html">Articles</a></li>
+          <li><span class="soon-link">Commonly Misinterpreted Passages</span></li>
+          <li><span class="soon-link">Featured Article Series</span></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="resources.html">External Resources</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>About</h5>
+        <ul>
+          <li><a href="about.html#mission">Our Mission</a></li>
+          <li><a href="about.html#statement-of-faith">Statement of Faith</a></li>
+          <li><a href="about.html#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Beyond TULIP</span>
+      <span>"Search the Scriptures" — John 5:39</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
