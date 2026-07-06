@@ -170,7 +170,7 @@
   <div class="wrap">
 
     <div class="filter-bar">
-      <div class="sort-note" id="sortNote">Sorted by: <strong style="color:var(--ink);">Newest first</strong></div>
+      <div class="sort-note">Sorted by: <strong style="color:var(--ink);">Newest first</strong></div>
       <div class="filter-tags" role="group" aria-label="Filter articles by category">
         <button type="button" class="filter-tag active" data-category="all">All</button>
         <button type="button" class="filter-tag" data-category="the-gospel">The Gospel</button>
@@ -182,6 +182,26 @@
     </div>
 
     <div class="article-list" id="articleList">
+
+      <div class="article-row" data-category="responding-to-calvinist-claims">
+        <div class="article-date">Jul 2026</div>
+        <div>
+          <span class="article-cat">Responding to Calvinist Claims · Claim 02</span>
+          <h2><a href="claim02.html">"John 6 Teaches Calvinism"</a></h2>
+          <p>Does John 6 actually teach unconditional election and irresistible grace? An inductive, verse-by-verse study through John 6:37, 6:44, 6:65, and the chapter's broader context.</p>
+          <a class="article-readmore" href="claim02.html">Read article →</a>
+        </div>
+      </div>
+
+      <div class="article-row" data-category="the-gospel">
+        <div class="article-date">Jul 2026</div>
+        <div>
+          <span class="article-cat">The Gospel · XII</span>
+          <h2><a href="christ-alone.html">Christ Alone</a></h2>
+          <p>Christianity is not founded upon a philosophy, a moral code, or a theological system. It is founded upon the person and work of Jesus Christ.</p>
+          <a class="article-readmore" href="christ-alone.html">Read article →</a>
+        </div>
+      </div>
 
       <div class="article-row" data-category="the-gospel">
         <div class="article-date">Jul 2026</div>
@@ -303,26 +323,6 @@
         </div>
       </div>
 
-      <div class="article-row" data-category="key-biblical-passages" data-bible-ref="Psalm 51:5" data-series-order="1">
-        <div class="article-date">Jul 2026</div>
-        <div>
-          <span class="article-cat">Key Biblical Passages · Psalm 51:5 · Part 2</span>
-          <h2><a href="does-psalm-51-5-teach-original-sin.html">Does Psalm 51:5 Teach Original Sin?</a></h2>
-          <p>Psalm 51:5 is often cited as evidence for Original Sin and inherited guilt. Many argue that David teaches every person is born guilty before God because of Adam's sin — but does the passage actually say that?</p>
-          <a class="article-readmore" href="does-psalm-51-5-teach-original-sin.html">Read article →</a>
-        </div>
-      </div>
-
-      <div class="article-row" data-category="key-biblical-passages" data-bible-ref="Psalm 51:5" data-series-order="2">
-        <div class="article-date">Jul 2026</div>
-        <div>
-          <span class="article-cat">Key Biblical Passages · Psalm 51:5 · Part 1</span>
-          <h2><a href="does-psalm-51-5-teach-total-depravity.html">Does Psalm 51:5 Teach Total Depravity?</a></h2>
-          <p>Does Psalm 51:5 actually teach Total Depravity? This article examines David's prayer in its historical, literary, and poetic context, showing why it should not be treated as a proof text for moral inability or regeneration before faith.</p>
-          <a class="article-readmore" href="does-psalm-51-5-teach-total-depravity.html">Read article →</a>
-        </div>
-      </div>
-
       <div class="article-row" data-category="responding-to-calvinist-claims">
         <div class="article-date">Jul 2026</div>
         <div>
@@ -348,22 +348,11 @@
   </div>
 </footer>
 
-<script src="bible-sort.js"></script>
 <script>
   const filterButtons = document.querySelectorAll('.filter-tag');
-  const articleList = document.getElementById('articleList');
   const articleRows = document.querySelectorAll('.article-row');
   const emptyNote = document.getElementById('emptyNote');
   const defaultNote = document.getElementById('defaultNote');
-  const sortNote = document.getElementById('sortNote');
-
-  function updateSortNote(category){
-    if(category === 'key-biblical-passages'){
-      sortNote.innerHTML = 'Sorted by: <strong style="color:var(--ink);">Canonical Scripture order</strong>';
-      return;
-    }
-    sortNote.innerHTML = 'Sorted by: <strong style="color:var(--ink);">Newest first</strong>';
-  }
 
   function applyFilter(category){
     let visibleCount = 0;
@@ -373,12 +362,6 @@
       row.style.display = matches ? '' : 'none';
       if(matches) visibleCount++;
     });
-
-    if(category === 'key-biblical-passages'){
-      BibleSort.sortContainer(articleList, '.article-row[data-bible-ref]');
-    }
-
-    updateSortNote(category);
 
     // "All" always keeps the standing note about more articles coming;
     // any other category with zero matches shows the empty-category note instead.
