@@ -119,64 +119,64 @@
 
 <main>
   <div class="wrap">
-    <div class="passage-grid">
+    <div class="passage-grid" id="passageGrid">
 
-      <a class="passage-card" href="claim02.html">
+      <a class="passage-card" href="claim02.html" data-bible-ref="John 6">
         <h3>John 6</h3>
         <span class="passage-status available">Read →</span>
       </a>
 
-      <a class="passage-card" href="ezekiel-36.html">
+      <a class="passage-card" href="ezekiel-36.html" data-bible-ref="Ezekiel 36">
         <h3>Ezekiel 36</h3>
         <span class="passage-status available">Read →</span>
       </a>
 
-      <div class="passage-card">
+      <div class="passage-card" data-bible-ref="Romans 8">
         <h3>Romans 8</h3>
         <span class="passage-status">Coming Soon</span>
       </div>
 
-      <div class="passage-card">
+      <div class="passage-card" data-bible-ref="Romans 9">
         <h3>Romans 9</h3>
         <span class="passage-status">Coming Soon</span>
       </div>
 
-      <div class="passage-card">
+      <div class="passage-card" data-bible-ref="Romans 10">
         <h3>Romans 10</h3>
         <span class="passage-status">Coming Soon</span>
       </div>
 
-      <div class="passage-card">
+      <div class="passage-card" data-bible-ref="Ephesians 1">
         <h3>Ephesians 1</h3>
         <span class="passage-status">Coming Soon</span>
       </div>
 
-      <div class="passage-card">
+      <div class="passage-card" data-bible-ref="Ephesians 2">
         <h3>Ephesians 2</h3>
         <span class="passage-status">Coming Soon</span>
       </div>
 
-      <div class="passage-card">
+      <div class="passage-card" data-bible-ref="John 10">
         <h3>John 10</h3>
         <span class="passage-status">Coming Soon</span>
       </div>
 
-      <div class="passage-card">
+      <div class="passage-card" data-bible-ref="Acts 13:48">
         <h3>Acts 13:48</h3>
         <span class="passage-status">Coming Soon</span>
       </div>
 
-      <div class="passage-card">
+      <div class="passage-card" data-bible-ref="2 Thessalonians 2:13">
         <h3>2 Thessalonians 2:13–14</h3>
         <span class="passage-status">Coming Soon</span>
       </div>
 
-      <div class="passage-card">
+      <div class="passage-card" data-bible-ref="1 Timothy 2">
         <h3>1 Timothy 2</h3>
         <span class="passage-status">Coming Soon</span>
       </div>
 
-      <div class="passage-card">
+      <div class="passage-card" data-bible-ref="2 Peter 3:9">
         <h3>2 Peter 3:9</h3>
         <span class="passage-status">Coming Soon</span>
       </div>
@@ -191,6 +191,11 @@
     <span>"Search the Scriptures" — John 5:39</span>
   </div>
 </footer>
+
+<script src="bible-sort.js"></script>
+<script>
+  BibleSort.sortContainer(document.getElementById('passageGrid'), '.passage-card[data-bible-ref]');
+</script>
 
 </body>
 </html>
