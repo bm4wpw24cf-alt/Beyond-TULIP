@@ -292,6 +292,35 @@
   .soon-btn{
     opacity:.55;cursor:default;
   }
+
+  /* Theological Dictionary term buttons */
+  .dict-terms{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+    margin-top:4px;
+  }
+  .dict-term{
+    font-size:.7rem;
+    font-weight:600;
+    letter-spacing:.04em;
+    color:var(--ink-soft);
+    border:1px solid var(--line);
+    padding:5px 10px;
+    border-radius:12px;
+    background:var(--paper);
+    line-height:1.2;
+  }
+  a.dict-term{
+    color:var(--gold-deep);
+    border-color:var(--gold);
+    transition:border-color .2s ease, color .2s ease;
+  }
+  a.dict-term:hover{
+    border-color:var(--gold-deep);
+    color:var(--wine);
+  }
+  .nav-card.dict-card .dict-terms{ flex-grow:1; align-content:flex-start; }
 </style>
 </head>
 <body>
@@ -382,10 +411,29 @@
         <span class="nav-arrow soon-tag">Coming soon</span>
       </div>
 
-      <div class="nav-card soon">
+      <div class="nav-card soon dict-card">
         <div class="nav-icon">📖</div>
         <h3>Theological Dictionary</h3>
         <p>Clear definitions of important biblical and theological terms, with Scripture references and concise explanations.</p>
+        <div class="dict-terms" aria-label="Theological Dictionary terms">
+          <a class="dict-term" href="predestination.html">Predestination</a>
+          <span class="dict-term">Election</span>
+          <span class="dict-term">Foreknowledge</span>
+          <span class="dict-term">Grace</span>
+          <span class="dict-term">Faith</span>
+          <span class="dict-term">Repentance</span>
+          <span class="dict-term">Regeneration</span>
+          <span class="dict-term">Justification</span>
+          <span class="dict-term">Sanctification</span>
+          <span class="dict-term">Glorification</span>
+          <span class="dict-term">Atonement</span>
+          <span class="dict-term">Propitiation</span>
+          <span class="dict-term">Reconciliation</span>
+          <span class="dict-term">Adoption</span>
+          <span class="dict-term">Covenant</span>
+          <span class="dict-term">Imputation</span>
+          <span class="dict-term">Perseverance</span>
+        </div>
         <span class="nav-arrow soon-tag">Coming soon</span>
       </div>
 
