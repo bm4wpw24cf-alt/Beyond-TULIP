@@ -58,6 +58,22 @@ The primary audience includes:
 - Christians engaged in apologetics.
 - Anyone interested in examining biblical doctrine through careful study of God's Word.
 
+- ## Technology Stack
+
+Beyond TULIP is built using a lightweight, standards-based technology stack that prioritizes simplicity, maintainability, and long-term compatibility.
+
+The project currently uses:
+
+- HTML5
+- CSS3
+- JavaScript (Vanilla)
+- Progressive Web App (PWA)
+- Git
+- GitHub
+- GitHub Pages
+
+Future technologies may be introduced when they provide clear long-term benefits without compromising the project's simplicity or maintainability.
+
 ## Project Objectives
 
 The objectives of Beyond TULIP are to:
