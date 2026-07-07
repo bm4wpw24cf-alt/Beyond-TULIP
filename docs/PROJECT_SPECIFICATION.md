@@ -38,3 +38,22 @@ The objectives of Beyond TULIP are to:
 - Build a comprehensive theological library that is accessible, searchable, and easy to navigate.
 - Maintain a consistent architecture, design, and writing standard across the entire project.
 - Support long-term growth through clear documentation and AI-assisted development.
+
+## Functional Requirements
+
+The Beyond TULIP website shall:
+
+- Present theological articles in a clear and structured format.
+- Organize content by Topics and Series.
+- Provide verse-by-verse Bible Commentary.
+- Provide in-depth Bible Studies.
+- Display theological diagrams and illustrations.
+- Include Frequently Asked Questions (FAQ).
+- Provide internal links between related content.
+- Support search and content discovery.
+- Provide downloadable resources where appropriate.
+- Support responsive design for desktop, tablet, and mobile devices.
+- Support Progressive Web App (PWA) functionality.
+- Be fully compatible with GitHub Pages hosting.
+
+- 
