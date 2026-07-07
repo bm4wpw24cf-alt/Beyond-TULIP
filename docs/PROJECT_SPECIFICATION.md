@@ -125,6 +125,34 @@ Major architectural, structural, or editorial changes should be reflected in the
 
 Project versions should remain backward compatible whenever possible, preserving existing content, URLs, and documentation.
 
+## Governance
+
+The Beyond TULIP project is governed according to the principles defined in the Engineering Handbook.
+
+### Project Owner
+
+The Project Owner is responsible for:
+
+- Defining the project's vision and direction.
+- Approving architectural decisions.
+- Approving theological content.
+- Maintaining documentation.
+- Reviewing AI-generated content before publication.
+
+### AI Assistants
+
+AI assistants may assist with:
+
+- Writing documentation.
+- Generating code.
+- Drafting articles.
+- Improving structure and organization.
+- Suggesting architectural improvements.
+
+AI assistants do not make final theological, editorial, or architectural decisions.
+
+Human review is required before publication or major implementation.
+
 ## Project Objectives
 
 The objectives of Beyond TULIP are to:
