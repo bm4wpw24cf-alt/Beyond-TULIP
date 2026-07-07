@@ -119,10 +119,22 @@ Bible Studies should normally include:
 
 ### Diagram
 
-Diagrams visually explain theological concepts, biblical relationships, historical timelines, or logical arguments.
+Diagrams are visual learning resources that explain biblical teachings, theological concepts, historical developments, logical arguments, or comparisons.
 
-Every diagram should support an accompanying article whenever possible.
+Every diagram should support the written content of Beyond TULIP and should normally be connected to one or more related articles.
 
+Diagrams should prioritize:
+
+- Biblical accuracy
+- Theological clarity
+- Simple visual design
+- Consistent terminology
+- Readability
+- Educational value
+
+Detailed design and formatting standards are defined in:
+
+**07_DIAGRAM_STANDARD.md**
 ---
 
 ### FAQ
