@@ -160,20 +160,33 @@ FAQ pages should serve as entry points into the wider Beyond TULIP library rathe
 
 ### Topic
 
-A Topic represents a theological subject that groups related content together.
+A Topic represents a major theological subject within Beyond TULIP.
+
+Topics are the primary method of organizing content across the theological library.
+
+A Topic may include:
+
+- Articles
+- Bible Commentary
+- Bible Studies
+- Diagrams
+- FAQ
+- Resources
 
 Examples include:
 
 - Salvation
+- Gospel
 - Faith
 - Grace
 - Election
 - Regeneration
 - Sovereignty
 - Calvinism
-- Church History
 - Apologetics
 - Islam
+
+A single article may belong to one or more Topics when appropriate.
 
 ---
 
