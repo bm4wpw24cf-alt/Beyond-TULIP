@@ -67,8 +67,6 @@ Each content type serves a distinct purpose within Beyond TULIP.
 
 ### Article
 
-### Article
-
 An Article is the primary content type within Beyond TULIP.
 
 Every article should follow a consistent structure to ensure readability, maintainability, and consistency throughout the project.
@@ -91,9 +89,23 @@ Each article should focus on a single theological subject and avoid covering mul
 
 ### Bible Commentary
 
-Bible Commentary provides verse-by-verse exposition of Scripture using the project's established commentary standard.
+Bible Commentary is one of the core content types within Beyond TULIP.
 
-Commentary should prioritize biblical context, careful exegesis, and clear explanation.
+Each commentary should follow the project's established Bible Commentary Standard to ensure consistency throughout the entire Bible library.
+
+Every commentary should normally include:
+
+- Bible passage
+- Historical and literary context
+- Verse-by-verse commentary
+- Cross references
+- Original language insights (when relevant)
+- Theological observations
+- Practical application (when appropriate)
+
+Bible commentary should prioritize careful biblical exegesis over theological speculation.
+
+The primary goal is to explain the meaning of the biblical text before discussing theological implications.
 
 ---
 
