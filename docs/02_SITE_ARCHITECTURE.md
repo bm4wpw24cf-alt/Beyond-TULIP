@@ -20,12 +20,24 @@ The architecture is designed to support hundreds of articles without becoming di
 
 ## Design Principles
 
-The site architecture shall:
+---
 
-- remain simple
-- remain scalable
-- prioritize readability
-- support future expansion
-- minimize duplicate content
-- make navigation intuitive
-- support AI-assisted development
+## Website Hierarchy
+
+The website is organized into a small number of primary sections that remain stable as the project grows.
+
+Primary navigation:
+Home
+About
+Statement of Faith
+Articles
+Bible
+Diagrams
+Resources
+Contact
+
+Each primary section may contain additional categories and subcategories without changing the overall navigation structure.
+
+
+
+
