@@ -74,6 +74,21 @@ The project currently uses:
 
 Future technologies may be introduced when they provide clear long-term benefits without compromising the project's simplicity or maintainability.
 
+## Project Structure
+
+The Beyond TULIP project is organized into separate documents, each with a specific responsibility.
+
+The Engineering Handbook currently consists of:
+
+- PROJECT_SPECIFICATION.md — Master project specification.
+- 01_PROJECT_IDENTITY.md — Project identity, mission, and vision.
+- 02_SITE_ARCHITECTURE.md — Website structure and navigation.
+- 03_CONTENT_ARCHITECTURE.md — Content organization and content types.
+
+Additional documents define standards for design, editorial practices, Bible commentary, diagrams, and future development.
+
+Each document should focus on its own responsibility while remaining consistent with the Project Specification.
+
 ## Project Objectives
 
 The objectives of Beyond TULIP are to:
