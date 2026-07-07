@@ -28,6 +28,23 @@ The project combines biblical exegesis, theological articles, Bible commentary, 
 
 Its mission is to help readers understand, evaluate, and defend biblical doctrine through careful study of God's Word.
 
+## Project Scope
+
+Beyond TULIP is intended to be a comprehensive Scripture-first theological library focused on the study of the gospel, salvation, Calvinism, biblical theology, and Christian apologetics.
+
+The project includes:
+
+- Theological articles
+- Bible Commentary
+- Bible Studies
+- Educational diagrams
+- Frequently Asked Questions
+- Recommended resources
+- Historical theology
+- Christian apologetics
+
+The project does not seek to replace the local church, pastoral ministry, or formal theological education. Its purpose is to serve as a biblical study resource that encourages readers to examine all doctrines in the light of Scripture.
+
 ## Project Objectives
 
 The objectives of Beyond TULIP are to:
@@ -174,8 +191,6 @@ Every change should improve or preserve the long-term maintainability of the pro
 9. Review the published result.
 
 All significant architectural or content decisions should be documented before implementation whenever practical.
-
-### Workflow Overview
 
 ### Workflow Overview
 
