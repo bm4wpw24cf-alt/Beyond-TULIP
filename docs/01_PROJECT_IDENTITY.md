@@ -33,11 +33,11 @@ Beyond TULIP is written primarily for Christians who desire to study Scripture c
 
 ## What Beyond TULIP Is
 
-Beyond TULIP is a Scripture-first theological library.
+Beyond TULIP is a Scripture-first theological library dedicated to examining Calvinist theology in the light of Scripture.
 
-It exists to help Christians examine doctrine through careful biblical exegesis, historical theology, and respectful theological dialogue.
+The project evaluates theological doctrines through careful biblical exegesis, historical theology, and respectful theological dialogue.
 
-The project seeks to glorify Jesus Christ by encouraging believers to search the Scriptures and to evaluate every theological system in light of God's Word.
+It argues that several central doctrines of Calvinist soteriology are inconsistent with the teaching of Scripture and seeks to present a clear, biblically grounded understanding of the gospel of Jesus Christ.
 
 ## What Beyond TULIP Is Not
 
