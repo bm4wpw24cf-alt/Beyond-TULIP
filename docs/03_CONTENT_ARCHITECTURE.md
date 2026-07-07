@@ -27,6 +27,40 @@ Every piece of content should be:
 
 Content should always encourage readers to examine every doctrine in the light of Scripture.
 
+## Content Organization
+
+Beyond TULIP organizes content using two complementary systems:
+
+### Topics
+
+Topics classify content according to theological subject.
+
+Examples include:
+
+- Salvation
+- Gospel
+- Faith
+- Grace
+- Election
+- Regeneration
+- Sovereignty
+- Calvinism
+- Apologetics
+- Islam
+
+### Series
+
+Series group related articles into structured studies designed to be read in sequence.
+
+Examples include:
+
+- Understanding TULIP
+- Examining Calvinism
+- Responding to Calvinist Claims
+- Difficult Questions
+
+An article may belong to both a Topic and a Series.
+
 ## Content Types
 
 Each content type serves a distinct purpose within Beyond TULIP.
