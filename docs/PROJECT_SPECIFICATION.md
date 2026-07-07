@@ -129,6 +129,38 @@ Human review remains responsible for all theological, editorial, architectural, 
 
 All development within Beyond TULIP should follow a consistent workflow to ensure quality, consistency, and long-term maintainability.
 
+## Engineering Principles
+
+All development within Beyond TULIP should follow these principles:
+
+### Scripture First
+
+Scripture is the highest authority for all theological conclusions.
+
+### Simplicity Before Complexity
+
+Choose the simplest solution that fulfills the project's requirements.
+
+### Consistency Before Innovation
+
+Maintain a consistent user experience throughout the website.
+
+### Documentation Before Implementation
+
+Major architectural and structural decisions should be documented before implementation whenever practical.
+
+### Reuse Before Duplication
+
+Reuse existing components, templates, and standards whenever possible.
+
+### Human Review
+
+All AI-generated content, code, and documentation should be reviewed before publication.
+
+### Long-Term Maintainability
+
+Every change should improve or preserve the long-term maintainability of the project.
+
 ### Standard Workflow
 
 1. Define the objective.
