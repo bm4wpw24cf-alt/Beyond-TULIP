@@ -192,14 +192,27 @@ A single article may belong to one or more Topics when appropriate.
 
 ### Series
 
-A Series is a structured collection of articles designed to be read in a specific order.
+A Series is a structured collection of related content designed to guide readers through a theological subject in a logical sequence.
 
-Each series should contain:
+Unlike Topics, which organize content by subject, Series organize content by learning path.
+
+A Series should normally include:
 
 - Introduction
 - Sequential articles
-- Summary
-- Related resources
+- Supporting Bible Commentary (when applicable)
+- Related diagrams
+- Summary or conclusion
+- Further reading
+
+Examples include:
+
+- Understanding TULIP
+- Examining Calvinism
+- Responding to Calvinist Claims
+- Difficult Questions
+
+An article may belong to both a Topic and a Series.
 
 ---
 
