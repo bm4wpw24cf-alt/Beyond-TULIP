@@ -311,3 +311,13 @@ All significant architectural or content decisions should be documented before i
 7. Testing
 8. Git Commit
 9. Deployment
+
+## Conclusion
+
+The Project Specification defines the overall direction, architecture, standards, and development principles of Beyond TULIP.
+
+It serves as the primary reference for all future development and should be consulted before making significant architectural, editorial, or technical decisions.
+
+As the project grows, this specification should evolve while preserving the project's core mission, structure, and long-term vision.
+
+Supporting documents within the Engineering Handbook provide detailed standards for specific areas of the project and should remain consistent with this specification.
