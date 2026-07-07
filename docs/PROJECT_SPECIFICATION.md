@@ -45,6 +45,19 @@ The project includes:
 
 The project does not seek to replace the local church, pastoral ministry, or formal theological education. Its purpose is to serve as a biblical study resource that encourages readers to examine all doctrines in the light of Scripture.
 
+## Project Audience
+
+Beyond TULIP is intended for readers who desire to study Scripture carefully and examine theological doctrines in a biblical, historical, and respectful manner.
+
+The primary audience includes:
+
+- Christians seeking a deeper understanding of Scripture.
+- Students of theology.
+- Pastors and church leaders.
+- Those studying Calvinism and non-Calvinist perspectives.
+- Christians engaged in apologetics.
+- Anyone interested in examining biblical doctrine through careful study of God's Word.
+
 ## Project Objectives
 
 The objectives of Beyond TULIP are to:
