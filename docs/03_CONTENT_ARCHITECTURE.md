@@ -8,79 +8,90 @@
 
 # 03. Content Architecture
 
-## Purpose
+---
 
-This document defines how all content within Beyond TULIP is organized, structured, connected, and maintained.
+## Content Types
 
-Its purpose is to ensure consistency, scalability, discoverability, and long-term maintainability across the entire theological library.
+Each content type serves a distinct purpose within Beyond TULIP.
 
-Content architecture defines not only where content belongs, but also how different content types relate to one another.
+### Article
+
+Articles present theological teaching, biblical interpretation, historical analysis, apologetics, or responses to theological claims.
+
+Articles are the primary educational content of the project.
 
 ---
 
-## Content Philosophy
+### Bible Commentary
 
-Beyond TULIP is a Scripture-first theological library.
+Bible Commentary provides verse-by-verse exposition of Scripture using the project's established commentary standard.
 
-Content should always be:
-
-- Biblically grounded
-- Clearly organized
-- Easy to navigate
-- Easy to maintain
-- Easy to expand
-- Consistent in structure
-- Accessible to readers
-- Suitable for AI-assisted development
+Commentary should prioritize biblical context, careful exegesis, and clear explanation.
 
 ---
 
-## Primary Content Types
+### Bible Study
 
-The project currently consists of the following primary content types:
-
-- Articles
-- Bible Commentary
-- Bible Studies
-- Diagrams
-- Frequently Asked Questions (FAQ)
-- Topics
-- Series
-- Resources
-
-Each content type has a specific purpose and follows its own standards.
+Bible Studies examine biblical themes, doctrines, books, chapters, or passages in greater depth than standard commentary.
 
 ---
 
-## Content Organization
+### Diagram
 
-All content is organized using two complementary systems.
+Diagrams visually explain theological concepts, biblical relationships, historical timelines, or logical arguments.
 
-### Topics
+Every diagram should support an accompanying article whenever possible.
 
-Topics classify content according to theological subject.
+---
 
-Examples:
+### FAQ
+
+Frequently Asked Questions provide concise answers to common theological questions.
+
+Whenever appropriate, FAQ pages should link to longer articles for further study.
+
+---
+
+### Topic
+
+A Topic represents a theological subject that groups related content together.
+
+Examples include:
 
 - Salvation
 - Faith
-- Election
 - Grace
+- Election
 - Regeneration
 - Sovereignty
 - Calvinism
+- Church History
 - Apologetics
 - Islam
 
+---
+
 ### Series
 
-Series organize articles into structured learning paths.
+A Series is a structured collection of articles designed to be read in a specific order.
 
-Examples:
+Each series should contain:
 
-- Understanding TULIP
-- Examining Calvinism
-- Responding to Calvinist Claims
-- Difficult Questions
+- Introduction
+- Sequential articles
+- Summary
+- Related resources
 
-An article may belong to both a Topic and a Series.
+---
+
+### Resource
+
+Resources include material that supports learning but is not original article content.
+
+Examples include:
+
+- Recommended books
+- External websites
+- Historical documents
+- Study tools
+- Downloads
