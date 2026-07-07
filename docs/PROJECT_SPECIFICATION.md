@@ -177,36 +177,14 @@ All significant architectural or content decisions should be documented before i
 
 ### Workflow Overview
 
-Idea
+### Workflow Overview
 
-↓
-
-Research
-
-↓
-
-Specification
-
-↓
-
-Content Development
-
-↓
-
-Review
-
-↓
-
-Implementation
-
-↓
-
-Testing
-
-↓
-
-Git Commit
-
-↓
-
-Deployment
+1. Idea
+2. Research
+3. Specification
+4. Content Development
+5. Review
+6. Implementation
+7. Testing
+8. Git Commit
+9. Deployment
