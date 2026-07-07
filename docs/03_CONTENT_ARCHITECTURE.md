@@ -218,12 +218,15 @@ An article may belong to both a Topic and a Series.
 
 ### Resource
 
-Resources include material that supports learning but is not original article content.
+Resources provide supplementary material that supports the mission of Beyond TULIP but is not part of the project's original theological content.
 
-Examples include:
+Resources may include:
 
 - Recommended books
 - External websites
 - Historical documents
-- Study tools
-- Downloads
+- Bible study tools
+- Downloadable resources
+- Reference materials
+
+Resources should complement the site's own articles and encourage further study without replacing original content.
