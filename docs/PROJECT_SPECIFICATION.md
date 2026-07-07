@@ -125,41 +125,6 @@ AI assistants are used to accelerate development while following the standards d
 
 Human review remains responsible for all theological, editorial, architectural, and technical decisions.
 
-### Performance
-
-- Pages should load quickly.
-- Images should be optimized for web delivery.
-- The website should remain responsive on modern devices.
-
-### Accessibility
-
-- Follow modern web accessibility standards where practical.
-- Support keyboard navigation.
-- Use semantic HTML whenever possible.
-
-### Maintainability
-
-- Code should remain simple and well organized.
-- Documentation should be kept up to date.
-- New content should follow established project standards.
-
-### Scalability
-
-- The architecture should support thousands of pages without major restructuring.
-- New Topics, Series, and content types should be added without changing the core architecture.
-
-### Reliability
-
-- Internal links should remain valid.
-- Stable URLs should be preserved whenever possible.
-- The project should remain compatible with GitHub Pages.
-
-### AI Compatibility
-
-- Project documentation should enable AI assistants to understand the architecture.
-- AI-generated content should follow the Engineering Handbook.
-- AI should preserve existing architecture whenever possible.
-
 ## Development Workflow
 
 All development within Beyond TULIP should follow a consistent workflow to ensure quality, consistency, and long-term maintainability.
