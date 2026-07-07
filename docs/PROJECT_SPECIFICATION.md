@@ -56,7 +56,7 @@ The Beyond TULIP website shall:
 - Support Progressive Web App (PWA) functionality.
 - Be fully compatible with GitHub Pages hosting.
 
-- ## Non-Functional Requirements
+## Non-Functional Requirements
 
 Beyond TULIP shall be designed to meet the following quality requirements:
 
