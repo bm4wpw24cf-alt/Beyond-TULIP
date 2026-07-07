@@ -136,6 +136,7 @@ Diagrams should prioritize:
 Detailed design and formatting standards are defined in:
 
 **07_DIAGRAM_STANDARD.md**
+
 ---
 
 ### FAQ
