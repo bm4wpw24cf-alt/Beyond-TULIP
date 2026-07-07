@@ -175,20 +175,38 @@ Every change should improve or preserve the long-term maintainability of the pro
 
 All significant architectural or content decisions should be documented before implementation whenever practical.
 
+### Workflow Overview
+
 Idea
-    ↓
+
+↓
+
 Research
-    ↓
+
+↓
+
 Specification
-    ↓
-Content
-    ↓
+
+↓
+
+Content Development
+
+↓
+
 Review
-    ↓
+
+↓
+
 Implementation
-    ↓
+
+↓
+
 Testing
-    ↓
-Commit
-    ↓
+
+↓
+
+Git Commit
+
+↓
+
 Deployment
