@@ -67,9 +67,25 @@ Each content type serves a distinct purpose within Beyond TULIP.
 
 ### Article
 
-Articles present theological teaching, biblical interpretation, historical analysis, apologetics, or responses to theological claims.
+### Article
 
-Articles are the primary educational content of the project.
+An Article is the primary content type within Beyond TULIP.
+
+Every article should follow a consistent structure to ensure readability, maintainability, and consistency throughout the project.
+
+A standard article should normally include:
+
+- Title
+- Introduction
+- Main Content
+- Biblical References
+- Conclusion
+- Related Articles
+- Related Bible Commentary
+- Related Diagrams (when applicable)
+- Further Reading (when applicable)
+
+Each article should focus on a single theological subject and avoid covering multiple major topics in one document.
 
 ---
 
