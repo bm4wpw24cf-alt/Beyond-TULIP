@@ -66,6 +66,26 @@ Beyond TULIP follows a content-first architecture designed for long-term maintai
 
 The project is based on the following architectural principles:
 
+## Development Workflow
+
+Idea
+    ↓
+Research
+    ↓
+Specification
+    ↓
+Content
+    ↓
+Review
+    ↓
+Implementation
+    ↓
+Testing
+    ↓
+Commit
+    ↓
+Deployment
+
 ### Static Website
 
 The website is built as a static website to maximize speed, security, portability, and compatibility with GitHub Pages.
