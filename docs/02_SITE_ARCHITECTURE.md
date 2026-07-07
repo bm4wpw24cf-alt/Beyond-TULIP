@@ -24,7 +24,58 @@ The architecture is designed to support hundreds of articles without becoming di
 
 ## Website Hierarchy
 
-The website is organized into a small number of primary sections that remain stable as the project grows. This structure is intended to provide a consistent user experience while allowing the content library to expand significantly over time.
+---
+
+## Folder Structure
+
+The project is organized into logical directories to ensure scalability, maintainability, and consistency as the library continues to grow.
+
+```text
+Beyond-TULIP/
+│
+├── index.html
+├── about.html
+├── statement-of-faith.html
+├── contact.html
+│
+├── articles/
+│   ├── topics/
+│   └── series/
+│
+├── bible/
+│   ├── old-testament/
+│   └── new-testament/
+│
+├── diagrams/
+│
+├── assets/
+│   ├── css/
+│   ├── js/
+│   ├── images/
+│   ├── icons/
+│   └── fonts/
+│
+├── templates/
+│
+├── data/
+│
+├── docs/
+│
+└── ai/
+```
+
+### Folder Purposes
+
+| Folder | Purpose |
+|---------|---------|
+| **articles/** | Original theological articles organized by topics and article series. |
+| **bible/** | Bible commentary, biblical studies, and Scripture resources. |
+| **diagrams/** | Original diagrams, illustrations, timelines, and comparison charts. |
+| **assets/** | Shared CSS, JavaScript, images, fonts, icons, and other static resources. |
+| **templates/** | Standard page templates used throughout the project. |
+| **data/** | Metadata files used for navigation, search, categories, and future automation. |
+| **docs/** | Blueprint documentation and project planning. |
+| **ai/** | AI development standards, prompts, rules, and project guidance. |
 
 ### Primary Navigation
 
