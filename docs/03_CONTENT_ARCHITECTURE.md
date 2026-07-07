@@ -89,24 +89,13 @@ Each article should focus on a single theological subject and avoid covering mul
 
 ### Bible Commentary
 
-Bible Commentary is one of the core content types within Beyond TULIP.
+Bible Commentary provides verse-by-verse exposition of Scripture using the project's established Bible Commentary Standard.
 
-Each commentary should follow the project's established Bible Commentary Standard to ensure consistency throughout the entire Bible library.
+Its primary purpose is to explain the meaning of the biblical text through careful exegesis, historical context, literary analysis, and cross-references.
 
-Every commentary should normally include:
+Every Bible Commentary must follow the standards defined in:
 
-- Bible passage
-- Historical and literary context
-- Verse-by-verse commentary
-- Cross references
-- Original language insights (when relevant)
-- Theological observations
-- Practical application (when appropriate)
-
-Bible commentary should prioritize careful biblical exegesis over theological speculation.
-
-The primary goal is to explain the meaning of the biblical text before discussing theological implications.
-
+**06_BIBLE_COMMENTARY_STANDARD.md**
 ---
 
 ### Bible Study
