@@ -96,6 +96,7 @@ Its primary purpose is to explain the meaning of the biblical text through caref
 Every Bible Commentary must follow the standards defined in:
 
 **06_BIBLE_COMMENTARY_STANDARD.md**
+
 ---
 
 ### Bible Study
