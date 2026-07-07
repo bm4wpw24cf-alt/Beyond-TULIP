@@ -100,7 +100,20 @@ Every Bible Commentary must follow the standards defined in:
 
 ### Bible Study
 
-Bible Studies examine biblical themes, doctrines, books, chapters, or passages in greater depth than standard commentary.
+Bible Studies examine biblical books, chapters, passages, themes, or doctrines in greater depth than standard Bible Commentary.
+
+Their purpose is to provide structured teaching that connects biblical texts, theological themes, historical context, and practical application.
+
+Bible Studies should normally include:
+
+- Introduction
+- Historical and literary context
+- Main study sections
+- Biblical cross references
+- Theological observations
+- Practical application (when appropriate)
+- Conclusion
+- Related resources
 
 ---
 
