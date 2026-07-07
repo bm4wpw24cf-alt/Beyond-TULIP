@@ -1,4 +1,4 @@
-# Beyond TULIP Developer Handbook
+# Beyond TULIP Engineering Handbook
 
 **Version:** 2.0 (Draft)  
 **Last Updated:** 2026-07-07  
