@@ -141,9 +141,20 @@ Detailed design and formatting standards are defined in:
 
 ### FAQ
 
-Frequently Asked Questions provide concise answers to common theological questions.
+Frequently Asked Questions (FAQ) provide concise, biblical answers to common theological questions.
 
-Whenever appropriate, FAQ pages should link to longer articles for further study.
+Their purpose is to introduce readers to a subject while directing them to more comprehensive articles for deeper study.
+
+Each FAQ should normally include:
+
+- The question
+- A concise biblical answer
+- Key Bible references
+- Link to related articles
+- Link to related Bible Commentary (when applicable)
+- Link to related diagrams (when applicable)
+
+FAQ pages should serve as entry points into the wider Beyond TULIP library rather than as comprehensive studies.
 
 ---
 
