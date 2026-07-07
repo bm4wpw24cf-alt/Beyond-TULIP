@@ -68,6 +68,24 @@ The project is based on the following architectural principles:
 
 ## Development Workflow
 
+All development within Beyond TULIP should follow a consistent workflow to ensure quality, consistency, and long-term maintainability.
+
+### Standard Workflow
+
+1. Define the objective.
+2. Review the relevant project documentation.
+3. Create or update the project specification if necessary.
+4. Develop the content or feature.
+5. Review for theological, editorial, and technical accuracy.
+6. Test functionality and navigation.
+7. Commit changes to Git.
+8. Deploy to GitHub Pages.
+9. Review the published result.
+
+All significant architectural or content decisions should be documented before implementation whenever practical.
+
+## Development Workflow
+
 Idea
     ↓
 Research
