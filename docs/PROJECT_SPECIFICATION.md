@@ -119,8 +119,6 @@ All development within Beyond TULIP should follow a consistent workflow to ensur
 
 All significant architectural or content decisions should be documented before implementation whenever practical.
 
-## Development Workflow
-
 Idea
     ↓
 Research
