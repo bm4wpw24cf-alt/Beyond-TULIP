@@ -60,6 +60,36 @@ The Beyond TULIP website shall:
 
 Beyond TULIP shall be designed to meet the following quality requirements:
 
+## System Architecture
+
+Beyond TULIP follows a content-first architecture designed for long-term maintainability, simplicity, and scalability.
+
+The project is based on the following architectural principles:
+
+### Static Website
+
+The website is built as a static website to maximize speed, security, portability, and compatibility with GitHub Pages.
+
+### Content-First Development
+
+Content is the primary focus of the project.
+
+Architecture, design, and implementation exist to support the presentation and study of biblical content.
+
+### Modular Organization
+
+Content, assets, templates, documentation, and AI resources are organized into separate modules to simplify maintenance and future expansion.
+
+### Progressive Web App
+
+The project supports Progressive Web App (PWA) features to provide an improved user experience across desktop and mobile devices.
+
+### AI-Assisted Development
+
+AI assistants are used to accelerate development while following the standards defined in the Engineering Handbook.
+
+Human review remains responsible for all theological, editorial, architectural, and technical decisions.
+
 ### Performance
 
 - Pages should load quickly.
