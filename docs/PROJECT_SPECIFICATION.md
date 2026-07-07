@@ -89,6 +89,27 @@ Additional documents define standards for design, editorial practices, Bible com
 
 Each document should focus on its own responsibility while remaining consistent with the Project Specification.
 
+## Document Hierarchy
+
+The Engineering Handbook is organized in a hierarchical structure.
+
+The Project Specification serves as the master document.
+
+Supporting documents provide detailed standards for specific areas of the project.
+
+The relationship is as follows:
+
+- PROJECT_SPECIFICATION.md
+  - 01_PROJECT_IDENTITY.md
+  - 02_SITE_ARCHITECTURE.md
+  - 03_CONTENT_ARCHITECTURE.md
+  - 04_DESIGN_SYSTEM.md
+  - 05_EDITORIAL_STANDARDS.md
+  - 06_BIBLE_COMMENTARY_STANDARD.md
+  - 07_DIAGRAM_STANDARD.md
+
+If a conflict exists between documents, the Project Specification takes precedence unless explicitly stated otherwise.
+
 ## Project Objectives
 
 The objectives of Beyond TULIP are to:
