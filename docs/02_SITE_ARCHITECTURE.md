@@ -24,20 +24,22 @@ The architecture is designed to support hundreds of articles without becoming di
 
 ## Website Hierarchy
 
-The website is organized into a small number of primary sections that remain stable as the project grows.
+The website is organized into a small number of primary sections that remain stable as the project grows. This structure is intended to provide a consistent user experience while allowing the content library to expand significantly over time.
 
-Primary navigation:
-Home
-About
-Statement of Faith
-Articles
-Bible
-Diagrams
-Resources
-Contact
+### Primary Navigation
+
+- Home
+- About
+- Statement of Faith
+- Articles
+- Bible
+- Diagrams
+- Resources
+- Contact
 
 Each primary section may contain additional categories and subcategories without changing the overall navigation structure.
 
+The primary navigation should remain stable over time. New content should normally be added within existing sections rather than by creating new top-level navigation items.
 
 
 
