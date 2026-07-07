@@ -41,16 +41,31 @@ It argues that several central doctrines of Calvinist soteriology are inconsiste
 
 ## What Beyond TULIP Is Not
 
-Beyond TULIP is not an anti-Calvinist website.
+Beyond TULIP is not a denominational ministry.
 
-It is not a debate platform.
+It is not a church.
 
-It is not a denominational ministry.
+It is not a debate platform intended to generate controversy.
 
-It is not intended to promote theological division.
+It does not seek to attack individual Christians or question their sincerity, faith, or love for Christ.
 
-Its purpose is to encourage biblical study, theological clarity, and faithful proclamation of the gospel.
+Rather, it seeks to examine theological doctrines in the light of Scripture and to encourage believers to search the Scriptures for themselves.
 
+Our desire is not to promote division but to promote biblical truth, theological clarity, and a deeper understanding of the gospel of Jesus Christ.
+## Long-Term Goals
+
+The long-term vision for Beyond TULIP is to become a comprehensive, Scripture-first theological library that serves Christians around the world.
+
+The project aims to:
+
+- Build a comprehensive theological library centered on Scripture.
+- Present clear and biblically grounded articles on salvation, Calvinism, and related doctrines.
+- Develop a complete Bible commentary emphasizing sound biblical exegesis.
+- Create theological diagrams, comparison charts, and educational resources.
+- Equip Christians with reliable apologetics resources.
+- Maintain a professional, accessible, and well-organized website that continues to grow for many years.
+- Glorify Jesus Christ by encouraging believers to search the Scriptures and to test every doctrine by God's Word.
+- 
 ## Long-Term Goals
 
 - Build a comprehensive theological library centered on Scripture.
