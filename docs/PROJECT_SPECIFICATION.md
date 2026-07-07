@@ -60,6 +60,41 @@ The Beyond TULIP website shall:
 
 Beyond TULIP shall be designed to meet the following quality requirements:
 
+### Performance
+
+- Pages should load quickly.
+- Images should be optimized for web delivery.
+- The website should remain responsive on modern devices.
+
+### Accessibility
+
+- Follow modern web accessibility standards where practical.
+- Support keyboard navigation.
+- Use semantic HTML whenever possible.
+
+### Maintainability
+
+- Code should remain simple and well organized.
+- Documentation should be kept up to date.
+- New content should follow established project standards.
+
+### Scalability
+
+- The architecture should support thousands of pages without major restructuring.
+- New Topics, Series, and content types should be added without changing the core architecture.
+
+### Reliability
+
+- Internal links should remain valid.
+- Stable URLs should be preserved whenever possible.
+- The project should remain compatible with GitHub Pages.
+
+### AI Compatibility
+
+- Project documentation should enable AI assistants to understand the architecture.
+- AI-generated content should follow the Engineering Handbook.
+- AI should preserve existing architecture whenever possible.
+
 ## System Architecture
 
 Beyond TULIP follows a content-first architecture designed for long-term maintainability, simplicity, and scalability.
