@@ -52,6 +52,7 @@ It does not seek to attack individual Christians or question their sincerity, fa
 Rather, it seeks to examine theological doctrines in the light of Scripture and to encourage believers to search the Scriptures for themselves.
 
 Our desire is not to promote division but to promote biblical truth, theological clarity, and a deeper understanding of the gospel of Jesus Christ.
+
 ## Long-Term Goals
 
 The long-term vision for Beyond TULIP is to become a comprehensive, Scripture-first theological library that serves Christians around the world.
@@ -66,11 +67,3 @@ The project aims to:
 - Maintain a professional, accessible, and well-organized website that continues to grow for many years.
 - Glorify Jesus Christ by encouraging believers to search the Scriptures and to test every doctrine by God's Word.
 - 
-## Long-Term Goals
-
-- Build a comprehensive theological library centered on Scripture.
-- Provide well-researched articles on salvation, Calvinism, and related doctrines.
-- Develop a complete Bible commentary based on careful exegesis.
-- Create high-quality theological diagrams and illustrations.
-- Equip believers with reliable apologetics resources.
-- Maintain a consistent, professional, and Scripture-centered presentation across the entire project.
