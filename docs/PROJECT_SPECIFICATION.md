@@ -110,6 +110,21 @@ The relationship is as follows:
 
 If a conflict exists between documents, the Project Specification takes precedence unless explicitly stated otherwise.
 
+## Versioning
+
+The Beyond TULIP Engineering Handbook is intended to evolve alongside the project.
+
+Each document should include:
+
+- Version
+- Status
+- Last Updated
+- Document Owner
+
+Major architectural, structural, or editorial changes should be reflected in the appropriate handbook documents before implementation whenever practical.
+
+Project versions should remain backward compatible whenever possible, preserving existing content, URLs, and documentation.
+
 ## Project Objectives
 
 The objectives of Beyond TULIP are to:
