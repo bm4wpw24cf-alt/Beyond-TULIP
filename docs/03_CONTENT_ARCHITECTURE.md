@@ -9,10 +9,20 @@
 # 03. Content Architecture
 ## Purpose
 
-This document defines how all content within Beyond TULIP is organized, structured, connected, and maintained.
+## Content Philosophy
 
-Its purpose is to ensure consistency, scalability, discoverability, and long-term maintainability across the entire theological library.
----
+Beyond TULIP is a Scripture-first theological library.
+
+Every piece of content should be:
+
+- Biblically faithful
+- Clearly organized
+- Easy to understand
+- Easy to maintain
+- Consistent in structure
+- Focused on glorifying Jesus Christ
+
+Content should always encourage readers to examine every doctrine in the light of Scripture.
 
 ## Content Types
 
