@@ -354,6 +354,50 @@ The footer should normally include:
 
 The footer should remain visually simple, consistent, and accessible on all devices.
 
+## Search Standards
+
+Search should help users quickly discover relevant biblical and theological content.
+
+The search experience should prioritize:
+
+- Fast results
+- Relevant content ranking
+- Clear result titles
+- Short content summaries
+- Topic filtering (when applicable)
+- Bible reference searching
+- Mobile-friendly interaction
+
+Search should be available from any page and remain consistent throughout the website.
+
+## Theme Standards
+
+Beyond TULIP should maintain a consistent visual identity across all pages.
+
+The theme should prioritize:
+
+- A calm and distraction-free reading experience.
+- Consistent colors and typography.
+- Clear visual hierarchy.
+- Minimal visual clutter.
+- High readability in both light and dark themes (if supported).
+
+Theme changes should preserve the established design language and should not alter the overall user experience.
+
+## Design Maintenance
+
+The Design System should evolve gradually as Beyond TULIP grows.
+
+Changes to the design system should:
+
+- Preserve visual consistency.
+- Improve usability and accessibility.
+- Maintain compatibility with existing components whenever practical.
+- Be documented before widespread implementation.
+- Avoid unnecessary redesigns.
+
+All major design changes should be reviewed to ensure they remain consistent with the project's Design Philosophy and Engineering Handbook.
+
 ## Responsive Design Standards
 
 Beyond TULIP should provide a consistent reading experience across desktop, tablet, and mobile devices.
