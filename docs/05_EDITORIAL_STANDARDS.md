@@ -58,9 +58,12 @@ Whenever practical, readers should be encouraged to examine the surrounding cont
 Theological terminology should be used carefully and consistently throughout Beyond TULIP.
 
 Technical terms should:
-
 - Be defined when first introduced.
 - Be used consistently across the project.
+- Reflect their historical and theological meaning.
+- Avoid unnecessary jargon where simpler language communicates the same idea.
+
+When a theological term is understood differently by various traditions, the differing definitions should be explained before evaluating the doctrine.
 - Reflect their historical and theological meaning.
 - Avoid unnecessary jargon where simpler language communicates the same idea.
 
