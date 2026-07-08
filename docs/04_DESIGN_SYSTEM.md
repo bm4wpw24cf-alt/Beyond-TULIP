@@ -300,6 +300,29 @@ The project should prioritize:
 
 Visual styling should be centralized whenever possible to reduce duplication and simplify future maintenance.
 
+## Naming Conventions
+
+Design components should use clear, descriptive, and consistent names.
+
+Naming should prioritize readability over brevity.
+
+Component names should:
+
+- Clearly describe their purpose.
+- Remain consistent throughout the project.
+- Avoid ambiguous abbreviations.
+- Follow the project's established naming conventions.
+
+Examples include:
+
+- Article Card
+- Bible Commentary Card
+- Primary Button
+- Secondary Button
+- Callout Box
+- Hero Section
+- Navigation Bar
+
 ## Navigation Standards
 
 Navigation should be simple, predictable, and consistent throughout the website.
@@ -315,6 +338,21 @@ Navigation should:
 - Provide consistent navigation across all pages.
 
 Primary navigation items should be defined in the Site Architecture documentation and implemented consistently throughout the project.
+
+## Footer Standards
+
+The footer should provide consistent navigation, project information, and supporting resources across the entire website.
+
+The footer should normally include:
+
+- Copyright information
+- Project description
+- Primary navigation links
+- Contact information
+- GitHub repository
+- Version information (when appropriate)
+
+The footer should remain visually simple, consistent, and accessible on all devices.
 
 ## Responsive Design Standards
 
