@@ -89,3 +89,15 @@ These documents define the standards, methodologies, and workflows that AI assis
 - 17-THEOLOGICAL-EVIDENCE-STANDARD.md
 - 18-HERMENEUTICS-STANDARD.md
 - 19-DOCTRINAL-COMPARISON-STANDARD.md
+
+---
+
+# Version
+
+Current Version: **1.0**
+
+Status: **Stable**
+
+The Engineering Handbook and AI Development Kit should be considered the authoritative reference for developing and maintaining the Beyond TULIP project.
+
+Future revisions should be made by updating existing standards rather than creating unnecessary new documents.
