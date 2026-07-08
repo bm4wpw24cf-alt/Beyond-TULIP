@@ -133,7 +133,7 @@ Grammar often determines meaning.
 
 ### 6. Word Studies
 
-When appropriate, study important Greek or Hebrew terms.
+When appropriate, study important Hebrew, Aramaic, or Greek terms.
 
 Include:
 
@@ -184,7 +184,7 @@ Doctrine should emerge from Scripture rather than be imposed upon it.
 
 ## Cross References
 
-Cross references should be:
+Cross-references should be:
 
 - Contextually relevant
 - Genuinely parallel
@@ -196,7 +196,7 @@ Avoid creating artificial connections based solely on identical words.
 
 ## Original Languages
 
-When significant, include observations from:
+When significant, consult the original biblical languages:
 
 - Hebrew
 - Aramaic
@@ -206,8 +206,8 @@ Explain:
 
 - Key grammatical features
 - Lexical nuances
-- Important textual variants when relevant
-
+- Significant semantic observations
+  
 Language notes should clarify the passage, not overwhelm the reader.
 
 ---
@@ -340,4 +340,4 @@ Every theological conclusion in the Beyond TULIP project should be traceable bac
 
 The AI must resist the temptation to harmonize passages prematurely or force them into any predefined theological framework.
 
-**The goal is faithful interpretation before theological formulation.**
+**Faithful interpretation before theological formulation.**
