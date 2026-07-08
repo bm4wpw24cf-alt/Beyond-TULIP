@@ -28,7 +28,7 @@ Every Bible commentary within Beyond TULIP should seek to:
 - Distinguish clearly between observation, interpretation, and application.
 - Encourage readers to study Scripture carefully for themselves.
 
-The primary objective is to help readers understand what the biblical text meant to its original audience and how it continues to speak with authority today.
+The primary objective is to help readers understand the intended meaning of the biblical text within its original context and how it continues to speak with authority today.
 
 ## Exegetical Method
 
