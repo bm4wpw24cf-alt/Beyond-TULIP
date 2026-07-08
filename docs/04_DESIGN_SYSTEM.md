@@ -236,6 +236,25 @@ Article layouts should prioritize readability, generous whitespace, and a logica
 
 Long articles should be divided into clearly defined sections using descriptive headings.
 
+## Bible Commentary Layout Standards
+
+Bible Commentary pages should present Scripture in a clear, structured, and consistent format.
+
+Each commentary page should include:
+
+- Bible passage
+- Historical and literary context
+- Verse-by-verse commentary
+- Cross references
+- Original language insights (when appropriate)
+- Theological observations
+- Related articles
+- Navigation to adjacent passages
+
+The visual presentation should emphasize the biblical text while clearly distinguishing commentary from Scripture.
+
+The detailed content requirements are defined in **06_BIBLE_COMMENTARY_STANDARD.md**.
+
 ## Navigation Standards
 
 Navigation should be simple, predictable, and consistent throughout the website.
