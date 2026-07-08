@@ -28,6 +28,34 @@ Editorial decisions should prioritize clarity, accuracy, consistency, and faithf
 
 All content within Beyond TULIP should follow these editorial principles.
 
+## Doctrinal Evaluation
+
+Beyond TULIP seeks to evaluate every doctrine in the light of Scripture.
+
+When evaluating theological positions, articles should:
+
+- Present the doctrine fairly as its proponents understand it.
+- Explain the primary biblical arguments supporting the doctrine.
+- Present significant alternative interpretations where appropriate.
+- Evaluate each position carefully in the light of Scripture.
+- Distinguish between explicit biblical teaching and theological inference.
+
+## Writing Style
+
+Beyond TULIP should use a writing style that is clear, respectful, and accessible to a broad Christian audience.
+
+Content should:
+
+- Use clear and precise language.
+- Explain theological terminology when appropriate.
+- Avoid unnecessary repetition.
+- Prefer active voice where practical.
+- Maintain a respectful tone, even when presenting disagreement.
+- Prioritize understanding over rhetorical effect.
+
+The goal is to communicate biblical truth with clarity while remaining faithful to Scripture.
+
+
 ### Scripture First
 
 Scripture is the highest authority for every theological claim.
@@ -47,21 +75,6 @@ Complex theological concepts should be explained as clearly and simply as possib
 ### Consistency
 
 Editorial style, terminology, formatting, and structure should remain consistent throughout the project.
-
-## Writing Style
-
-Beyond TULIP should use a writing style that is clear, respectful, and accessible to a broad Christian audience.
-
-Content should:
-
-- Use clear and precise language.
-- Explain theological terminology when appropriate.
-- Avoid unnecessary repetition.
-- Prefer active voice where practical.
-- Maintain a respectful tone, even when presenting disagreement.
-- Prioritize understanding over rhetorical effect.
-
-The goal is to help readers understand Scripture rather than overwhelm them with unnecessary complexity.
 
 ## Scripture Quotations
 
@@ -88,6 +101,20 @@ Technical terms should:
 - Avoid unnecessary jargon where simpler language communicates the same idea.
 
 When a theological term is understood differently by various traditions, the differing definitions should be explained before evaluating the doctrine.
+
+## Sources and References
+
+Beyond TULIP should distinguish clearly between biblical authority, historical sources, and secondary literature.
+
+When appropriate:
+
+- Scripture should be cited as the primary authority.
+- Historical claims should be supported by reliable primary or secondary sources.
+- Quotations should be accurate and properly attributed.
+- Opinions should not be presented as established fact.
+- Readers should be able to distinguish between biblical teaching, historical evidence, and theological interpretation.
+
+Whenever practical, primary sources should be preferred over secondary summaries.
 
 ## Tone and Language
 
@@ -145,20 +172,6 @@ Changes to these standards should:
 - Be reviewed for consistency with the Engineering Handbook.
 
 Each significant revision should update the document version and revision date.
-
-## Sources and References
-
-Beyond TULIP should distinguish clearly between biblical authority, historical sources, and secondary literature.
-
-When appropriate:
-
-- Scripture should be cited as the primary authority.
-- Historical claims should be supported by reliable primary or secondary sources.
-- Quotations should be accurate and properly attributed.
-- Opinions should not be presented as established fact.
-- Readers should be able to distinguish between biblical teaching, historical evidence, and theological interpretation.
-
-Whenever practical, primary sources should be preferred over secondary summaries.
 
 ### Scripture First
 
