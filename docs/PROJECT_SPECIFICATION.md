@@ -321,3 +321,13 @@ It serves as the primary reference for all future development and should be cons
 As the project grows, this specification should evolve while preserving the project's core mission, structure, and long-term vision.
 
 Supporting documents within the Engineering Handbook provide detailed standards for specific areas of the project and should remain consistent with this specification.
+
+## Design Philosophy
+
+The Beyond TULIP design system is built around simplicity, clarity, readability, and consistency.
+
+The visual design should always support the content rather than compete with it.
+
+Every design decision should help readers focus on studying Scripture and theology without unnecessary visual distractions.
+
+The design should remain timeless, professional, accessible, and easy to maintain.
