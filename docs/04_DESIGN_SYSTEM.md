@@ -62,17 +62,17 @@ Colors should be assigned clear purposes rather than used arbitrarily.
 
 The design system should define:
 
-- Primary color
-- Secondary color
-- Accent color
-- Background color
-- Surface color
-- Text color
-- Link color
-- Border color
-- Success color
-- Warning color
-- Error color
+- Primary Color
+- Secondary Color
+- Accent Color
+- Background Color
+- Surface Color
+- Text Color
+- Link Color
+- Border Color
+- Success Color
+- Warning Color
+- Error Color
 
 Color values should remain consistent across the entire website.
 
@@ -217,7 +217,7 @@ Cards should:
 - Remain responsive across all screen sizes.
 - Follow the project's typography and color standards.
 
-- ## Article Layout Standards
+## Article Layout Standards
 
 Articles are the primary content type within Beyond TULIP and should provide a consistent reading experience.
 
@@ -451,7 +451,20 @@ Icons should:
 - Use a consistent style throughout the project.
 - Improve navigation and usability without distracting from the content.
 
-- ## Conclusion
+## Versioning
+
+The Design System is a living document and should evolve alongside the Beyond TULIP project.
+
+Changes should:
+
+- Be documented before implementation whenever practical.
+- Preserve backward compatibility where possible.
+- Be reviewed for consistency with the Engineering Handbook.
+- Be reflected in reusable components before being adopted across the website.
+
+Each significant revision should update the document version and revision date.
+
+## Conclusion
 
 The Beyond TULIP Design System establishes the visual standards that create a consistent, readable, and maintainable user experience.
 
