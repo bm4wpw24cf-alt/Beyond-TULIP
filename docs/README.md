@@ -1,6 +1,6 @@
-# Beyond TULIP Developer Handbook
+# Beyond TULIP Engineering Handbook
 
-Welcome to the official development handbook for Beyond TULIP.
+Welcome to the official engineering handbook for Beyond TULIP.
 
 This handbook defines the architecture, standards, principles, and long-term vision of the project.
 
@@ -54,7 +54,11 @@ The AI Development Kit contains the standards used by ChatGPT, Claude, Gemini, C
 
 The AI standards are located in the `/ai` directory.
 
-Current AI documents include:
+These documents define the standards, methodologies, and workflows that AI assistants should follow when generating, editing, reviewing, or maintaining content for the Beyond TULIP project.
+
+---
+
+## Foundation
 
 - 01-IDENTITY-AND-MISSION.md
 - 02-WRITING-STANDARD.md
@@ -62,11 +66,21 @@ Current AI documents include:
 - 04-CITATION-STANDARD.md
 - 05-CONTENT-STANDARD.md
 - 06-BIBLE-COMMENTARY-STANDARD.md
+
+---
+
+## Biblical Methodology
+
 - 07-BIBLE-STUDY-STANDARD.md
 - 08-BIBLE-ARTICLE-STANDARD.md
 - 09-THEOLOGICAL-METHODOLOGY.md
 - 10-SOURCE-STANDARD.md
 - 11-SCRIPTURE-CITATION-STANDARD.md
+
+---
+
+## Quality & Reasoning
+
 - 12-QUALITY-ASSURANCE-STANDARD.md
 - 13-ARGUMENTATION-STANDARD.md
 - 14-THEOLOGICAL-ENGAGEMENT-STANDARD.md
