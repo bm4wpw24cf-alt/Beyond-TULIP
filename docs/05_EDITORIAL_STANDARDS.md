@@ -26,7 +26,27 @@ Editorial decisions should prioritize clarity, accuracy, consistency, and faithf
 
 ## Editorial Principles
 
-All content within Beyond TULIP should follow these editorial principles:
+All content within Beyond TULIP should follow these editorial principles.
+
+### Scripture First
+
+Scripture is the highest authority for every theological claim.
+
+### Accuracy
+
+Biblical, historical, and theological statements should be factually accurate and carefully researched.
+
+### Fair Representation
+
+Theological positions should be presented as their proponents understand them before being evaluated or critiqued.
+
+### Clarity
+
+Complex theological concepts should be explained as clearly and simply as possible without sacrificing accuracy.
+
+### Consistency
+
+Editorial style, terminology, formatting, and structure should remain consistent throughout the project.
 
 ## Writing Style
 
