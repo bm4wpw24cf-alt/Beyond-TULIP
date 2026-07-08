@@ -217,6 +217,22 @@ Cards should:
 - Remain responsive across all screen sizes.
 - Follow the project's typography and color standards.
 
+## Navigation Standards
+
+Navigation should be simple, predictable, and consistent throughout the website.
+
+The primary navigation should remain stable as the project grows.
+
+Navigation should:
+
+- Clearly indicate the current page.
+- Group related content logically.
+- Minimize unnecessary menu levels.
+- Remain accessible on desktop and mobile devices.
+- Provide consistent navigation across all pages.
+
+Primary navigation items should be defined in the Site Architecture documentation and implemented consistently throughout the project.
+
 ## Responsive Design Standards
 
 Beyond TULIP should provide a consistent reading experience across desktop, tablet, and mobile devices.
