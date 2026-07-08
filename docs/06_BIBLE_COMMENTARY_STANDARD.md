@@ -209,3 +209,63 @@ The summary should:
 - Encourage continued study of Scripture.
 
 The summary should provide a clear conclusion without introducing new arguments or interpretations.
+
+## Formatting Standards
+
+All Bible commentaries should follow a consistent formatting standard throughout the project.
+
+Formatting should promote readability, consistency, and ease of navigation.
+
+Commentaries should use:
+
+- Consistent heading hierarchy.
+- Consistent typography.
+- Consistent spacing.
+- Clearly distinguished Scripture quotations.
+- Clearly distinguished commentary sections.
+- Consistent use of emphasis where appropriate.
+- Consistent formatting for cross-references, original language notes, and citations.
+
+Formatting should support the content without distracting from the study of Scripture.
+
+## Scripture References
+
+Scripture references should be used consistently throughout every Bible commentary.
+
+References should:
+
+- Be accurate and complete.
+- Support the interpretation of the passage.
+- Be integrated naturally into the commentary.
+- Distinguish between primary and supporting references where appropriate.
+- Avoid excessive citation that distracts from the primary discussion.
+
+When multiple passages address the same subject, priority should be given to references that provide the clearest contextual support for the interpretation.
+
+## Original Language Citations
+
+References to Hebrew, Aramaic, and Greek should be used consistently throughout the Bible commentary library.
+
+When original language terms are included, the commentary should:
+
+- Identify the original word accurately.
+- Provide transliteration where appropriate.
+- Explain the meaning within its literary context.
+- Distinguish lexical meaning from contextual usage.
+- Avoid placing unnecessary emphasis on etymology.
+
+Original language citations should clarify the biblical text rather than introduce unnecessary technical complexity.
+
+## Interpretive Standards
+
+Every Bible commentary should distinguish carefully between biblical observation, interpretation, theological inference, and practical application.
+
+Commentaries should:
+
+- Base conclusions on the biblical text.
+- Distinguish clearly between explicit statements and reasonable inferences.
+- Acknowledge significant interpretive differences where appropriate.
+- Avoid speculative conclusions not supported by Scripture.
+- Present disputed interpretations fairly before evaluating them.
+
+The goal is to help readers understand the biblical text while maintaining intellectual honesty and theological integrity.
