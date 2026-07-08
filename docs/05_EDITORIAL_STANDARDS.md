@@ -28,6 +28,26 @@ Editorial decisions should prioritize clarity, accuracy, consistency, and faithf
 
 All content within Beyond TULIP should follow these editorial principles.
 
+### Scripture First
+
+Scripture is the highest authority for every theological claim.
+
+### Accuracy
+
+Biblical, historical, and theological statements should be factually accurate and carefully researched.
+
+### Fair Representation
+
+Theological positions should be presented as their proponents understand them before being evaluated or critiqued.
+
+### Clarity
+
+Complex theological concepts should be explained as clearly and simply as possible without sacrificing accuracy.
+
+### Consistency
+
+Editorial style, terminology, formatting, and structure should remain consistent throughout the project.
+
 ## Doctrinal Evaluation
 
 Beyond TULIP seeks to evaluate every doctrine in the light of Scripture.
@@ -55,27 +75,6 @@ Content should:
 
 The goal is to communicate biblical truth with clarity while remaining faithful to Scripture.
 
-
-### Scripture First
-
-Scripture is the highest authority for every theological claim.
-
-### Accuracy
-
-Biblical, historical, and theological statements should be factually accurate and carefully researched.
-
-### Fair Representation
-
-Theological positions should be presented as their proponents understand them before being evaluated or critiqued.
-
-### Clarity
-
-Complex theological concepts should be explained as clearly and simply as possible without sacrificing accuracy.
-
-### Consistency
-
-Editorial style, terminology, formatting, and structure should remain consistent throughout the project.
-
 ## Scripture Quotations
 
 Scripture is the foundation of Beyond TULIP and should be presented with accuracy and consistency.
@@ -95,6 +94,7 @@ Whenever practical, readers should be encouraged to examine the surrounding cont
 Theological terminology should be used carefully and consistently throughout Beyond TULIP.
 
 Technical terms should:
+
 - Be defined when first introduced.
 - Be used consistently across the project.
 - Reflect their historical and theological meaning.
@@ -128,7 +128,7 @@ The editorial tone should:
 - Encourage thoughtful study rather than unnecessary controversy.
 - Reflect a Christ-like attitude in both agreement and disagreement.
 
-The goal is to persuade through careful biblical reasoning rather than emotional rhetoric.
+The goal is to encourage readers to examine every doctrine carefully in the light of Scripture rather than relying on emotional rhetoric.
 
 ## AI-Assisted Writing
 
@@ -173,26 +173,6 @@ Changes to these standards should:
 
 Each significant revision should update the document version and revision date.
 
-### Scripture First
-
-Scripture is the highest authority for every theological claim.
-
-### Accuracy
-
-Biblical, historical, and theological statements should be factually accurate and carefully researched.
-
-### Fair Representation
-
-Theological positions should be presented as their proponents understand them before being evaluated or critiqued.
-
-### Clarity
-
-Complex theological concepts should be explained as clearly and simply as possible without sacrificing accuracy.
-
-### Consistency
-
-Editorial style, terminology, formatting, and structure should remain consistent throughout the project.
-
 ## Conclusion
 
 The Editorial Standards define how Beyond TULIP communicates biblical truth with clarity, consistency, and theological integrity.
@@ -200,5 +180,3 @@ The Editorial Standards define how Beyond TULIP communicates biblical truth with
 As the project grows, these standards should guide every article, Bible commentary, Bible study, FAQ, diagram, and supporting resource.
 
 Editorial practices should continue to develop while remaining faithful to Scripture, committed to accuracy, and consistent with the Engineering Handbook.
-
-
