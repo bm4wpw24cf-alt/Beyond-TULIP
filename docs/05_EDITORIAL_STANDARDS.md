@@ -66,6 +66,34 @@ Technical terms should:
 
 When a theological term is understood differently by various traditions, the differing definitions should be explained before evaluating the doctrine.
 
+## Tone and Language
+
+Beyond TULIP should communicate biblical truth with humility, clarity, and respect.
+
+The editorial tone should:
+
+- Be respectful toward differing theological viewpoints.
+- Avoid inflammatory or dismissive language.
+- Distinguish carefully between fact, interpretation, and opinion.
+- Encourage thoughtful study rather than unnecessary controversy.
+- Reflect a Christ-like attitude in both agreement and disagreement.
+
+The goal is to persuade through careful biblical reasoning rather than emotional rhetoric.
+
+## AI-Assisted Writing
+
+AI tools may be used to assist with research, drafting, editing, formatting, and proofreading.
+
+All AI-assisted content should:
+
+- Be reviewed by a human before publication.
+- Be verified for biblical, historical, and theological accuracy.
+- Follow the standards defined in the Engineering Handbook.
+- Maintain a consistent editorial style throughout the project.
+- Never replace careful theological judgment.
+
+Human review remains responsible for all published content.
+
 ## Sources and References
 
 Beyond TULIP should distinguish clearly between biblical authority, historical sources, and secondary literature.
