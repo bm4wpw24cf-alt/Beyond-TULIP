@@ -39,7 +39,7 @@ Authorial intent always comes first.
 
 ---
 
-## Order of Study
+## Order of Biblical Study
 
 Every passage should normally be examined in the following order.
 
