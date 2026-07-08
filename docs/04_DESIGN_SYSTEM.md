@@ -217,6 +217,25 @@ Cards should:
 - Remain responsive across all screen sizes.
 - Follow the project's typography and color standards.
 
+- ## Article Layout Standards
+
+Articles are the primary content type within Beyond TULIP and should provide a consistent reading experience.
+
+Article pages should include:
+
+- Page title
+- Introduction
+- Main content
+- Scripture references
+- Related articles
+- Related Bible commentary (when applicable)
+- Related diagrams (when applicable)
+- Footer navigation
+
+Article layouts should prioritize readability, generous whitespace, and a logical content hierarchy.
+
+Long articles should be divided into clearly defined sections using descriptive headings.
+
 ## Navigation Standards
 
 Navigation should be simple, predictable, and consistent throughout the website.
