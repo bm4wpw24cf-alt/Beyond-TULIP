@@ -125,3 +125,33 @@ The commentary should consider:
 - The contribution of the passage to the overall message of the book.
 
 No verse should be interpreted in isolation from its surrounding context.
+
+## Historical Background
+
+Historical background should be included whenever it significantly contributes to understanding the biblical passage.
+
+The commentary should consider:
+
+- The historical setting of the passage.
+- The original audience.
+- Cultural customs and practices.
+- Political and religious circumstances.
+- Relevant geographical information where appropriate.
+
+Historical information should clarify the biblical text without overshadowing its primary message.
+
+## Original Language Notes
+
+Original language observations should be included when they provide meaningful insight into the interpretation of the biblical text.
+
+Language notes may discuss:
+
+- Significant Hebrew, Aramaic, or Greek terms.
+- Important grammatical features.
+- Word meanings within their literary context.
+- Textual nuances that affect interpretation.
+- Significant translation considerations where appropriate.
+
+Original language analysis should serve the interpretation of Scripture rather than becoming an end in itself. Technical discussions should remain clear and accessible to the intended audience.
+
+
