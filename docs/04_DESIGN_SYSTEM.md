@@ -58,28 +58,30 @@ Every page should function well on desktop, tablet, and mobile devices.
 
 Visual design should prioritize fast loading and efficient rendering.
 
+The exact color values are defined separately and should remain consistent across all pages and components.
+
 
 ## Color System
 
-The Beyond TULIP color system should support readability, consistency, and a calm reading experience.
+The Beyond TULIP color system should promote readability, consistency, and a calm reading experience.
 
-Colors should be used consistently throughout the website with clearly defined purposes.
+Colors should be assigned clear purposes rather than used arbitrarily.
 
-The color palette includes:
+The design system should define:
 
-- Primary Color
-- Secondary Color
-- Accent Color
-- Background Color
-- Surface Color
-- Text Color
-- Border Color
-- Link Color
-- Success Color
-- Warning Color
-- Error Color
+- Primary color
+- Secondary color
+- Accent color
+- Background color
+- Surface color
+- Text color
+- Link color
+- Border color
+- Success color
+- Warning color
+- Error color
 
-The exact color values are defined separately and should remain consistent across all pages and components.
+Color values should remain consistent across the entire website.
 
 ## Typography
 
