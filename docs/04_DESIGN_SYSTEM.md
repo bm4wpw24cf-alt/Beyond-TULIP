@@ -132,3 +132,82 @@ The layout should define:
 - Responsive breakpoints
 
 Every page should use the same fundamental layout to create a familiar and predictable user experience.
+
+## Component Library
+
+Beyond TULIP uses reusable interface components to ensure consistency across the website.
+
+Components should follow the same visual language, spacing, typography, and interaction patterns.
+
+The component library includes:
+
+- Header
+- Navigation
+- Hero Sections
+- Cards
+- Buttons
+- Links
+- Tables
+- Callout Boxes
+- Bible Verse Blocks
+- Article Cards
+- Diagram Cards
+- Search Components
+- Footer
+
+Each component should be defined once and reused throughout the project whenever possible.
+
+## Responsive Design Standards
+
+Beyond TULIP should provide a consistent reading experience across desktop, tablet, and mobile devices.
+
+Responsive design should prioritize:
+
+- Readable typography
+- Flexible layouts
+- Scalable images
+- Touch-friendly navigation
+- Consistent spacing
+- Fast loading
+
+Content should adapt naturally to different screen sizes without sacrificing readability or usability.
+
+Mobile users should have access to the same content and functionality as desktop users.
+
+## Accessibility Standards
+
+Beyond TULIP should be designed to be accessible to as many users as possible.
+
+The design should prioritize:
+
+- Semantic HTML
+- Clear heading hierarchy
+- Sufficient color contrast
+- Keyboard navigation
+- Descriptive link text
+- Alternative text for images
+- Readable font sizes
+- Consistent navigation
+
+Accessibility should be considered during both design and development rather than added as an afterthought.
+
+## Iconography & Imagery
+
+Icons and images should support the educational purpose of Beyond TULIP rather than serve as decoration.
+
+The visual language should remain consistent throughout the website.
+
+Images should:
+
+- Support the accompanying content.
+- Be high quality and optimized for web use.
+- Maintain a consistent visual style.
+- Include alternative text where appropriate.
+
+Icons should:
+
+- Be simple and easy to recognize.
+- Use a consistent style throughout the project.
+- Improve navigation and usability without distracting from the content.
+
+- 
