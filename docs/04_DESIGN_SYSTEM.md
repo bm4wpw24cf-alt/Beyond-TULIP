@@ -270,6 +270,36 @@ Every diagram should:
 
 The detailed standards for theological diagrams are defined in **07_DIAGRAM_STANDARD.md**.
 
+## Image Standards
+
+Images should support the educational purpose of Beyond TULIP and enhance the reader's understanding of the content.
+
+Images should:
+
+- Be relevant to the accompanying content.
+- Maintain high visual quality.
+- Be optimized for fast loading.
+- Use consistent dimensions where practical.
+- Include descriptive alternative text.
+- Respect copyright and licensing requirements.
+
+Decorative images should be used sparingly and should never distract from the study of Scripture.
+
+## CSS Standards
+
+CSS should be organized, consistent, and easy to maintain.
+
+The project should prioritize:
+
+- Reusable utility classes where appropriate.
+- Clearly named CSS variables.
+- Modular stylesheets.
+- Minimal selector specificity.
+- Consistent naming conventions.
+- Responsive-first design.
+
+Visual styling should be centralized whenever possible to reduce duplication and simplify future maintenance.
+
 ## Navigation Standards
 
 Navigation should be simple, predictable, and consistent throughout the website.
