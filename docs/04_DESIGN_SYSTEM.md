@@ -58,7 +58,6 @@ Every page should function well on desktop, tablet, and mobile devices.
 
 The Beyond TULIP color system should promote readability, consistency, and a calm reading experience.
 
-
 Colors should be assigned clear purposes rather than used arbitrarily.
 
 The design system should define:
@@ -154,6 +153,23 @@ The component library includes:
 - Footer
 
 Each component should be defined once and reused throughout the project whenever possible.
+
+## Component Design Principles
+
+All reusable components should follow a consistent design language throughout the website.
+
+Every component should be:
+
+- Reusable
+- Simple
+- Accessible
+- Responsive
+- Consistent
+- Easy to maintain
+
+Components should prioritize readability and usability over visual complexity.
+
+New components should be added only when existing components cannot reasonably fulfill the same purpose.
 
 ## Responsive Design Standards
 
