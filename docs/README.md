@@ -48,8 +48,30 @@ Its purpose is to ensure that Beyond TULIP remains consistent, maintainable, sca
 
 ---
 
-## AI Development Kit
+# AI Development Kit
 
-The AI Development Kit contains the standards used by ChatGPT, Claude, Gemini, Cursor, Windsurf, and other AI assistants when working on Beyond TULIP.
+The AI Development Kit contains the standards used by ChatGPT, Claude, Gemini, Cursor, Windsurf, and other AI assistants when contributing to Beyond TULIP.
 
-The AI documents are located in the `/ai` directory.
+The AI standards are located in the `/ai` directory.
+
+Current AI documents include:
+
+- 01-IDENTITY-AND-MISSION.md
+- 02-WRITING-STANDARD.md
+- 03-STYLE-GUIDE.md
+- 04-CITATION-STANDARD.md
+- 05-CONTENT-STANDARD.md
+- 06-BIBLE-COMMENTARY-STANDARD.md
+- 07-BIBLE-STUDY-STANDARD.md
+- 08-BIBLE-ARTICLE-STANDARD.md
+- 09-THEOLOGICAL-METHODOLOGY.md
+- 10-SOURCE-STANDARD.md
+- 11-SCRIPTURE-CITATION-STANDARD.md
+- 12-QUALITY-ASSURANCE-STANDARD.md
+- 13-ARGUMENTATION-STANDARD.md
+- 14-THEOLOGICAL-ENGAGEMENT-STANDARD.md
+- 15-THEOLOGICAL-TERMINOLOGY-STANDARD.md
+- 16-DOCTRINAL-DEVELOPMENT-STANDARD.md
+- 17-THEOLOGICAL-EVIDENCE-STANDARD.md
+- 18-HERMENEUTICS-STANDARD.md
+- 19-DOCTRINAL-COMPARISON-STANDARD.md
