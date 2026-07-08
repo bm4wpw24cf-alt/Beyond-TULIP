@@ -54,13 +54,6 @@ Design should follow modern accessibility best practices wherever practical.
 
 Every page should function well on desktop, tablet, and mobile devices.
 
-### Performance
-
-Visual design should prioritize fast loading and efficient rendering.
-
-The exact color values are defined separately and should remain consistent across all pages and components.
-
-
 ## Color System
 
 The Beyond TULIP color system should promote readability, consistency, and a calm reading experience.
@@ -82,6 +75,13 @@ The design system should define:
 - Error color
 
 Color values should remain consistent across the entire website.
+
+### Performance
+
+Visual design should prioritize fast loading and efficient rendering.
+
+The exact color values are defined separately and should remain consistent across all pages and components.
+
 
 ## Typography
 
