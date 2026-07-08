@@ -171,6 +171,52 @@ Components should prioritize readability and usability over visual complexity.
 
 New components should be added only when existing components cannot reasonably fulfill the same purpose.
 
+## Button Standards
+
+Buttons should follow a consistent appearance and behavior throughout the website.
+
+Each button should have a clearly defined purpose.
+
+Standard button types include:
+
+- Primary Button
+- Secondary Button
+- Outline Button
+- Text Button
+
+Buttons should:
+
+- Use consistent spacing and typography.
+- Provide clear hover and focus states.
+- Remain accessible when using keyboard navigation.
+- Clearly indicate disabled states when applicable.
+- Avoid unnecessary animations.
+
+## Card Standards
+
+Cards are one of the primary content presentation components used throughout Beyond TULIP.
+
+Cards should present information in a clear, consistent, and visually balanced manner.
+
+Standard card types include:
+
+- Article Card
+- Bible Commentary Card
+- Bible Study Card
+- Diagram Card
+- Resource Card
+- Topic Card
+- Series Card
+
+Cards should:
+
+- Use consistent spacing and padding.
+- Maintain a consistent heading hierarchy.
+- Display concise summaries.
+- Include clear calls to action where appropriate.
+- Remain responsive across all screen sizes.
+- Follow the project's typography and color standards.
+
 ## Responsive Design Standards
 
 Beyond TULIP should provide a consistent reading experience across desktop, tablet, and mobile devices.
