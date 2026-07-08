@@ -255,6 +255,21 @@ The visual presentation should emphasize the biblical text while clearly disting
 
 The detailed content requirements are defined in **06_BIBLE_COMMENTARY_STANDARD.md**.
 
+## Diagram Standards
+
+Diagrams should simplify complex theological concepts without sacrificing biblical accuracy.
+
+Every diagram should:
+
+- Support an accompanying article whenever possible.
+- Present information clearly and logically.
+- Use consistent typography, spacing, and colors.
+- Remain readable on desktop and mobile devices.
+- Include a descriptive title.
+- Avoid unnecessary visual complexity.
+
+The detailed standards for theological diagrams are defined in **07_DIAGRAM_STANDARD.md**.
+
 ## Navigation Standards
 
 Navigation should be simple, predictable, and consistent throughout the website.
