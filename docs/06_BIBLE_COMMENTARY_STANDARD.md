@@ -154,4 +154,58 @@ Language notes may discuss:
 
 Original language analysis should serve the interpretation of Scripture rather than becoming an end in itself. Technical discussions should remain clear and accessible to the intended audience.
 
+## Cross-References
 
+Cross-references should be used to illuminate the meaning of Scripture by comparing Scripture with Scripture.
+
+Cross-references should:
+
+- Clarify the meaning of the passage.
+- Demonstrate biblical themes across Scripture.
+- Explain quotations and allusions.
+- Connect related passages where appropriate.
+- Avoid unnecessary or speculative associations.
+
+Cross-references should support interpretation rather than overwhelm the reader with excessive references. Priority should be given to passages that directly contribute to understanding the biblical text.
+
+## Theological Themes
+
+Each Bible commentary should identify and explain the principal theological themes found within the passage.
+
+The commentary should:
+
+- Explain major biblical doctrines reflected in the text.
+- Show how the passage contributes to the broader teaching of Scripture.
+- Distinguish between explicit teaching and theological inference.
+- Recognize legitimate theological diversity where appropriate.
+- Keep theological conclusions grounded in the biblical text.
+
+Theological discussion should arise naturally from careful exegesis rather than predetermined doctrinal systems.
+
+## Practical Application
+
+Practical application should arise naturally from the meaning of the biblical text rather than from personal opinion or contemporary trends.
+
+Application should:
+
+- Be rooted in the author's intended meaning.
+- Reflect the theological message of the passage.
+- Encourage faithful Christian living.
+- Distinguish between timeless biblical principles and culture-specific instructions.
+- Remain consistent with the broader teaching of Scripture.
+
+Application should always follow sound interpretation and should never become the primary focus of the commentary.
+
+## Summary
+
+Each Bible commentary should conclude with a concise summary of the passage.
+
+The summary should:
+
+- Reinforce the central message of the passage.
+- Highlight the primary theological themes.
+- Summarize the main interpretive conclusions.
+- Connect the passage to its broader biblical context where appropriate.
+- Encourage continued study of Scripture.
+
+The summary should provide a clear conclusion without introducing new arguments or interpretations.
