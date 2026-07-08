@@ -94,6 +94,35 @@ All AI-assisted content should:
 
 Human review remains responsible for all published content.
 
+## Editorial Review
+
+All content should be reviewed before publication to ensure theological, editorial, and technical quality.
+
+The review process should verify:
+
+- Biblical accuracy.
+- Theological consistency.
+- Historical accuracy.
+- Editorial clarity.
+- Grammar and spelling.
+- Internal links and references.
+- Compliance with the Engineering Handbook.
+
+Content should be revised whenever improvements are identified.
+
+## Version Control
+
+Editorial standards should evolve gradually as Beyond TULIP grows.
+
+Changes to these standards should:
+
+- Improve clarity and consistency.
+- Preserve compatibility with existing content whenever practical.
+- Be documented before widespread adoption.
+- Be reviewed for consistency with the Engineering Handbook.
+
+Each significant revision should update the document version and revision date.
+
 ## Sources and References
 
 Beyond TULIP should distinguish clearly between biblical authority, historical sources, and secondary literature.
