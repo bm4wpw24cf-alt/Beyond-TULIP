@@ -24,6 +24,10 @@ Every piece of content should seek to explain Scripture accurately, present theo
 
 Editorial decisions should prioritize clarity, accuracy, consistency, and faithfulness to the biblical text over personal opinion or rhetorical persuasion.
 
+## Editorial Principles
+
+All content within Beyond TULIP should follow these editorial principles:
+
 ## Writing Style
 
 Beyond TULIP should use a writing style that is clear, respectful, and accessible to a broad Christian audience.
@@ -60,10 +64,6 @@ Theological terminology should be used carefully and consistently throughout Bey
 Technical terms should:
 - Be defined when first introduced.
 - Be used consistently across the project.
-- Reflect their historical and theological meaning.
-- Avoid unnecessary jargon where simpler language communicates the same idea.
-
-When a theological term is understood differently by various traditions, the differing definitions should be explained before evaluating the doctrine.
 - Reflect their historical and theological meaning.
 - Avoid unnecessary jargon where simpler language communicates the same idea.
 
@@ -139,10 +139,6 @@ When appropriate:
 - Readers should be able to distinguish between biblical teaching, historical evidence, and theological interpretation.
 
 Whenever practical, primary sources should be preferred over secondary summaries.
-
-## Editorial Principles
-
-All content within Beyond TULIP should follow these editorial principles:
 
 ### Scripture First
 
