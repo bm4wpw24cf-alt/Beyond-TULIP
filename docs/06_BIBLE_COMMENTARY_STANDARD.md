@@ -111,3 +111,17 @@ Each section of commentary should:
 - Avoid speculation where the biblical text is silent.
 
 Commentary should seek to explain the biblical author's intended meaning before drawing theological conclusions or practical applications.
+
+## Literary Context
+
+Every Bible commentary should explain the passage within its literary context before drawing theological conclusions.
+
+The commentary should consider:
+
+- The immediate context of the passage.
+- The flow of the author's argument.
+- The literary genre.
+- Structural relationships within the chapter and book.
+- The contribution of the passage to the overall message of the book.
+
+No verse should be interpreted in isolation from its surrounding context.
