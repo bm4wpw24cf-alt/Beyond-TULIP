@@ -58,6 +58,7 @@ Every page should function well on desktop, tablet, and mobile devices.
 
 The Beyond TULIP color system should promote readability, consistency, and a calm reading experience.
 
+
 Colors should be assigned clear purposes rather than used arbitrarily.
 
 The design system should define:
@@ -76,12 +77,7 @@ The design system should define:
 
 Color values should remain consistent across the entire website.
 
-### Performance
-
-Visual design should prioritize fast loading and efficient rendering.
-
 The exact color values are defined separately and should remain consistent across all pages and components.
-
 
 ## Typography
 
