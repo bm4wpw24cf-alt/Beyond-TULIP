@@ -51,8 +51,16 @@
   }
   .logo .beyond{color:var(--ink);}
   .logo .tulip{color:var(--gold-deep);font-style:italic;}
+  .menu-toggle{
+    display:none;align-items:center;justify-content:center;
+    min-height:40px;padding:0 14px;border:1px solid var(--line);
+    border-radius:999px;background:rgba(255,253,248,.82);
+    color:var(--ink);font-size:.8rem;font-weight:600;letter-spacing:.08em;
+    text-transform:uppercase;cursor:pointer;
+  }
   .back-link{font-size:.85rem;font-weight:600;color:var(--ink-soft);display:flex;align-items:center;gap:6px;}
   .back-link:hover{color:var(--wine);}
+  .header-links{display:none;}
 
   .page-hero{padding:64px 0 44px;border-bottom:1px solid var(--line);text-align:center;}
   .page-hero h1{font-size:2.35rem;margin-top:14px;}
@@ -105,6 +113,13 @@
   }
 
   @media (max-width:600px){
+    .header-inner{padding:12px 24px;flex-wrap:wrap;gap:12px;}
+    .menu-toggle{display:inline-flex;margin-left:auto;}
+    .back-link{display:none;}
+    .header-links{display:none;width:100%;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px 12px;padding:2px 0 2px;}
+    .header-links.is-open{display:grid;}
+    .header-links a{display:flex;align-items:center;justify-content:center;min-height:42px;padding:8px 12px;border:1px solid var(--line);border-radius:999px;background:rgba(255,253,248,.78);text-align:center;font-size:.85rem;font-weight:500;color:var(--ink-soft);}
+    .header-links a.cta{grid-column:1 / -1;border-color:var(--gold);color:var(--ink);font-weight:600;}
     .page-hero h1{font-size:1.95rem;}
   }
 </style>
@@ -114,7 +129,16 @@
 <header>
   <div class="header-inner">
     <a href="index.html" class="logo"><span class="beyond">Beyond</span> <span class="tulip">TULIP</span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">Menu</button>
     <a href="index.html" class="back-link">← Back to Home</a>
+    <nav class="header-links" id="main-nav" aria-label="Main navigation">
+      <a href="gospel.html">Gospel</a>
+      <a href="doctrine-of-salvation.html">Salvation</a>
+      <a href="calvinism.html">Calvinism</a>
+      <a href="difficult-questions.html">Questions</a>
+      <a href="articles.html">Articles</a>
+      <a href="about.html" class="cta">About</a>
+    </nav>
   </div>
 </header>
 
@@ -245,6 +269,17 @@
     <span>"Search the Scriptures" — John 5:39</span>
   </div>
 </footer>
+
+<script>
+  const menuToggle = document.querySelector('.menu-toggle');
+  const mainNav = document.getElementById('main-nav');
+  if (menuToggle && mainNav) {
+    menuToggle.addEventListener('click', () => {
+      const isOpen = mainNav.classList.toggle('is-open');
+      menuToggle.setAttribute('aria-expanded', String(isOpen));
+    });
+  }
+</script>
 
 </body>
 </html>
