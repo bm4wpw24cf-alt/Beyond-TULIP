@@ -150,6 +150,11 @@
     max-width:600px;margin:22px auto 0;line-height:1.55;text-align:center;
   }
   .hero-actions{display:flex;gap:14px;margin-top:34px;flex-wrap:wrap;justify-content:center;}
+  .hero-highlights{display:grid;grid-template-columns:repeat(2, minmax(0, 1fr));gap:16px;max-width:760px;margin:28px auto 0;}
+  .hero-pill{background:rgba(255,253,248,.7);border:1px solid var(--line);border-radius:4px;padding:18px 20px;text-align:left;}
+  .hero-pill .eyebrow{display:block;margin-bottom:8px;}
+  .hero-pill a{font-family:'EB Garamond',serif;font-size:1.06rem;font-weight:600;color:var(--wine);display:inline-block;margin-bottom:6px;}
+  .hero-pill p{margin:0;font-size:.9rem;color:var(--ink-soft);line-height:1.55;}
   .btn{
     display:inline-block;padding:13px 24px;font-size:.88rem;font-weight:600;
     letter-spacing:.03em;border-radius:2px;
@@ -327,6 +332,18 @@
     <div class="hero-actions">
       <a href="what-is-the-gospel.html" class="btn btn-primary">What Is the Gospel?</a>
       <a href="calvinism.html" class="btn btn-ghost">Examine Calvinism</a>
+    </div>
+    <div class="hero-highlights">
+      <div class="hero-pill">
+        <span class="eyebrow">Latest addition</span>
+        <a href="understanding-tulip.html">Understanding TULIP</a>
+        <p>The five points explained and weighed against the biblical text.</p>
+      </div>
+      <div class="hero-pill">
+        <span class="eyebrow">Featured reading</span>
+        <a href="difficult-questions.html">Difficult Questions</a>
+        <p>Thoughtful answers for hard passages and common objections.</p>
+      </div>
     </div>
   </div>
 </section>
