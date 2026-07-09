@@ -11,7 +11,7 @@
       cached files (e.g. after a big visual redesign).
 */
 
-const CACHE_VERSION = 'v7';
+const CACHE_VERSION = 'v8';
 const CACHE_NAME = `beyond-tulip-${CACHE_VERSION}`;
 
 // Core shell: cached on install so the site has something to show offline
@@ -65,9 +65,11 @@ self.addEventListener('fetch', (event) => {
   if (request.method !== 'GET') return;
 
   if (isHTMLRequest(request)) {
-    // Network-first for pages, so deployed updates are picked up automatically.
+    // Network-first for pages, but force a fresh fetch for HTML so
+    // newly published changes appear immediately after deploys.
+    const noCacheRequest = new Request(request, { cache: 'no-store' });
     event.respondWith(
-      fetch(request)
+      fetch(noCacheRequest)
         .then((response) => {
           const copy = response.clone();
           caches.open(CACHE_NAME).then((cache) => cache.put(request, copy));
