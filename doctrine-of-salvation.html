@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Doctrine of Salvation — Beyond TULIP</title>
+<meta name="description" content="A Scripture-first study of the biblical doctrine of salvation.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --parchment:#f6f0e1;
+    --paper:#fffdf8;
+    --ink:#2c2417;
+    --ink-soft:#5b5142;
+    --gold:#b08d57;
+    --gold-deep:#8a6a3c;
+    --wine:#6e2f2f;
+    --line:#ddd0b3;
+    --line-soft:#e9e0c9;
+    --max:1080px;
+    --max-copy:780px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;background:var(--parchment);color:var(--ink);
+    font-family:'Inter',sans-serif;line-height:1.65;-webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3{font-family:'EB Garamond',serif;font-weight:600;color:var(--ink);margin:0;}
+  a{color:inherit;text-decoration:none;}
+  .eyebrow{
+    font-family:'Inter',sans-serif;font-size:.72rem;font-weight:600;
+    letter-spacing:.14em;text-transform:uppercase;color:var(--gold-deep);
+  }
+  .wrap{max-width:var(--max);margin:0 auto;padding:0 24px;}
+  .copy{max-width:var(--max-copy);}
+
+  header{
+    position:sticky;top:0;z-index:60;background:rgba(246,240,225,.92);
+    backdrop-filter:blur(6px);border-bottom:1px solid var(--line);
+  }
+  .header-inner{
+    max-width:1180px;margin:0 auto;padding:16px 24px;
+    display:flex;align-items:center;justify-content:space-between;
+  }
+  .logo{
+    font-family:'EB Garamond',serif;font-size:1.45rem;font-weight:600;
+    letter-spacing:.01em;color:var(--ink);display:flex;align-items:baseline;gap:8px;
+  }
+  .logo .beyond{color:var(--ink);}
+  .logo .tulip{color:var(--gold-deep);font-style:italic;}
+  .back-link{font-size:.85rem;font-weight:600;color:var(--ink-soft);display:flex;align-items:center;gap:6px;}
+  .back-link:hover{color:var(--wine);}
+
+  .page-hero{padding:64px 0 44px;border-bottom:1px solid var(--line);text-align:center;}
+  .page-hero h1{font-size:2.35rem;margin-top:14px;}
+  .page-hero p{
+    font-family:'EB Garamond',serif;font-style:italic;color:var(--ink-soft);
+    font-size:1.1rem;max-width:720px;margin:16px auto 0;line-height:1.6;
+  }
+
+  main{padding:56px 0 60px;}
+  .section-block{padding:0 0 52px;}
+  .section-block + .section-block{border-top:1px solid var(--line);padding-top:52px;}
+  .section-block h2{font-size:1.7rem;margin-bottom:18px;}
+  .section-block p{margin:0 0 16px;color:var(--ink-soft);}
+  .section-block p:last-child{margin-bottom:0;}
+
+  .topic-grid{
+    display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:22px;
+    margin-top:28px;
+  }
+  .topic-card{
+    background:var(--paper);border:1px solid var(--line);border-radius:3px;
+    padding:24px 22px;display:flex;flex-direction:column;gap:10px;height:100%;
+    transition:border-color .2s ease, transform .2s ease, box-shadow .2s ease;
+  }
+  a.topic-card:hover{
+    border-color:var(--gold);transform:translateY(-3px);
+    box-shadow:0 10px 22px rgba(44,36,23,.07);
+  }
+  .topic-card h3{font-size:1.12rem;line-height:1.4;}
+  .topic-card p{font-size:.88rem;color:var(--ink-soft);margin:0;flex-grow:1;}
+  .topic-link{
+    font-size:.82rem;font-weight:600;color:var(--gold-deep);
+    display:flex;align-items:center;gap:6px;margin-top:auto;
+  }
+  .topic-card.soon{cursor:default;}
+  .topic-card.soon h3{color:var(--ink-soft);}
+  .topic-card.soon .topic-link{
+    color:var(--ink-soft);font-size:.7rem;letter-spacing:.06em;text-transform:uppercase;
+    border:1px solid var(--line);padding:4px 10px;border-radius:14px;display:inline-flex;width:fit-content;
+  }
+
+  .approach-list{margin:18px 0 0;padding-left:20px;color:var(--ink-soft);}
+  .approach-list li{margin-bottom:10px;}
+  .approach-list li:last-child{margin-bottom:0;}
+
+  footer{padding:40px 0;border-top:1px solid var(--line);margin-top:40px;}
+  .footer-bottom{
+    max-width:1180px;margin:0 auto;padding:0 24px;font-size:.78rem;color:var(--ink-soft);
+    display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;
+  }
+
+  @media (max-width:600px){
+    .page-hero h1{font-size:1.95rem;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="logo"><span class="beyond">Beyond</span> <span class="tulip">TULIP</span></a>
+    <a href="index.html" class="back-link">← Back to Home</a>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="wrap">
+    <span class="eyebrow">Doctrine of Salvation</span>
+    <h1>Doctrine of Salvation</h1>
+    <p>What does the Bible teach about salvation? This section examines the major doctrines of salvation through careful study of Scripture, allowing the biblical text to shape our theology.</p>
+  </div>
+</section>
+
+<main>
+  <div class="wrap">
+    <section class="section-block copy">
+      <h2>Introduction</h2>
+      <p>Salvation stands at the very heart of the Christian faith. Throughout church history, believers have debated questions concerning election, grace, faith, repentance, regeneration, justification, sanctification, perseverance, and eternal security. While theological systems often seek to organize these doctrines, our goal is to begin with Scripture itself.</p>
+      <p>This section is not designed to defend a particular theological tradition. Instead, it seeks to examine each doctrine in its biblical context, comparing passages carefully and allowing the whole counsel of God to speak.</p>
+    </section>
+
+    <section class="section-block">
+      <div class="copy">
+        <h2>Core Topics</h2>
+      </div>
+      <div class="topic-grid">
+        <a class="topic-card" href="gospel.html">
+          <h3>The Gospel</h3>
+          <p>The biblical message of salvation through Jesus Christ.</p>
+          <span class="topic-link">Open topic →</span>
+        </a>
+
+        <article class="topic-card soon">
+          <h3>Faith</h3>
+          <p>What saving faith is, how it comes, and what Scripture says about believing.</p>
+          <span class="topic-link">Coming soon</span>
+        </article>
+
+        <a class="topic-card" href="repent-and-believe.html">
+          <h3>Repentance</h3>
+          <p>The biblical meaning of repentance and its relationship to faith.</p>
+          <span class="topic-link">Open topic →</span>
+        </a>
+
+        <a class="topic-card" href="salvation-by-grace-through-faith.html">
+          <h3>Grace</h3>
+          <p>God's grace in salvation and the nature of His saving invitation.</p>
+          <span class="topic-link">Open topic →</span>
+        </a>
+
+        <article class="topic-card soon">
+          <h3>Election</h3>
+          <p>What does the Bible teach about God's choosing?</p>
+          <span class="topic-link">Coming soon</span>
+        </article>
+
+        <a class="topic-card" href="predestination.html">
+          <h3>Predestination</h3>
+          <p>Understanding predestination within the context of God's redemptive plan.</p>
+          <span class="topic-link">Open topic →</span>
+        </a>
+
+        <article class="topic-card soon">
+          <h3>Regeneration</h3>
+          <p>When does the new birth occur, and how does it relate to faith?</p>
+          <span class="topic-link">Coming soon</span>
+        </article>
+
+        <article class="topic-card soon">
+          <h3>Justification</h3>
+          <p>Declared righteous through faith in Jesus Christ.</p>
+          <span class="topic-link">Coming soon</span>
+        </article>
+
+        <article class="topic-card soon">
+          <h3>Adoption</h3>
+          <p>Believers become children of God through Christ.</p>
+          <span class="topic-link">Coming soon</span>
+        </article>
+
+        <a class="topic-card" href="following-jesus.html">
+          <h3>Sanctification</h3>
+          <p>The lifelong work of becoming more like Christ.</p>
+          <span class="topic-link">Open topic →</span>
+        </a>
+
+        <article class="topic-card soon">
+          <h3>Perseverance</h3>
+          <p>How believers continue in faith and what Scripture teaches about endurance.</p>
+          <span class="topic-link">Coming soon</span>
+        </article>
+
+        <a class="topic-card" href="assurance-of-salvation.html">
+          <h3>Assurance of Salvation</h3>
+          <p>How believers may know they have eternal life.</p>
+          <span class="topic-link">Open topic →</span>
+        </a>
+
+        <a class="topic-card" href="what-happens-when-you-believe.html">
+          <h3>Eternal Life</h3>
+          <p>The hope promised to everyone who believes in Christ.</p>
+          <span class="topic-link">Open topic →</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="section-block copy">
+      <h2>Our Approach</h2>
+      <p>Every article in this section follows the same principles:</p>
+      <ul class="approach-list">
+        <li>Scripture is the highest authority.</li>
+        <li>Immediate context is examined first.</li>
+        <li>Historical and literary context are considered.</li>
+        <li>Original-language observations are included when helpful.</li>
+        <li>Alternative interpretations are presented fairly.</li>
+        <li>Conclusions are based on the biblical evidence.</li>
+      </ul>
+    </section>
+
+    <section class="section-block copy">
+      <h2>Purpose</h2>
+      <p>The purpose of this section is to encourage careful Bible study rather than dependence on theological traditions. Our desire is to help readers understand what Scripture teaches about God's work of salvation from beginning to end.</p>
+    </section>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-bottom">
+    <span>© 2026 Beyond TULIP</span>
+    <span>"Search the Scriptures" — John 5:39</span>
+  </div>
+</footer>
+
+</body>
+</html>
