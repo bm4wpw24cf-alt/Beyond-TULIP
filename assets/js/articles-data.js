@@ -1,5 +1,13 @@
 window.articleEntries = [
   {
+    href: "why-doesnt-god-save-everyone.html",
+    title: "Why Doesn't God Save Everyone?",
+    description: "If God is sovereign and loving, why do some people never come to faith? A Scripture-first study of God's saving desire, Christ's provision, and human responsibility.",
+    category: "difficult-questions",
+    categoryLabel: "Difficult Questions · Salvation",
+    dateLabel: "Jul 2026"
+  },
+  {
     href: "does-psalm-53-teach-total-inability.html",
     title: "Does Psalm 53 Teach Total Inability?",
     description: "A biblical examination of Psalm 53 and the question of whether Scripture teaches that fallen people are unable to believe apart from divine intervention.",
