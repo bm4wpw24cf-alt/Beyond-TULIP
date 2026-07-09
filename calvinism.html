@@ -73,7 +73,18 @@
   }
   .header-links a.cta:hover{background:var(--gold);color:var(--paper) !important;}
   .soon-link{opacity:.55;cursor:default;}
-  @media (max-width:600px){ .header-links{flex-wrap:wrap;gap:14px 22px;} }
+  @media (max-width:720px){
+    .header-links{
+      display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px 12px;
+      padding:14px 0 16px;
+    }
+    .header-links a{
+      display:flex;align-items:center;justify-content:center;min-height:42px;
+      padding:8px 12px;border:1px solid var(--line);border-radius:999px;
+      background:rgba(255,253,248,.78);text-align:center;
+    }
+    .header-links a.cta{grid-column:1 / -1;}
+  }
 
   .page-hero{
     padding:64px 0 48px;border-bottom:1px solid var(--line);text-align:center;
@@ -157,10 +168,11 @@
     </div>
     <nav class="header-links" aria-label="Main navigation">
       <a href="gospel.html">Gospel</a>
+      <a href="doctrine-of-salvation.html">Salvation</a>
       <a href="calvinism.html" class="active" aria-current="page">Calvinism</a>
+      <a href="difficult-questions.html">Questions</a>
       <a href="articles.html">Articles</a>
-      <a href="faq.html">FAQ</a>
-      <a href="about.html#contact" class="cta">Contact</a>
+      <a href="about.html" class="cta">About</a>
     </nav>
   </div>
 </header>
