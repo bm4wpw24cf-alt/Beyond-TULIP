@@ -11,7 +11,7 @@
       cached files (e.g. after a big visual redesign).
 */
 
-const CACHE_VERSION = 'v3';
+const CACHE_VERSION = 'v4';
 const CACHE_NAME = `beyond-tulip-${CACHE_VERSION}`;
 
 // Core shell: cached on install so the site has something to show offline
