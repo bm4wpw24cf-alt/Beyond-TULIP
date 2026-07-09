@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Articles — Beyond TULIP</title>
+<meta name="description" content="All articles published on Beyond TULIP, sorted by newest first.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<style>
+  /* Page-specific overrides */
+  :root{--max:860px;}
+  body{line-height:1.65;}
+  .header-inner{max-width:1180px;margin:0 auto;padding:16px 24px;display:flex;align-items:center;justify-content:space-between;}
+  .logo{font-size:1.45rem;display:flex;align-items:baseline;gap:8px;}
+  main{padding:52px 0 60px;}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="logo"><span class="beyond">Beyond</span> <span class="tulip">TULIP</span></a>
+    <a href="index.html" class="back-link">← Back to Home</a>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="wrap">
+    <span class="eyebrow">Articles</span>
+    <h1>All Articles</h1>
+    <p>Every article published on Beyond TULIP, sorted by newest first.</p>
+  </div>
+</section>
+
+<main>
+  <div class="wrap">
+
+    <div class="filter-bar">
+      <div class="sort-note">Sorted by: <strong style="color:var(--ink);">Newest first</strong></div>
+      <div class="filter-tags" role="group" aria-label="Filter articles by category">
+        <button type="button" class="filter-tag active" data-category="all">All</button>
+        <button type="button" class="filter-tag" data-category="the-gospel">The Gospel</button>
+        <button type="button" class="filter-tag" data-category="examining-calvinism">Examining Calvinism</button>
+        <button type="button" class="filter-tag" data-category="understanding-tulip">Understanding TULIP</button>
+        <button type="button" class="filter-tag" data-category="key-biblical-passages">Key Biblical Passages</button>
+        <button type="button" class="filter-tag" data-category="responding-to-calvinist-claims">Responding to Calvinist Claims</button>
+      </div>
+    </div>
+
+    <div class="article-list" id="articleList"></div>
+
+    <p class="empty-note" id="emptyNote" hidden>No articles have been published in this category yet — check back soon.</p>
+    <p class="empty-note" id="defaultNote">More articles — on the gospel, Calvinism, key biblical passages, and further claims answered — will appear here as they are published.</p>
+
+  </div>
+</main>
+
+<footer>
+  <div class="footer-bottom">
+    <span>© 2026 Beyond TULIP</span>
+    <span>"Search the Scriptures" — John 5:39</span>
+  </div>
+</footer>
+
+<script src="assets/js/articles-data.js"></script>
+<script>
+  const articleList = document.getElementById('articleList');
+  const filterButtons = document.querySelectorAll('.filter-tag');
+  const emptyNote = document.getElementById('emptyNote');
+  const defaultNote = document.getElementById('defaultNote');
+
+  function renderArticles(category) {
+    const entries = (window.articleEntries || []).filter(entry => category === 'all' || entry.category === category);
+    articleList.innerHTML = entries.map(entry => `
+      <div class="article-row" data-category="${entry.category}">
+        <div class="article-date">${entry.dateLabel}</div>
+        <div>
+          <span class="article-cat">${entry.categoryLabel}</span>
+          <h2><a href="${entry.href}">${entry.title}</a></h2>
+          <p>${entry.description}</p>
+          <a class="article-readmore" href="${entry.href}">Read article →</a>
+        </div>
+      </div>
+    `).join('');
+
+    const visibleCount = entries.length;
+
+    if(category === 'all'){
+      emptyNote.hidden = true;
+      defaultNote.hidden = false;
+    } else if(visibleCount === 0){
+      emptyNote.hidden = false;
+      defaultNote.hidden = true;
+    } else {
+      emptyNote.hidden = true;
+      defaultNote.hidden = true;
+    }
+  }
+
+  filterButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filterButtons.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      renderArticles(btn.getAttribute('data-category'));
+    });
+  });
+
+  renderArticles('all');
+</script>
+
+</body>
+</html>

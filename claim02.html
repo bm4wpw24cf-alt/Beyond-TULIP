@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>"John 6 Teaches Calvinism" — Beyond TULIP</title>
+<meta name="description" content="Many Calvinists regard John 6 as one of the strongest biblical foundations for unconditional election, irresistible grace, and effectual calling. But does the passage actually teach these conclusions?">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --parchment:#f6f0e1;
+    --paper:#fffdf8;
+    --ink:#2c2417;
+    --ink-soft:#5b5142;
+    --gold:#b08d57;
+    --gold-deep:#8a6a3c;
+    --wine:#6e2f2f;
+    --line:#ddd0b3;
+    --line-soft:#e9e0c9;
+    --max:760px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;background:var(--parchment);color:var(--ink);
+    font-family:'Inter',sans-serif;line-height:1.7;-webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3{font-family:'EB Garamond',serif;font-weight:600;color:var(--ink);margin:0;}
+  a{color:inherit;text-decoration:none;}
+  .eyebrow{
+    font-family:'Inter',sans-serif;font-size:.72rem;font-weight:600;
+    letter-spacing:.14em;text-transform:uppercase;color:var(--gold-deep);
+  }
+  .wrap{max-width:var(--max);margin:0 auto;padding:0 24px;}
+
+  header{
+    position:sticky;top:0;z-index:60;background:rgba(246,240,225,.92);
+    backdrop-filter:blur(6px);border-bottom:1px solid var(--line);
+  }
+  .header-inner{
+    max-width:1180px;margin:0 auto;padding:16px 24px;
+    display:flex;align-items:center;justify-content:space-between;
+  }
+  .logo{
+    font-family:'EB Garamond',serif;font-size:1.45rem;font-weight:600;
+    letter-spacing:.01em;color:var(--ink);display:flex;align-items:baseline;gap:8px;
+  }
+  .logo .beyond{color:var(--ink);}
+  .logo .tulip{color:var(--gold-deep);font-style:italic;}
+  .back-link{font-size:.85rem;font-weight:600;color:var(--ink-soft);display:flex;align-items:center;gap:6px;}
+  .back-link:hover{color:var(--wine);}
+
+  .article-hero{padding:56px 0 40px;border-bottom:1px solid var(--line);}
+  .claim-badge{
+    display:inline-flex;align-items:center;gap:8px;
+    font-size:.7rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;
+    color:var(--wine);border:1px solid var(--line-soft);padding:6px 12px;border-radius:20px;
+    margin-bottom:22px;
+  }
+  .claim-badge .n{color:var(--gold-deep);}
+  .claim-quote{
+    font-family:'EB Garamond',serif;font-style:italic;font-size:1.9rem;
+    line-height:1.35;color:var(--ink);max-width:640px;
+  }
+  .part-badge{
+    display:inline-block;margin-top:18px;
+    font-size:.72rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;
+    color:var(--gold-deep);
+  }
+
+  main{padding:52px 0 60px;}
+  .lede{
+    font-family:'EB Garamond',serif;font-size:1.15rem;color:var(--ink-soft);
+    border-left:2px solid var(--gold);padding-left:20px;margin-bottom:44px;
+  }
+  article h2{font-size:1.4rem;margin:44px 0 16px;}
+  article h2:first-of-type{margin-top:0;}
+  article h3{font-size:1.15rem;margin:32px 0 12px;}
+  article p{color:var(--ink-soft);margin:0 0 16px;font-size:.98rem;}
+  article p:last-child{margin-bottom:0;}
+  article ul{color:var(--ink-soft);padding-left:22px;margin:0 0 16px;font-size:.98rem;}
+  article li{margin-bottom:6px;}
+  article li:last-child{margin-bottom:0;}
+
+  blockquote{
+    margin:22px 0;padding:18px 22px;
+    background:var(--paper);border-left:3px solid var(--gold);
+    font-family:'EB Garamond',serif;font-style:italic;color:var(--ink);
+    font-size:1.08rem;border-radius:0 3px 3px 0;
+  }
+
+  .question-block{
+    margin:22px 0;padding-left:20px;border-left:2px solid var(--line-soft);
+  }
+  .question-block p{
+    font-family:'EB Garamond',serif;font-style:italic;color:var(--ink);
+    font-size:1.05rem;margin-bottom:6px;
+  }
+
+  .continues-note{
+    margin-top:48px;padding:24px 26px;
+    background:var(--paper);border:1px dashed var(--line);border-radius:3px;
+    font-family:'EB Garamond',serif;font-style:italic;color:var(--ink-soft);
+    font-size:.98rem;
+  }
+
+  .conclusion{
+    margin-top:48px;padding:30px 26px;
+    background:var(--paper);border:1px solid var(--line);border-top:3px solid var(--gold);
+    border-radius:3px;
+  }
+  .conclusion h2{margin-top:0;font-size:1.4rem;}
+  .conclusion p{color:var(--ink-soft);}
+  .conclusion blockquote{margin:18px 0;}
+  .conclusion p.emphasis{
+    font-family:'EB Garamond',serif;font-style:italic;font-size:1.1rem;color:var(--ink);
+    margin-top:18px;
+  }
+
+  .nav-footer{
+    margin-top:40px;padding-top:28px;border-top:1px solid var(--line);
+    display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px;
+  }
+  .nav-footer a{font-size:.85rem;font-weight:600;color:var(--ink-soft);}
+  .nav-footer a:hover{color:var(--wine);}
+
+  footer{padding:40px 0;border-top:1px solid var(--line);margin-top:40px;}
+  .footer-bottom{
+    max-width:1180px;margin:0 auto;padding:0 24px;font-size:.78rem;color:var(--ink-soft);
+    display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;
+  }
+
+  @media (max-width:600px){
+    .claim-quote{font-size:1.5rem;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="logo"><span class="beyond">Beyond</span> <span class="tulip">TULIP</span></a>
+    <a href="claim01.html" class="back-link">← All Claims</a>
+  </div>
+</header>
+
+<section class="article-hero">
+  <div class="wrap">
+    <span class="claim-badge"><span class="n">Claim 02</span> · Responding to Calvinist Claims</span>
+    <p class="claim-quote">"John 6 teaches Calvinism."</p>
+    <span class="part-badge">Complete · 6 Parts</span>
+  </div>
+</section>
+
+<main>
+  <div class="wrap">
+    <article>
+
+      <h2>The Claim</h2>
+      <p class="lede">Many Calvinists regard John 6 as one of the strongest biblical foundations for the doctrines of unconditional election, irresistible grace, and effectual calling. Particular attention is given to verses 37, 44, and 65, where Jesus speaks of the Father giving people to the Son, drawing them to Christ, and granting them the ability to come.</p>
+
+      <p>According to the Calvinist interpretation, these verses teach that God has eternally chosen a particular group of people for salvation, irresistibly draws them to faith, and withholds this saving grace from everyone else.</p>
+
+      <div class="question-block">
+        <p>But does John 6 actually teach these conclusions?</p>
+        <p>Or are these doctrines being read into the passage through a particular theological framework?</p>
+      </div>
+
+      <div class="conclusion" style="margin-top:24px; margin-bottom:24px;">
+        <h2>Related Article</h2>
+        <p>For a related study on another often-cited passage in this debate, see <a href="does-psalm-53-teach-total-inability.html" style="color:var(--wine);font-weight:600;">Does Psalm 53 Teach Total Inability?</a>.</p>
+      </div>
+
+      <p>To answer that question, we must allow John's Gospel to speak for itself.</p>
+
+      <h2>Part 1 — Reading John 6 Inductively</h2>
+      <p>The first principle of sound biblical interpretation is simple:</p>
+      <blockquote>Let the text shape the theology—not the theology shape the text.</blockquote>
+      <p>This is known as the inductive method of Bible study. Instead of beginning with a theological system and asking how a passage supports it, the inductive approach begins with careful observation.</p>
+      <p>Rather than asking, <em>"How does John 6 fit Calvinism?"</em> the better question is: <em>"What does John 6 actually say?"</em></p>
+      <p>This approach examines:</p>
+      <ul>
+        <li>the immediate context,</li>
+        <li>the flow of the chapter,</li>
+        <li>the historical setting,</li>
+        <li>John's repeated themes,</li>
+        <li>and the stated purpose of the Gospel itself.</li>
+      </ul>
+      <p>Only after these observations have been made should theological conclusions be drawn.</p>
+
+      <h3>Why Context Matters</h3>
+      <p>One of the most common mistakes in theological discussion is isolating a few verses from their surrounding context.</p>
+      <p>John 6 contains statements about:</p>
+      <ul>
+        <li>God's initiative,</li>
+        <li>Christ as the Bread of Life,</li>
+        <li>the necessity of faith,</li>
+        <li>the Father's drawing,</li>
+        <li>eternal life,</li>
+        <li>and the repeated invitation to come and believe.</li>
+      </ul>
+      <p>These themes work together and should not be separated.</p>
+      <p>A verse should never be interpreted in a way that contradicts the chapter in which it appears or the Gospel as a whole.</p>
+
+      <h3>John's Consistent Emphasis</h3>
+      <p>Throughout John 6, two complementary truths appear side by side.</p>
+      <p>First, salvation begins entirely with God's gracious initiative. No one comes to Christ apart from the Father's work.</p>
+      <p>Second, Jesus repeatedly calls people to believe.</p>
+      <p>Again and again He says:</p>
+      <ul>
+        <li>"Whoever believes has eternal life."</li>
+        <li>"Whoever comes to Me…"</li>
+        <li>"Everyone who looks to the Son and believes…"</li>
+      </ul>
+      <p>John never presents these truths as contradictory.</p>
+      <p>God graciously initiates salvation, while human beings are genuinely called to respond in faith.</p>
+
+      <h3>The Goal of This Study</h3>
+      <p>The purpose of this article is not to minimize God's sovereignty or exalt human ability.</p>
+      <p>Rather, it is to examine whether John 6 actually teaches the distinctively Calvinistic doctrines that are often attributed to it.</p>
+      <p>As we work through verses 37, 44, and 65, the goal is to let the text speak on its own terms, following the evidence wherever it leads.</p>
+      <p>The question is not what Calvinism teaches.</p>
+      <p class="lede" style="margin-top:16px;">The question is: what does John 6 teach?</p>
+
+      <h2>Part 2 — John 6:37</h2>
+      <blockquote>"All that the Father gives Me will come to Me, and whoever comes to Me I will never cast out."</blockquote>
+      <p>John 6:37 is one of the most frequently cited verses in support of Calvinism. Many Calvinists argue that it teaches unconditional election and irresistible grace—that the Father gives a predetermined group of individuals to the Son, and every one of them will inevitably come to faith.</p>
+      <p>While the verse certainly affirms God's sovereign initiative, a closer reading raises several important questions that are often overlooked.</p>
+
+      <h3>1. What Does "All" Mean?</h3>
+      <p>Calvinists commonly understand <em>all</em> in this verse to mean every individual among the eternally elect.</p>
+      <p>Yet in other passages—such as John 12:32 or 1 Timothy 2:4—they often interpret <em>all</em> to mean "all kinds of people" rather than every individual.</p>
+      <p>The question is one of consistency. The meaning of <em>all</em> should be determined by the context of each passage, not by the requirements of a theological system.</p>
+
+      <h3>2. The Historical Context</h3>
+      <p>John 6 takes place during Jesus' earthly ministry. This is:</p>
+      <ul>
+        <li>before His crucifixion,</li>
+        <li>before His resurrection,</li>
+        <li>before Pentecost,</li>
+        <li>and before the Holy Spirit was given to indwell believers (John 7:39).</li>
+      </ul>
+      <p>Jesus is not giving a systematic explanation of New Covenant salvation but ministering within a unique historical period as He gathers His disciples and reveals Himself as the Messiah.</p>
+      <p>Ignoring this setting can lead to conclusions the text itself does not require.</p>
+
+      <h3>3. Who Are Those "Given" to Jesus?</h3>
+      <p>Throughout John's Gospel, the Father is repeatedly said to have "given" people to the Son.</p>
+      <p>The clearest explanation appears in John 17, where Jesus repeatedly speaks about those the Father had given Him. In that context, the phrase primarily refers to His disciples—the men chosen to accompany Him during His earthly ministry and entrusted with the apostolic mission.</p>
+      <p>This suggests that the language of those "given" may initially have a historical reference rather than functioning as a technical term for every believer throughout history.</p>
+
+      <h3>4. A Common Logical Fallacy</h3>
+      <p>John 6:37 states: "All that the Father gives Me will come to Me."</p>
+      <p>This statement tells us: if someone belongs to the group given by the Father, that person will come to Christ.</p>
+      <p>But it does not say: only those in that group may come to Christ.</p>
+      <p>This is known as the negative inference fallacy—drawing a conclusion that does not logically follow from what the text actually states. The verse affirms one direction of the relationship but never excludes others from responding to Christ.</p>
+
+      <h3>5. Judas Raises an Important Question</h3>
+      <blockquote>"Those You gave Me I have kept… except the son of destruction."<cite>John 17:12</cite></blockquote>
+      <p>Judas Iscariot was among those whom the Father had given to Jesus for His earthly ministry. Yet Judas was lost.</p>
+      <p>This demonstrates that being "given" cannot automatically mean possessing an unconditional guarantee of eternal salvation. The expression must therefore be interpreted within its immediate context rather than assumed to describe the eternal elect.</p>
+
+      <h3>6. The Chapter Repeatedly Emphasizes Faith</h3>
+      <p>One verse should never overshadow the message of the entire chapter. Throughout John 6, Jesus repeatedly declares:</p>
+      <ul>
+        <li>"Whoever comes to Me shall never hunger."</li>
+        <li>"Whoever believes has eternal life."</li>
+        <li>"Everyone who looks to the Son and believes in Him shall have eternal life."</li>
+      </ul>
+      <p>The repeated emphasis is not on identifying who belongs to an eternal decree, but on calling people to believe in Christ. Faith is the consistent human response throughout the chapter.</p>
+
+      <h3>7. The Often-Overlooked Second Half of the Verse</h3>
+      <p>The final words of John 6:37 deserve just as much attention as the first:</p>
+      <blockquote>"Whoever comes to Me I will never cast out."</blockquote>
+      <p>This is one of the most encouraging promises in John's Gospel.</p>
+      <p>Notice the shift. Jesus begins by speaking about those whom the Father gives Him. He then broadens the invitation: "Whoever comes to Me…"</p>
+      <p>The emphasis is no longer on identifying a particular group but on the certainty that every person who comes to Christ in faith will be welcomed.</p>
+      <p>Far from limiting the invitation, Jesus concludes the verse with one of the strongest assurances in Scripture: no one who comes to Him will ever be rejected.</p>
+
+      <h3>Conclusion to Part 2</h3>
+      <p>John 6:37 clearly teaches that salvation begins with God's initiative. No one comes to Christ apart from the Father's work.</p>
+      <p>However, the verse does not explicitly teach unconditional election or irresistible grace. When read in its historical setting and within the broader context of John's Gospel, it emphasizes God's sovereign work while simultaneously extending an open promise to every person who comes to Christ in faith.</p>
+      <p>The focus of the verse is not on excluding people from salvation, but on assuring all believers that Christ will never cast out anyone who comes to Him.</p>
+
+      <h2>Part 3 — John 6:44</h2>
+      <blockquote>"No one can come to Me unless the Father who sent Me draws him. And I will raise him up on the last day."</blockquote>
+      <p>John 6:44 is perhaps the most frequently cited verse in support of the Calvinistic doctrine of irresistible grace. Calvinists typically argue that the Father's "drawing" is an inward, irresistible work of grace that guarantees the salvation of every person whom God has elected.</p>
+      <p>The verse certainly teaches that salvation begins with God's initiative. The question is whether it also teaches that God's drawing is irresistible.</p>
+      <p>A careful reading suggests otherwise.</p>
+
+      <h3>1. The Key Word Is "Can"</h3>
+      <p>Much of the debate centers on the word <em>draw</em> (helkō). However, the structure of Jesus' statement suggests that the key word is actually <em>can</em>.</p>
+      <p>Jesus says: "No one can come to Me…"</p>
+      <p>The issue is ability, not coercion. Jesus is explaining that fallen humanity cannot come to Him apart from the Father's gracious work.</p>
+      <p>This is a truth affirmed by both Calvinists and non-Calvinists. The disagreement is not whether God must act first, but how He enables people to come.</p>
+
+      <h3>2. What Does the Drawing Accomplish?</h3>
+      <p>Jesus continues: "…unless the Father who sent Me draws him."</p>
+      <p>The verse teaches that the Father's drawing is necessary. But notice what it does not explicitly say. It does not say:</p>
+      <ul>
+        <li>that the drawing is irresistible,</li>
+        <li>that every person drawn inevitably believes,</li>
+        <li>or that the drawing cannot be resisted.</li>
+      </ul>
+      <p>The result stated in the verse is simply that the person can come. The Father's gracious action enables people to come to Christ.</p>
+      <p>Whether they actually come is a question answered by the broader context of John's Gospel.</p>
+
+      <h3>3. The Meaning of "Draw"</h3>
+      <p>The Greek verb <em>helkō</em> simply means to draw, to pull, or to attract. The word itself does not determine whether the action is irresistible.</p>
+      <p>Words receive their precise meaning from their context. Therefore, irresistible grace cannot be established from the Greek word alone. The surrounding verses must explain the nature of the Father's drawing.</p>
+
+      <h3>4. John 6:45 Explains the Drawing</h3>
+      <p>The very next verse explains what Jesus means.</p>
+      <blockquote>"It is written in the Prophets: 'And they shall all be taught by God.' Everyone who has heard and learned from the Father comes to Me."<cite>John 6:45</cite></blockquote>
+      <p>Jesus connects the Father's drawing with four actions:</p>
+      <ul>
+        <li>God teaches.</li>
+        <li>People hear.</li>
+        <li>People learn.</li>
+        <li>They come to Christ.</li>
+      </ul>
+      <p>This is significant. Rather than describing an irresistible inward act that bypasses human response, Jesus explains the Father's drawing in terms of divine revelation.</p>
+      <p>God graciously teaches people about His Son. Those who hear and learn come to Christ. Verse 45 therefore provides the immediate explanation of verse 44.</p>
+
+      <h3>5. John 12:32 Creates an Important Parallel</h3>
+      <p>Later in John's Gospel Jesus declares:</p>
+      <blockquote>"And I, when I am lifted up from the earth, will draw all people to Myself."<cite>John 12:32</cite></blockquote>
+      <p>This verse uses the same Greek word (helkō).</p>
+      <p>If drawing always means an irresistible act that guarantees salvation, then everyone whom Christ draws must inevitably be saved. That would lead to universal salvation—a conclusion rejected by Calvinists and non-Calvinists alike.</p>
+      <p>The more natural conclusion is that drawing refers to God's gracious initiative in calling people to Christ, not to an irresistible force that guarantees conversion.</p>
+
+      <h3>6. The Question of "All"</h3>
+      <p>To avoid universalism, many Calvinist interpreters understand "all" in John 12:32 to mean all kinds of people rather than every individual.</p>
+      <p>Whether one agrees with that interpretation or not, an important question remains.</p>
+      <p>If the meaning of <em>all</em> is adjusted to fit the theological system in one passage, while the meaning of <em>draw</em> is fixed as irresistible in another, consistency becomes difficult to maintain.</p>
+      <p>Each passage should be interpreted according to its own context rather than by the demands of a theological framework.</p>
+
+      <h3>7. God's Initiative and Human Responsibility</h3>
+      <p>John's Gospel consistently presents two complementary truths.</p>
+      <p>First, salvation begins entirely with God. No one comes to Christ apart from the Father's gracious initiative.</p>
+      <p>Second, people are repeatedly called to respond in faith. Throughout John 6 Jesus says:</p>
+      <ul>
+        <li>"Whoever comes to Me…"</li>
+        <li>"Whoever believes…"</li>
+        <li>"Everyone who looks to the Son and believes…"</li>
+      </ul>
+      <p>These truths are never presented as contradictory. God graciously draws, teaches, and reveals His Son, while people are genuinely called to believe.</p>
+
+      <h3>Conclusion to Part 3</h3>
+      <p>John 6:44 teaches that no one can come to Christ apart from the Father's gracious initiative.</p>
+      <p>However, the verse does not explicitly teach that God's drawing is irresistible or limited to an eternally elected group.</p>
+      <p>The immediate context explains the Father's drawing through teaching, hearing, and learning, while the broader context of John's Gospel repeatedly invites people to believe.</p>
+      <p>Rather than describing an irresistible force that compels the elect to faith, John 6:44 emphasizes humanity's complete dependence upon God's grace while preserving the Gospel's universal call: everyone who comes to Christ in faith will be received.</p>
+
+      <h2>Part 4 — John 6:65</h2>
+      <blockquote>"And He said, 'This is why I told you that no one can come to Me unless it is granted him by the Father.'"</blockquote>
+      <p>John 6:65 is often presented as one of the strongest biblical proofs for the Calvinistic doctrine of effectual calling. Many Calvinists argue that the Father's "granting" refers to a special, irresistible gift given only to the elect, while being withheld from everyone else.</p>
+      <p>The verse certainly teaches that no one comes to Christ apart from the Father's initiative.</p>
+      <p>The question is whether it also teaches that God grants this privilege only to a predetermined group of people.</p>
+      <p>A careful reading suggests that this conclusion goes beyond what the text actually says.</p>
+
+      <h3>1. What Does the Verse Actually Say?</h3>
+      <p>Jesus says: "No one can come to Me unless it is granted him by the Father."</p>
+      <p>Like John 6:44, the emphasis is on human inability apart from God's grace.</p>
+      <p>The verse teaches two important truths:</p>
+      <ul>
+        <li>No one comes to Christ independently of God.</li>
+        <li>Salvation begins with the Father's gracious initiative.</li>
+      </ul>
+      <p>Virtually all Christians affirm these truths. The disagreement concerns what the Father's "granting" actually involves.</p>
+
+      <h3>2. What the Verse Does Not Say</h3>
+      <p>Notice what Jesus does not say. The verse never states:</p>
+      <ul>
+        <li>that God grants this only to the elect,</li>
+        <li>that God refuses to grant it to everyone else,</li>
+        <li>that God withholds saving grace from most of humanity,</li>
+        <li>or that those who receive this grant are irresistibly converted.</li>
+      </ul>
+      <p>These ideas are often associated with Calvinism, but they are not explicitly found in John 6:65.</p>
+      <p>The text simply affirms that coming to Christ depends upon the Father's gracious work.</p>
+
+      <h3>3. The Negative Inference Fallacy</h3>
+      <p>A common mistake is to reason as follows: if no one can come unless the Father grants it, then the Father must grant it only to certain people.</p>
+      <p>But this conclusion does not follow from the verse itself.</p>
+      <p>Jesus identifies a necessary condition for coming to Him. He does not identify the scope of those to whom the Father grants this privilege.</p>
+      <p>This is another example of the negative inference fallacy—drawing a conclusion that the text never states.</p>
+      <p>If Jesus intended to teach that God grants this only to an eternally chosen few, He could have said so plainly. Instead, He simply emphasizes humanity's dependence upon God's grace.</p>
+
+      <h3>4. The Context Is About God's Generous Giving</h3>
+      <p>One of the most striking features of John 6 is how often Jesus speaks about what God gives.</p>
+      <p>Throughout the chapter, the Father gives:</p>
+      <ul>
+        <li>the true bread from heaven (John 6:32–33),</li>
+        <li>the Bread of Life,</li>
+        <li>His Son,</li>
+        <li>and life for the world (John 6:51).</li>
+      </ul>
+      <p>The dominant theme is not that God is withholding life. Rather, the Father is portrayed as generously providing everything necessary for salvation through His Son.</p>
+      <p>This broader context should shape how verse 65 is understood.</p>
+
+      <h3>5. The Bread Is Given for the World</h3>
+      <p>Jesus declares:</p>
+      <blockquote>"The bread of God is He who comes down from heaven and gives life to the world."<cite>John 6:33</cite></blockquote>
+      <p>Later He says:</p>
+      <blockquote>"The bread that I will give for the life of the world is My flesh."<cite>John 6:51</cite></blockquote>
+      <p>These statements emphasize the universal scope of God's provision. Christ is presented as God's gift to the world.</p>
+      <p>The issue is not whether God has provided life, but whether people receive His gift through faith.</p>
+
+      <h3>6. Why Do People Remain Lost?</h3>
+      <p>Throughout John's Gospel, unbelief—not divine withholding—is consistently presented as the reason people remain lost. Jesus repeatedly says:</p>
+      <ul>
+        <li>"Whoever believes has eternal life."</li>
+        <li>"Whoever does not believe stands condemned already."</li>
+        <li>"You refuse to come to Me that you may have life."</li>
+      </ul>
+      <p>The problem is never described as God's unwillingness to grant salvation. Rather, people reject the One whom the Father has sent.</p>
+      <p>John consistently places responsibility for unbelief upon those who refuse to believe.</p>
+
+      <h3>7. John 6 Must Be Read in Light of John's Purpose</h3>
+      <p>Near the conclusion of the Gospel, John explains why he wrote:</p>
+      <blockquote>"These are written so that you may believe that Jesus is the Christ, the Son of God, and that by believing you may have life in His name."<cite>John 20:31</cite></blockquote>
+      <p>John's purpose is clear. His Gospel is an invitation to believe.</p>
+      <p>The repeated calls to faith throughout the book naturally fit a reading in which God's gracious initiative enables people to come to Christ, while genuinely calling every reader to respond in faith.</p>
+
+      <h3>Conclusion to Part 4</h3>
+      <p>John 6:65 powerfully teaches that no one can come to Christ apart from the Father's gracious initiative.</p>
+      <p>However, the verse does not explicitly teach that God grants this grace only to an unconditionally elected group or that He withholds it from everyone else.</p>
+      <p>The immediate context emphasizes God's generous provision through Christ, repeatedly describing Jesus as the Bread of Life given for the world.</p>
+      <p>When interpreted within the flow of John's Gospel, John 6:65 highlights humanity's complete dependence upon God's grace while leaving intact the Gospel's repeated invitation: whoever believes in the Son has eternal life.</p>
+
+      <h2>Part 5 — The Broader Context of John 6</h2>
+      <p>One of the most important principles of biblical interpretation is that individual verses should be understood in light of the entire passage.</p>
+      <p>John 6 contains several statements that Calvinists frequently cite in support of irresistible grace and unconditional election. Yet these verses appear within a chapter that repeatedly emphasizes God's gracious provision, Christ's universal invitation, and the necessity of faith.</p>
+      <p>When the chapter is read as a whole, a different picture begins to emerge.</p>
+
+      <h3>1. The Bread of Life Is Given to the World</h3>
+      <p>The central theme of John 6 is not election—it is Jesus as the Bread of Life.</p>
+      <p>Jesus declares:</p>
+      <blockquote>"The bread of God is He who comes down from heaven and gives life to the world."<cite>John 6:33</cite></blockquote>
+      <p>Later He adds:</p>
+      <blockquote>"The bread that I will give for the life of the world is My flesh."<cite>John 6:51</cite></blockquote>
+      <p>The emphasis is unmistakable. God's gift is directed toward the world.</p>
+      <p>Rather than describing a limited provision for a predetermined group, Jesus presents Himself as Heaven's gift for all humanity.</p>
+
+      <h3>2. The Repeated Call to Believe</h3>
+      <p>One of the most striking features of John 6 is how often Jesus speaks about faith. Throughout the chapter He repeatedly says:</p>
+      <ul>
+        <li>"Whoever comes to Me shall never hunger."</li>
+        <li>"Whoever believes in Me shall never thirst."</li>
+        <li>"Everyone who looks on the Son and believes in Him shall have eternal life."</li>
+        <li>"Whoever believes has eternal life." (John 6:47)</li>
+      </ul>
+      <p>These are not isolated statements. They form the heartbeat of the chapter.</p>
+      <p>The emphasis consistently falls on believing in Christ as the means of receiving eternal life.</p>
+
+      <h3>3. God's Initiative and Human Response</h3>
+      <p>John 6 presents two truths side by side.</p>
+      <p>First, salvation begins with God:</p>
+      <ul>
+        <li>The Father gives.</li>
+        <li>The Father draws.</li>
+        <li>The Father teaches.</li>
+        <li>The Father grants.</li>
+      </ul>
+      <p>No one comes to Christ apart from His gracious initiative.</p>
+      <p>Second, people are repeatedly called to respond:</p>
+      <ul>
+        <li>Come.</li>
+        <li>Believe.</li>
+        <li>Eat.</li>
+        <li>Receive.</li>
+      </ul>
+      <p>John never presents these truths as competing ideas. God's initiative does not eliminate the call to faith; rather, it makes faith possible.</p>
+
+      <h3>4. The Explanation in John 6:45</h3>
+      <p>Immediately after speaking of the Father's drawing, Jesus explains:</p>
+      <blockquote>"Everyone who has heard and learned from the Father comes to Me."<cite>John 6:45</cite></blockquote>
+      <p>This verse is often overlooked in discussions of John 6. Notice the progression:</p>
+      <ul>
+        <li>God teaches.</li>
+        <li>People hear.</li>
+        <li>People learn.</li>
+        <li>They come to Christ.</li>
+      </ul>
+      <p>The Father's drawing is explained through divine revelation. God reveals His Son. Those who receive His teaching come to Christ in faith.</p>
+
+      <h3>5. Why Did Many Reject Jesus?</h3>
+      <p>A key question arises as the chapter unfolds. If Jesus performed miracles and spoke with divine authority, why did so many reject Him?</p>
+      <p>John's answer is not that God withheld salvation from them. Rather, people refused to believe despite the revelation they received.</p>
+      <p>Earlier in the chapter, the crowds sought Jesus because they wanted more bread, but many rejected Him when He identified Himself as the true Bread from Heaven.</p>
+      <p>Their problem was not a lack of revelation. It was unbelief.</p>
+
+      <h3>6. John's Gospel Consistently Explains Unbelief</h3>
+      <p>This pattern continues throughout the Gospel. John repeatedly identifies unbelief—not divine withholding—as the reason people remain lost. Jesus says:</p>
+      <ul>
+        <li>"You refuse to come to Me that you may have life." (John 5:40)</li>
+        <li>"Whoever believes has eternal life."</li>
+        <li>"Whoever does not believe stands condemned already." (John 3:18)</li>
+      </ul>
+      <p>The responsibility for remaining outside eternal life is consistently connected with rejecting Christ.</p>
+
+      <h3>7. The Purpose Statement of John's Gospel</h3>
+      <p>Near the end of the Gospel, John explains why he recorded these events.</p>
+      <blockquote>"These are written so that you may believe that Jesus is the Christ, the Son of God, and that by believing you may have life in His name."<cite>John 20:31</cite></blockquote>
+      <p>This statement provides the interpretive key for the entire Gospel. John writes to persuade his readers to believe. His goal is evangelistic.</p>
+      <p>He presents Christ as God's gift to the world and repeatedly invites every reader to place their faith in Him.</p>
+
+      <h3>Conclusion to Part 5</h3>
+      <p>When John 6 is read as a complete chapter rather than as a collection of isolated proof texts, several themes stand out clearly:</p>
+      <ul>
+        <li>Jesus is the Bread of Life given for the world.</li>
+        <li>God graciously initiates salvation by giving, drawing, teaching, and revealing His Son.</li>
+        <li>Eternal life is repeatedly promised to those who believe.</li>
+        <li>Unbelief—not divine withholding—is consistently presented as the reason people remain lost.</li>
+        <li>The entire Gospel is written to bring readers to faith in Jesus Christ.</li>
+      </ul>
+      <p>Rather than presenting a detailed explanation of Calvinistic soteriology, John 6 proclaims God's gracious initiative in Christ while repeatedly extending the invitation: "Whoever believes has eternal life."</p>
+
+      <h2>Part 6 — Conclusion: Does John 6 Teach Calvinism?</h2>
+      <p>John 6 is one of the most profound chapters in Scripture concerning the person of Christ and the nature of salvation. It presents Jesus as the Bread of Life sent from heaven, reveals humanity's complete dependence upon God's grace, and repeatedly calls people to believe in the Son.</p>
+      <p>There is no question that the chapter emphasizes God's sovereign initiative.</p>
+      <p>The Father gives, draws, teaches, grants, and sends His Son into the world. No one comes to Christ apart from God's gracious work.</p>
+      <p>On this point, Calvinists and non-Calvinists agree.</p>
+      <p>The disagreement is whether John 6 also teaches the distinctive Calvinistic doctrines of unconditional election, effectual calling, and irresistible grace.</p>
+      <p>When the chapter is read carefully, several observations suggest that it does not.</p>
+
+      <h3>What John 6 Clearly Teaches</h3>
+      <p>John 6 repeatedly affirms that:</p>
+      <ul>
+        <li>God takes the initiative in salvation.</li>
+        <li>Jesus is the Bread of Life sent from heaven.</li>
+        <li>Christ gives His life for the world.</li>
+        <li>The Father teaches and draws people to His Son.</li>
+        <li>Eternal life belongs to those who believe.</li>
+        <li>Everyone who comes to Christ will be received.</li>
+        <li>No believer will ever be cast out.</li>
+      </ul>
+      <p>These truths are plainly stated throughout the chapter.</p>
+
+      <h3>What John 6 Does Not Explicitly Teach</h3>
+      <p>At the same time, the chapter never explicitly states that:</p>
+      <ul>
+        <li>God has eternally chosen only certain individuals to be drawn.</li>
+        <li>The Father's drawing is irresistible.</li>
+        <li>The Father's granting is limited to an unconditionally elected group.</li>
+        <li>God withholds the opportunity to believe from the rest of humanity.</li>
+        <li>Unbelief results from God's refusal to grant saving grace.</li>
+      </ul>
+      <p>These ideas are often inferred from the text, but they are never directly asserted.</p>
+      <p>A careful distinction should be made between what the passage says and what some theological systems conclude from it.</p>
+
+      <h3>The Importance of Reading the Whole Chapter</h3>
+      <p>Throughout this study, one principle has remained central: context determines meaning.</p>
+      <p>John 6 should not be interpreted by isolating verses 37, 44, or 65 from the rest of the chapter.</p>
+      <p>Instead, they should be read alongside the repeated statements that:</p>
+      <ul>
+        <li>"Whoever comes to Me shall never hunger."</li>
+        <li>"Whoever believes has eternal life."</li>
+        <li>"Everyone who looks on the Son and believes in Him shall have eternal life."</li>
+        <li>"Whoever comes to Me I will never cast out."</li>
+      </ul>
+      <p>These invitations are not peripheral to the chapter—they are its dominant theme.</p>
+
+      <h3>John's Purpose for Writing</h3>
+      <p>The Gospel itself concludes with a clear statement of purpose:</p>
+      <blockquote>"These are written so that you may believe that Jesus is the Christ, the Son of God, and that by believing you may have life in His name."<cite>John 20:31</cite></blockquote>
+      <p>John's purpose is not to identify an invisible group of eternally elected individuals. His purpose is to proclaim Christ so that people may believe and receive eternal life.</p>
+      <p>That purpose should guide how the entire Gospel—including John 6—is interpreted.</p>
+
+      <h3>A Balanced Reading of John 6</h3>
+      <p>A non-Calvinist reading does not minimize God's sovereignty. Rather, it seeks to preserve every emphasis found in the text.</p>
+      <p>John 6 teaches:</p>
+      <ul>
+        <li>God's sovereign initiative.</li>
+        <li>Humanity's inability apart from grace.</li>
+        <li>The Father's revelation through His Son.</li>
+        <li>Christ as God's gift to the world.</li>
+        <li>The universal proclamation of the gospel.</li>
+        <li>The necessity of personal faith.</li>
+        <li>The complete security of every believer who comes to Christ.</li>
+      </ul>
+      <p>These themes are not in conflict. God graciously initiates salvation, and people are genuinely called to respond in faith.</p>
+
+      <div class="conclusion">
+        <h2>Final Thoughts</h2>
+        <p>John 6 is not ultimately about Calvinism or Arminianism.</p>
+        <p>It is about Jesus Christ.</p>
+        <p>He is the Bread of Life. He is the One sent by the Father. He is the Savior who gives His flesh for the life of the world.</p>
+        <p>And His invitation remains wonderfully clear:</p>
+        <blockquote>"Whoever comes to Me I will never cast out." (John 6:37)<br>"Whoever believes has eternal life." (John 6:47)</blockquote>
+        <p>Those promises stand at the heart of the chapter and summarize John's message to every reader.</p>
+        <p class="emphasis">The emphasis of John 6 is therefore not on identifying who cannot come, but on proclaiming the gracious work of God in Christ and assuring every person that all who come to Him in faith will be received and will have eternal life.</p>
+      </div>
+
+      <div class="nav-footer">
+        <a href="claim01.html">← All Claims</a>
+        <a href="claim01-dead-cannot-believe.html">Claim 01 →</a>
+      </div>
+
+    </article>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-bottom">
+    <span>© 2026 Beyond TULIP</span>
+    <span>"Search the Scriptures" — John 5:39</span>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>What Is Calvinism? — Beyond TULIP</title>
+<meta name="description" content="An introduction to the doctrines of sovereign grace — God's sovereignty, humanity's fallen condition, election, redemption, and the perseverance of the saints.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --parchment:#f6f0e1;
+    --paper:#fffdf8;
+    --ink:#2c2417;
+    --ink-soft:#5b5142;
+    --gold:#b08d57;
+    --gold-deep:#8a6a3c;
+    --wine:#6e2f2f;
+    --line:#ddd0b3;
+    --line-soft:#e9e0c9;
+    --max:760px;
+    --max-wide:1180px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;background:var(--parchment);color:var(--ink);
+    font-family:'Inter',sans-serif;line-height:1.7;-webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3{font-family:'EB Garamond',serif;font-weight:600;color:var(--ink);margin:0;}
+  a{color:inherit;text-decoration:none;}
+  .wrap{max-width:var(--max);margin:0 auto;padding:0 24px;}
+
+  header{
+    position:sticky;top:0;z-index:60;background:rgba(246,240,225,.92);
+    backdrop-filter:blur(6px);border-bottom:1px solid var(--line);
+  }
+  .header-inner{max-width:var(--max-wide);margin:0 auto;padding:14px 24px 0;}
+  .header-top{display:flex;align-items:center;justify-content:center;padding-bottom:11px;}
+  .logo{
+    font-family:'EB Garamond',serif;font-size:1.7rem;font-weight:600;
+    letter-spacing:.01em;color:var(--ink);
+  }
+  .logo .beyond{color:var(--ink);}
+  .logo .tulip{color:var(--gold-deep);font-style:italic;}
+  .header-links{
+    display:flex;align-items:center;justify-content:center;gap:30px;
+    padding:14px 0;border-top:1px solid var(--line);
+  }
+  .header-links a{font-size:.85rem;font-weight:500;color:var(--ink-soft);transition:color .2s ease;}
+  .header-links a:hover{color:var(--wine);}
+  .header-links a.active{color:var(--ink);font-weight:600;}
+  .header-links a.cta{
+    border:1px solid var(--gold);color:var(--ink);
+    padding:9px 18px;border-radius:2px;font-weight:600;
+  }
+  .header-links a.cta:hover{background:var(--gold);color:var(--paper);}
+  @media (max-width:600px){ .header-links{flex-wrap:wrap;gap:14px 22px;} }
+
+  .article-hero{padding:56px 0 40px;border-bottom:1px solid var(--line);}
+  .topic-badge{
+    display:inline-flex;align-items:center;gap:8px;
+    font-size:.7rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;
+    color:var(--wine);border:1px solid var(--line-soft);padding:6px 12px;border-radius:20px;
+    margin-bottom:22px;
+  }
+  .topic-badge .n{color:var(--gold-deep);}
+  .article-hero h1{font-size:2.3rem;line-height:1.25;max-width:680px;}
+  .article-hero .subtitle{
+    font-family:'EB Garamond',serif;font-style:italic;font-size:1.15rem;
+    color:var(--ink-soft);margin-top:16px;max-width:620px;
+  }
+  .back-links{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px;}
+  .back-links a{
+    display:inline-flex;align-items:center;gap:8px;
+    padding:10px 14px;border:1px solid var(--line);border-radius:999px;
+    background:rgba(255,253,248,.74);font-size:.84rem;font-weight:600;color:var(--ink-soft);
+  }
+  .back-links a:hover{color:var(--wine);border-color:var(--gold);}
+  .back-links-inline{margin:24px 0 8px;}
+
+  main{padding:52px 0 60px;}
+  article h2{font-size:1.4rem;margin:44px 0 16px;}
+  article h2:first-of-type{margin-top:0;}
+  article p{color:var(--ink-soft);margin:0 0 16px;font-size:.98rem;}
+  article ul{color:var(--ink-soft);padding-left:22px;margin:0 0 16px;font-size:.98rem;}
+  article li{margin-bottom:8px;}
+  article li:last-child{margin-bottom:0;}
+
+  .conclusion{
+    margin-top:48px;padding:30px 26px;
+    background:var(--paper);border:1px solid var(--line);border-top:3px solid var(--gold);
+    border-radius:3px;
+  }
+  .conclusion h2{margin-top:0;}
+  .conclusion p{color:var(--ink-soft);}
+  .conclusion p:last-of-type{
+    font-family:'EB Garamond',serif;font-style:italic;font-size:1.1rem;color:var(--ink);
+    margin-top:18px;margin-bottom:0;
+  }
+
+  .nav-footer{
+    margin-top:56px;padding-top:28px;border-top:1px solid var(--line);
+    display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px;
+  }
+  .nav-footer a{font-size:.85rem;font-weight:600;color:var(--ink-soft);}
+  .nav-footer a:hover{color:var(--wine);}
+
+  footer{padding:40px 0;border-top:1px solid var(--line);margin-top:40px;}
+  .footer-bottom{
+    max-width:var(--max-wide);margin:0 auto;padding:0 24px;font-size:.78rem;color:var(--ink-soft);
+    display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;
+  }
+
+  @media (max-width:600px){ .article-hero h1{font-size:1.85rem;} }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <div class="header-top">
+      <a href="index.html" class="logo"><span class="beyond">Beyond</span> <span class="tulip">TULIP</span></a>
+    </div>
+    <nav class="header-links" aria-label="Main navigation">
+      <a href="gospel.html">Gospel</a>
+      <a href="calvinism.html" class="active" aria-current="page">Calvinism</a>
+      <a href="articles.html">Articles</a>
+      <a href="faq.html">FAQ</a>
+      <a href="about.html#contact" class="cta">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="article-hero">
+  <div class="wrap">
+    <span class="topic-badge"><span class="n">Examining Calvinism</span> · Introduction</span>
+    <h1>What Is Calvinism?</h1>
+    <p class="subtitle">An Introduction to the Doctrines of Sovereign Grace</p>
+    <div class="back-links" aria-label="Back navigation">
+      <a href="index.html">← Back to Home</a>
+      <a href="calvinism.html">← Open Examining Calvinism</a>
+    </div>
+  </div>
+</section>
+
+<main>
+  <div class="wrap">
+    <article>
+
+      <p>Calvinism is a biblical and historic system of Christian theology that seeks to give God the glory due His name by recognizing His absolute sovereignty in creation, providence, and salvation. Rooted in Scripture and developed during the Protestant Reformation, Calvinism has been expressed in historic confessions such as the Westminster Confession of Faith, the Canons of Dort, the Belgic Confession, and the Heidelberg Catechism.</p>
+
+      <p>At its heart, Calvinism teaches that salvation is entirely the work of God's grace from beginning to end. Because humanity is fallen in Adam and spiritually unable to come to God on its own, God graciously takes the initiative to save sinners through the person and work of Jesus Christ and the power of the Holy Spirit.</p>
+
+      <div class="back-links back-links-inline" aria-label="Quick back navigation">
+        <a href="index.html">← Back to Home</a>
+        <a href="calvinism.html">← Open Examining Calvinism</a>
+      </div>
+
+      <h2>The Sovereignty of God</h2>
+      <p>The central theme of Calvinism is the sovereignty of God.</p>
+      <p>God rules over all things according to His eternal purpose. Nothing happens apart from His decree or providence. History unfolds according to His perfect will, and every aspect of salvation is governed by His wisdom, justice, mercy, and love.</p>
+      <p>Because God is sovereign, His saving purpose cannot fail.</p>
+
+      <h2>Humanity's Fallen Condition</h2>
+      <p>Scripture teaches that all people have sinned in Adam and are born with a fallen nature.</p>
+      <p>Sin has affected every part of human life—mind, will, emotions, and affections. Apart from God's grace, people are spiritually dead, hostile toward God, and unable to come to Christ through their own ability.</p>
+      <p>This doctrine is commonly known as Total Depravity. It does not mean that every person is as sinful as possible, but that every part of human nature has been corrupted by sin and is unable to produce saving faith apart from God's grace.</p>
+
+      <h2>God's Sovereign Election</h2>
+      <p>Before the foundation of the world, God freely and graciously chose a people for Himself.</p>
+      <p>This election was not based on foreseen faith, works, or any quality found in those chosen. Rather, it rests entirely upon God's sovereign purpose and mercy.</p>
+      <p>Election magnifies God's grace by demonstrating that salvation depends not upon human effort but upon God's saving will.</p>
+
+      <h2>Christ's Perfect Redemption</h2>
+      <p>Jesus Christ came into the world to accomplish the redemption of His people.</p>
+      <p>Through His sinless life, sacrificial death, and victorious resurrection, Christ fully satisfied the justice of God and secured eternal redemption for all whom the Father had given Him.</p>
+      <p>His atoning work did not merely make salvation possible—it actually accomplished salvation for His people.</p>
+      <p>This doctrine is often called Definite Atonement or Particular Redemption.</p>
+
+      <h2>The Effectual Call</h2>
+      <p>The gospel is proclaimed to all people, but only the Holy Spirit can bring sinners to saving faith.</p>
+      <p>At the time appointed by God, the Holy Spirit effectually calls His elect through the preaching of the gospel. By removing the heart of stone and giving a heart of flesh, He enables them willingly and joyfully to repent and believe in Christ.</p>
+      <p>This gracious work is known as Effectual Calling or Irresistible Grace. God's grace is irresistible not because sinners are forced against their will, but because the Spirit transforms their hearts so that they freely come to Christ.</p>
+
+      <h2>The Order of Salvation</h2>
+      <p>God applies the benefits of Christ's redemption according to His eternal purpose.</p>
+      <p>The work of salvation unfolds as God:</p>
+      <ul>
+        <li>elects His people,</li>
+        <li>effectually calls them through the gospel,</li>
+        <li>regenerates them by the Holy Spirit,</li>
+        <li>grants repentance and faith,</li>
+        <li>justifies them through faith in Christ,</li>
+        <li>adopts them as His children,</li>
+        <li>sanctifies them throughout their lives,</li>
+        <li>preserves them by His grace,</li>
+        <li>and finally glorifies them in His presence.</li>
+      </ul>
+      <p>Every stage of salvation is the work of God's sovereign grace.</p>
+
+      <h2>The Perseverance of the Saints</h2>
+      <p>Those whom God has chosen, Christ has redeemed, and the Holy Spirit has regenerated will persevere in faith until the end.</p>
+      <p>Believers may struggle with sin and experience seasons of weakness, yet God faithfully preserves His people so that none of those truly united to Christ will finally be lost.</p>
+      <p>The certainty of salvation rests not upon human strength but upon God's faithfulness.</p>
+
+      <h2>More Than TULIP</h2>
+      <p>Although Calvinism is often summarized by the acronym TULIP, these five doctrines represent only one aspect of a much broader theological system.</p>
+      <p>Calvinism also emphasizes:</p>
+      <ul>
+        <li>the supreme authority of Scripture,</li>
+        <li>the glory of God in all things,</li>
+        <li>salvation by grace alone through faith alone in Christ alone,</li>
+        <li>the covenantal unity of God's redemptive plan,</li>
+        <li>the centrality of the local church,</li>
+        <li>reverent worship,</li>
+        <li>faithful discipleship,</li>
+        <li>and God's providential rule over all creation.</li>
+      </ul>
+      <p>The doctrines of grace are therefore understood not as isolated beliefs but as part of a unified biblical worldview centered on God's glory.</p>
+
+      <div class="conclusion">
+        <h2>Conclusion</h2>
+        <p>Calvinism is a God-centered understanding of the Christian faith that proclaims salvation by sovereign grace alone. From election before the foundation of the world to glorification in eternity, every aspect of redemption displays God's mercy, power, and faithfulness.</p>
+        <p>For this reason, Calvinism seeks above all to exalt God, proclaim the sufficiency of Christ, and affirm that salvation belongs to the Lord.</p>
+      </div>
+
+      <div class="nav-footer">
+        <a href="calvinism.html">← Examining Calvinism</a>
+        <a href="index.html">Back to Home →</a>
+      </div>
+
+    </article>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-bottom">
+    <span>© 2026 Beyond TULIP</span>
+    <span>"Search the Scriptures" — John 5:39</span>
+  </div>
+</footer>
+
+</body>
+</html>

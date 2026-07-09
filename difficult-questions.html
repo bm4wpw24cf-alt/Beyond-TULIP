@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Difficult Questions — Beyond TULIP</title>
+<meta name="description" content="Thoughtful, biblical answers to challenging theological questions — on salvation, God's sovereignty, difficult Bible passages, God's character, the atonement, and Calvinism.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --parchment:#f6f0e1;
+    --paper:#fffdf8;
+    --ink:#2c2417;
+    --ink-soft:#5b5142;
+    --gold:#b08d57;
+    --gold-deep:#8a6a3c;
+    --wine:#6e2f2f;
+    --line:#ddd0b3;
+    --line-soft:#e9e0c9;
+    --max:1080px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;background:var(--parchment);color:var(--ink);
+    font-family:'Inter',sans-serif;line-height:1.65;-webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3{font-family:'EB Garamond',serif;font-weight:600;color:var(--ink);margin:0;}
+  a{color:inherit;text-decoration:none;}
+  .eyebrow{
+    font-family:'Inter',sans-serif;font-size:.72rem;font-weight:600;
+    letter-spacing:.14em;text-transform:uppercase;color:var(--gold-deep);
+  }
+  .wrap{max-width:var(--max);margin:0 auto;padding:0 24px;}
+
+  /* ---------- HEADER ---------- */
+  header{
+    position:sticky;top:0;z-index:60;background:rgba(246,240,225,.92);
+    backdrop-filter:blur(6px);border-bottom:1px solid var(--line);
+  }
+  .header-inner{
+    max-width:1180px;margin:0 auto;padding:16px 24px;
+    display:flex;align-items:center;justify-content:space-between;
+  }
+  .logo{
+    font-family:'EB Garamond',serif;font-size:1.45rem;font-weight:600;
+    letter-spacing:.01em;color:var(--ink);display:flex;align-items:baseline;gap:8px;
+  }
+  .logo .beyond{color:var(--ink);}
+  .logo .tulip{color:var(--gold-deep);font-style:italic;}
+  .back-link{font-size:.85rem;font-weight:600;color:var(--ink-soft);display:flex;align-items:center;gap:6px;}
+  .back-link:hover{color:var(--wine);}
+
+  /* ---------- PAGE HERO ---------- */
+  .page-hero{padding:60px 0 36px;border-bottom:1px solid var(--line);text-align:center;}
+  .page-hero h1{font-size:2.3rem;margin-top:14px;}
+  .page-hero p{
+    font-family:'EB Garamond',serif;font-style:italic;color:var(--ink-soft);
+    font-size:1.08rem;max-width:680px;margin:16px auto 0;line-height:1.6;
+  }
+
+  /* ---------- CATEGORY CHIPS ---------- */
+  .chip-bar{
+    position:sticky;top:65px;z-index:50;
+    background:rgba(246,240,225,.96);backdrop-filter:blur(6px);
+    border-bottom:1px solid var(--line);padding:18px 0;
+  }
+  .chip-row{
+    display:flex;flex-wrap:wrap;gap:10px;justify-content:center;
+  }
+  .chip{
+    font-family:'Inter',sans-serif;font-size:.83rem;font-weight:600;
+    color:var(--ink-soft);background:var(--paper);
+    border:1px solid var(--line);border-radius:24px;
+    padding:9px 18px;cursor:pointer;
+    transition:background .2s ease, color .2s ease, border-color .2s ease, transform .15s ease;
+  }
+  .chip:hover{border-color:var(--gold);color:var(--ink);transform:translateY(-1px);}
+  .chip:focus-visible{outline:2px solid var(--gold-deep);outline-offset:2px;}
+  .chip.active{
+    background:var(--ink);color:var(--parchment);border-color:var(--ink);
+  }
+
+  /* ---------- ARTICLE GRID ---------- */
+  main{padding:52px 0 60px;}
+  .results-note{
+    text-align:center;font-size:.82rem;color:var(--ink-soft);margin-bottom:32px;
+  }
+  .question-grid{
+    display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:22px;
+  }
+  .question-card{
+    background:var(--paper);border:1px solid var(--line);border-radius:3px;
+    padding:24px 22px;display:flex;flex-direction:column;gap:10px;height:100%;
+    transition:border-color .2s ease, transform .2s ease, box-shadow .2s ease;
+  }
+  a.question-card:hover{
+    border-color:var(--gold);transform:translateY(-3px);
+    box-shadow:0 10px 22px rgba(44,36,23,.07);
+  }
+  .question-cat{
+    font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;
+    color:var(--gold-deep);font-weight:600;
+  }
+  .question-card h3{font-size:1.12rem;line-height:1.4;}
+  .question-card p{font-size:.87rem;color:var(--ink-soft);margin:0;flex-grow:1;}
+  .question-arrow{
+    font-size:.82rem;font-weight:600;color:var(--gold-deep);
+    display:flex;align-items:center;gap:6px;margin-top:auto;
+  }
+  .question-card.soon{cursor:default;}
+  .question-card.soon:hover{border-color:var(--line);transform:none;box-shadow:none;}
+  .question-card.soon h3{color:var(--ink-soft);}
+  .question-card.soon .question-arrow{
+    color:var(--ink-soft);font-size:.7rem;letter-spacing:.06em;text-transform:uppercase;
+    border:1px solid var(--line);padding:4px 10px;border-radius:14px;display:inline-flex;width:fit-content;
+  }
+
+  .no-results{
+    text-align:center;padding:60px 20px;color:var(--ink-soft);
+    font-family:'EB Garamond',serif;font-style:italic;font-size:1.05rem;
+  }
+
+  footer{padding:40px 0;border-top:1px solid var(--line);margin-top:40px;}
+  .footer-bottom{
+    max-width:1180px;margin:0 auto;padding:0 24px;font-size:.78rem;color:var(--ink-soft);
+    display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;
+  }
+
+  @media (max-width:600px){
+    .page-hero h1{font-size:1.9rem;}
+    .chip-bar{top:57px;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="logo"><span class="beyond">Beyond</span> <span class="tulip">TULIP</span></a>
+    <a href="index.html" class="back-link">← Back to Home</a>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="wrap">
+    <span class="eyebrow">Difficult Questions</span>
+    <h1>Difficult Questions</h1>
+    <p>Explore thoughtful, biblical answers to challenging theological questions. Browse by topic below to discover articles on salvation, God's sovereignty, difficult Bible passages, God's character, the atonement, and Calvinism.</p>
+  </div>
+</section>
+
+<nav class="chip-bar" aria-label="Filter questions by category">
+  <div class="wrap">
+    <div class="chip-row" id="chipRow" role="group" aria-label="Question categories">
+      <!-- Chips are rendered by JavaScript from the CATEGORIES array below,
+           so adding a category only requires editing the data, not this markup. -->
+    </div>
+  </div>
+</nav>
+
+<main>
+  <div class="wrap">
+    <p class="results-note" id="resultsNote"></p>
+    <div class="question-grid" id="questionGrid">
+      <!-- Cards are rendered by JavaScript from the QUESTIONS array below. -->
+    </div>
+    <p class="no-results" id="noResults" hidden>No questions in this category yet — check back soon.</p>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-bottom">
+    <span>© 2026 Beyond TULIP</span>
+    <span>"Search the Scriptures" — John 5:39</span>
+  </div>
+</footer>
+
+<script>
+/* =========================================================================
+   DATA
+   Add a new question by adding one object to QUESTIONS. Once an article
+   is written, set `available: true` and it automatically becomes a live,
+   clickable link — no other code needs to change.
+
+   NOTE ON FILE PATHS: the brief specified nested URLs like
+   "/difficult-questions/{slug}.html". This site is hosted flat on GitHub
+   Pages (all pages live in the repo root, e.g. "gospel.html", not inside
+   subfolders) because subfolder uploads have repeatedly caused broken
+   links here before. So each slug below resolves to a flat file,
+   e.g. "why-doesnt-god-save-everyone.html", in the same folder as this
+   page. If you'd rather keep the nested /difficult-questions/ structure,
+   say so and I'll switch every link and the upload instructions to match.
+   ========================================================================= */
+
+const CATEGORIES = [
+  { id: "all", label: "All" },
+  { id: "salvation", label: "Salvation" },
+  { id: "sovereignty", label: "God's Sovereignty & Human Responsibility" },
+  { id: "passages", label: "Difficult Bible Passages" },
+  { id: "character", label: "God's Character" },
+  { id: "atonement", label: "Atonement" },
+  { id: "calvinism", label: "Calvinism & Non-Calvinism" }
+];
+
+const QUESTIONS = [
+  // ---------------- Salvation ----------------
+  {
+    category: "salvation",
+    title: "Why Doesn't God Save Everyone?",
+    description: "If God is sovereign and loving, why do some people never come to faith?",
+    slug: "why-doesnt-god-save-everyone",
+    available: false
+  },
+  {
+    category: "salvation",
+    title: "Can a Person Resist God's Grace?",
+    description: "Does Scripture allow for a gracious call that can genuinely be refused?",
+    slug: "can-a-person-resist-gods-grace",
+    available: false
+  },
+  {
+    category: "salvation",
+    title: "Is Faith a Gift or a Human Response?",
+    description: "Examining whether faith itself is bestowed only on the elect or is the response every hearer is called to make.",
+    slug: "is-faith-a-gift-or-a-human-response",
+    available: false
+  },
+  {
+    category: "salvation",
+    title: "Can Someone Lose Their Salvation?",
+    description: "What Scripture's warning passages mean for the security of the believer.",
+    slug: "can-someone-lose-their-salvation",
+    available: false
+  },
+  {
+    category: "salvation",
+    title: "What Happens to Those Who Never Hear the Gospel?",
+    description: "How God's justice and the necessity of the gospel relate to the unreached.",
+    slug: "what-happens-to-those-who-never-hear-the-gospel",
+    available: false
+  },
+
+  // ---------------- Sovereignty & Responsibility ----------------
+  {
+    category: "sovereignty",
+    title: "If God Is Sovereign, Do Our Choices Really Matter?",
+    description: "How divine sovereignty and meaningful human choice fit together in Scripture.",
+    slug: "if-god-is-sovereign-do-our-choices-really-matter",
+    available: false
+  },
+  {
+    category: "sovereignty",
+    title: "Does God Determine Every Human Action?",
+    description: "Weighing exhaustive determinism against the Bible's own account of human agency.",
+    slug: "does-god-determine-every-human-action",
+    available: false
+  },
+  {
+    category: "sovereignty",
+    title: "How Can God Know the Future Without Causing It?",
+    description: "Distinguishing God's foreknowledge from God's causation of events.",
+    slug: "how-can-god-know-the-future-without-causing-it",
+    available: false
+  },
+  {
+    category: "sovereignty",
+    title: "Is Free Will Compatible with God's Sovereignty?",
+    description: "A biblical look at whether genuine human freedom undermines God's rule.",
+    slug: "is-free-will-compatible-with-gods-sovereignty",
+    available: false
+  },
+  {
+    category: "sovereignty",
+    title: "Why Does God Allow Evil?",
+    description: "How Scripture holds God's sovereignty and the reality of evil together.",
+    slug: "why-does-god-allow-evil",
+    available: false
+  },
+
+  // ---------------- Difficult Bible Passages ----------------
+  {
+    category: "passages",
+    title: "Does Romans 9 Teach Unconditional Election?",
+    description: "Reading Paul's argument about Israel, mercy, and the potter and the clay in its own context.",
+    slug: "does-romans-9-teach-unconditional-election",
+    available: false
+  },
+  {
+    category: "passages",
+    title: "Does John 6 Teach Calvinism?",
+    description: "A full inductive study of John 6:37, 44, 65, and the chapter as a whole.",
+    slug: "claim02",
+    available: true
+  },
+  {
+    category: "passages",
+    title: "What Does \"Dead in Sin\" Mean?",
+    description: "Examining whether spiritual death describes inability to respond or separation from God.",
+    slug: "claim01",
+    available: true
+  },
+  {
+    category: "passages",
+    title: "Does Psalm 53 Teach Total Inability?",
+    description: "Examining whether Psalm 53 supports the Calvinistic doctrine of total inability.",
+    slug: "does-psalm-53-teach-total-inability",
+    available: true
+  },
+  {
+    category: "passages",
+    title: "Does Acts 13:48 Teach Predestination?",
+    description: "A close look at 'appointed to eternal life' and what the verb actually implies.",
+    slug: "does-acts-13-48-teach-predestination",
+    available: false
+  },
+  {
+    category: "passages",
+    title: "What Does \"Draw\" Mean in John 6:44?",
+    description: "Examining the Greek word helkō and whether it implies an irresistible act.",
+    slug: "claim02",
+    available: true
+  },
+
+  // ---------------- God's Character ----------------
+  {
+    category: "character",
+    title: "Is God Loving If He Judges Eternally?",
+    description: "How divine love and everlasting judgment are held together in Scripture.",
+    slug: "is-god-loving-if-he-judges-eternally",
+    available: false
+  },
+  {
+    category: "character",
+    title: "Does God Desire Everyone to Be Saved?",
+    description: "Examining 1 Timothy 2:4 and 2 Peter 3:9 on the scope of God's saving desire.",
+    slug: "does-god-desire-everyone-to-be-saved",
+    available: false
+  },
+  {
+    category: "character",
+    title: "Can God Love Those Who Reject Him?",
+    description: "What Scripture says about God's disposition toward the unrepentant.",
+    slug: "can-god-love-those-who-reject-him",
+    available: false
+  },
+  {
+    category: "character",
+    title: "Why Did God Create People He Knew Would Reject Him?",
+    description: "Considering divine foreknowledge, human freedom, and the purpose of creation.",
+    slug: "why-did-god-create-people-he-knew-would-reject-him",
+    available: false
+  },
+  {
+    category: "character",
+    title: "Is God's Justice Compatible with His Mercy?",
+    description: "How the cross displays both God's justice and His mercy without contradiction.",
+    slug: "is-gods-justice-compatible-with-his-mercy",
+    available: false
+  },
+
+  // ---------------- Atonement ----------------
+  {
+    category: "atonement",
+    title: "Did God Punish Jesus?",
+    description: "Examining what it means that Christ bore the penalty for sin on the cross.",
+    slug: "did-god-punish-jesus",
+    available: false
+  },
+  {
+    category: "atonement",
+    title: "What Did Christ Accomplish on the Cross?",
+    description: "A survey of the biblical language used to describe Christ's atoning work.",
+    slug: "what-did-christ-accomplish-on-the-cross",
+    available: false
+  },
+  {
+    category: "atonement",
+    title: "Is Penal Substitution the Only Biblical View?",
+    description: "Considering how penal substitution relates to other biblical pictures of the atonement.",
+    slug: "is-penal-substitution-the-only-biblical-view",
+    available: false
+  },
+  {
+    category: "atonement",
+    title: "What Does It Mean That Christ Died for Our Sins?",
+    description: "Unpacking 1 Corinthians 15:3 and the heart of the gospel message.",
+    slug: "what-does-it-mean-that-christ-died-for-our-sins",
+    available: false
+  },
+  {
+    category: "atonement",
+    title: "Why Was the Resurrection Necessary?",
+    description: "Why the empty tomb is essential, not incidental, to the gospel.",
+    slug: "why-was-the-resurrection-necessary",
+    available: false
+  },
+
+  // ---------------- Calvinism & Non-Calvinism ----------------
+  {
+    category: "calvinism",
+    title: "Is Calvinism the Gospel?",
+    description: "Distinguishing the gospel itself from any one theological system built around it.",
+    slug: "is-calvinism-the-gospel",
+    available: false
+  },
+  {
+    category: "calvinism",
+    title: "What Are the Strongest Arguments for Calvinism?",
+    description: "A fair, uncaricatured summary of Calvinism's best biblical and theological arguments.",
+    slug: "what-are-the-strongest-arguments-for-calvinism",
+    available: false
+  },
+  {
+    category: "calvinism",
+    title: "What Are the Strongest Arguments Against Calvinism?",
+    description: "The most substantive biblical and theological objections to Calvinist soteriology.",
+    slug: "what-are-the-strongest-arguments-against-calvinism",
+    available: false
+  },
+  {
+    category: "calvinism",
+    title: "Is Arminianism the Only Alternative?",
+    description: "Surveying the range of non-Calvinist positions beyond classical Arminianism.",
+    slug: "is-arminianism-the-only-alternative",
+    available: false
+  },
+  {
+    category: "calvinism",
+    title: "What Is Provisionism?",
+    description: "An introduction to the view that God has provided salvation for all, conditioned on faith.",
+    slug: "what-is-provisionism",
+    available: false
+  }
+];
+
+/* =========================================================================
+   RENDER CHIPS
+   ========================================================================= */
+const chipRow = document.getElementById("chipRow");
+let activeCategory = "all";
+
+function renderChips(){
+  chipRow.innerHTML = "";
+  CATEGORIES.forEach(cat => {
+    const btn = document.createElement("button");
+    btn.type = "button";
+    btn.className = "chip" + (cat.id === activeCategory ? " active" : "");
+    btn.textContent = cat.label;
+    btn.setAttribute("aria-pressed", cat.id === activeCategory ? "true" : "false");
+    btn.addEventListener("click", () => {
+      activeCategory = cat.id;
+      renderChips();
+      renderQuestions();
+    });
+    chipRow.appendChild(btn);
+  });
+}
+
+/* =========================================================================
+   RENDER QUESTION CARDS
+   ========================================================================= */
+const questionGrid = document.getElementById("questionGrid");
+const noResults = document.getElementById("noResults");
+const resultsNote = document.getElementById("resultsNote");
+
+const CATEGORY_LABELS = Object.fromEntries(CATEGORIES.map(c => [c.id, c.label]));
+
+function renderQuestions(){
+  const filtered = activeCategory === "all"
+    ? QUESTIONS
+    : QUESTIONS.filter(q => q.category === activeCategory);
+
+  questionGrid.innerHTML = "";
+
+  if(filtered.length === 0){
+    noResults.hidden = false;
+    resultsNote.textContent = "";
+    return;
+  }
+  noResults.hidden = true;
+
+  const availableCount = filtered.filter(q => q.available).length;
+  resultsNote.textContent = `${filtered.length} question${filtered.length === 1 ? "" : "s"} — ${availableCount} available now`;
+
+  filtered.forEach(q => {
+    const isAvailable = Boolean(q.available);
+    const card = document.createElement(isAvailable ? "a" : "div");
+    card.className = "question-card" + (isAvailable ? "" : " soon");
+
+    if (isAvailable) {
+      card.href = `${q.slug}.html`;
+      card.setAttribute("aria-label", `Read more about ${q.title}`);
+      card.setAttribute("role", "link");
+      card.setAttribute("tabindex", "0");
+      card.addEventListener("click", () => {
+        window.location.href = card.href;
+      });
+      card.addEventListener("keydown", (event) => {
+        if (event.key === "Enter" || event.key === " ") {
+          event.preventDefault();
+          window.location.href = card.href;
+        }
+      });
+    }
+
+    card.innerHTML = `
+      <span class="question-cat">${CATEGORY_LABELS[q.category]}</span>
+      <h3>${q.title}</h3>
+      <p>${q.description}</p>
+      <span class="question-arrow">${isAvailable ? "Read more →" : "Coming Soon"}</span>
+    `;
+    questionGrid.appendChild(card);
+  });
+}
+
+renderChips();
+renderQuestions();
+</script>
+
+</body>
+</html>

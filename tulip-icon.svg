@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img" aria-labelledby="tulipIconTitle">
+  <title id="tulipIconTitle">Beyond TULIP tulip mark</title>
+
+  <!-- Outer ring -->
+  <circle cx="60" cy="60" r="52" fill="none" stroke="#D4AF37" stroke-width="2"/>
+
+  <!-- Stem -->
+  <path d="M60 66 L60 90" stroke="#0D1B2A" stroke-width="3.2" stroke-linecap="round" fill="none"/>
+
+  <!-- Leaves (stylized, echoing a "B" silhouette either side of the stem) -->
+  <path d="M60 76
+           C 47 74, 38 66, 38 55
+           C 50 55, 60 62, 60 76 Z"
+        fill="#0D1B2A"/>
+  <path d="M60 84
+           C 49 83, 41 90, 41 98
+           C 52 98, 60 93, 60 84 Z"
+        fill="#0D1B2A"/>
+  <path d="M60 80
+           C 71 78, 79 71, 79 62
+           C 68 63, 60 69, 60 80 Z"
+        fill="#0D1B2A"/>
+
+  <!-- Tulip bloom -->
+  <path d="M60 30
+           C 64 38, 64 48, 60 56
+           C 56 48, 56 38, 60 30 Z"
+        fill="#FBF6EA" stroke="#0D1B2A" stroke-width="1.4"/>
+  <path d="M60 34
+           C 68 36, 74 44, 72 54
+           C 65 52, 60 45, 60 34 Z"
+        fill="#D4AF37"/>
+  <path d="M60 34
+           C 52 36, 46 44, 48 54
+           C 55 52, 60 45, 60 34 Z"
+        fill="#D4AF37"/>
+</svg>

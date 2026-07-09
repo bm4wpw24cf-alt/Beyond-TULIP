@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Understanding TULIP | Beyond TULIP</title>
+<meta name="description" content="A biblical examination of the five points of Calvinism: Total Depravity, Unconditional Election, Limited Atonement, Irresistible Grace, and Perseverance of the Saints.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --parchment: #f6f0e1;
+    --parchment-deep: #efe6d1;
+    --navy: #0D1B2A;
+    --gold: #D4AF37;
+    --gold-deep: #b08d57;
+    --wine: #6e2f2f;
+    --ink: #2b2620;
+    --ink-soft: #55503f;
+    --border-soft: rgba(13, 27, 42, 0.1);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background-color: var(--parchment);
+    background-image:
+      radial-gradient(circle at 15% 10%, rgba(212, 175, 55, 0.05), transparent 40%),
+      radial-gradient(circle at 85% 90%, rgba(110, 47, 47, 0.04), transparent 40%);
+    color: var(--ink);
+    font-family: 'Inter', sans-serif;
+    line-height: 1.7;
+  }
+
+  a { text-decoration: none; color: inherit; }
+
+  /* ---------- NAV ---------- */
+  .site-nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(246, 240, 225, 0.92);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--border-soft);
+    padding: 16px 24px;
+  }
+
+  .nav-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .back-link {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--navy);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    letter-spacing: 0.02em;
+    transition: color 0.2s ease;
+  }
+  .back-link:hover { color: var(--gold-deep); }
+
+  .brand {
+    font-family: 'EB Garamond', serif;
+    font-size: 1.15rem;
+    font-style: italic;
+    color: var(--wine);
+    letter-spacing: 0.02em;
+  }
+
+  /* ---------- HERO ---------- */
+  .hero {
+    max-width: 820px;
+    margin: 0 auto;
+    padding: 72px 24px 40px;
+    text-align: center;
+  }
+
+  .eyebrow {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--gold-deep);
+    margin-bottom: 18px;
+  }
+
+  h1 {
+    font-family: 'EB Garamond', serif;
+    font-weight: 500;
+    font-size: clamp(2.3rem, 5vw, 3.4rem);
+    color: var(--navy);
+    line-height: 1.15;
+    margin-bottom: 20px;
+  }
+
+  .subtitle {
+    font-family: 'EB Garamond', serif;
+    font-style: italic;
+    font-size: 1.35rem;
+    color: var(--wine);
+    margin-bottom: 32px;
+  }
+
+  .lede {
+    font-size: 1.05rem;
+    color: var(--ink-soft);
+    max-width: 640px;
+    margin: 0 auto 18px;
+  }
+
+  .divider {
+    width: 64px;
+    height: 2px;
+    background: var(--gold);
+    margin: 36px auto;
+    opacity: 0.6;
+  }
+
+  /* ---------- INTRO PROSE ---------- */
+  .intro {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 24px 20px;
+  }
+
+  .intro p {
+    font-size: 1.02rem;
+    color: var(--ink-soft);
+    margin-bottom: 18px;
+  }
+
+  .intro p:last-child { margin-bottom: 0; }
+
+  .goal-box {
+    max-width: 700px;
+    margin: 36px auto 0;
+    padding: 26px 30px;
+    background: rgba(255, 255, 255, 0.4);
+    border-left: 3px solid var(--gold-deep);
+    border-radius: 4px;
+  }
+
+  .goal-box p {
+    font-family: 'EB Garamond', serif;
+    font-style: italic;
+    font-size: 1.12rem;
+    color: var(--navy);
+    margin: 0;
+  }
+
+  /* ---------- EXPLORE SECTION ---------- */
+  .explore {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 56px 24px 100px;
+  }
+
+  .explore-heading {
+    text-align: center;
+    margin-bottom: 48px;
+  }
+
+  .explore-heading h2 {
+    font-family: 'EB Garamond', serif;
+    font-weight: 500;
+    font-size: 1.9rem;
+    color: var(--navy);
+    margin-bottom: 10px;
+  }
+
+  .explore-heading .rule {
+    width: 40px;
+    height: 2px;
+    background: var(--wine);
+    margin: 0 auto;
+    opacity: 0.5;
+  }
+
+  .tulip-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .doctrine-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 22px;
+    background: rgba(255, 255, 255, 0.5);
+    border: 1px solid var(--border-soft);
+    border-radius: 8px;
+    padding: 26px 28px;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .doctrine-card::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: var(--gold-deep);
+    opacity: 0;
+    transition: opacity 0.25s ease;
+  }
+
+  .doctrine-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 28px rgba(13, 27, 42, 0.09);
+    border-color: rgba(212, 175, 55, 0.4);
+  }
+
+  .doctrine-card:hover::before { opacity: 1; }
+
+  .letter-badge {
+    flex-shrink: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--navy), #14283f);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'EB Garamond', serif;
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: var(--gold);
+    border: 2px solid var(--gold-deep);
+  }
+
+  .card-text h3 {
+    font-family: 'EB Garamond', serif;
+    font-weight: 500;
+    font-size: 1.4rem;
+    color: var(--navy);
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .card-text h3 .term {
+    font-style: italic;
+    color: var(--wine);
+    font-size: 1rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+  }
+
+  .card-text p {
+    font-size: 0.98rem;
+    color: var(--ink-soft);
+    margin-bottom: 0;
+  }
+
+  .card-arrow {
+    align-self: center;
+    margin-left: auto;
+    flex-shrink: 0;
+    font-size: 1.3rem;
+    color: var(--gold-deep);
+    transition: transform 0.25s ease;
+  }
+
+  .doctrine-card:hover .card-arrow { transform: translateX(4px); }
+
+  /* ---------- FOOTER NOTE ---------- */
+  .footer-note {
+    max-width: 700px;
+    margin: 60px auto 0;
+    text-align: center;
+    padding: 0 24px;
+  }
+
+  .footer-note p {
+    font-family: 'EB Garamond', serif;
+    font-style: italic;
+    font-size: 1.05rem;
+    color: var(--ink-soft);
+  }
+
+  @media (min-width: 640px) {
+    .doctrine-card { align-items: center; }
+  }
+
+  @media (max-width: 480px) {
+    .doctrine-card { flex-wrap: wrap; }
+    .card-arrow { display: none; }
+    .letter-badge { width: 50px; height: 50px; font-size: 1.4rem; }
+  }
+</style>
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="nav-inner">
+    <a href="index.html" class="back-link">&larr; Back to Home</a>
+    <span class="brand">Beyond TULIP</span>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="eyebrow">The Five Points Examined</div>
+  <h1>Understanding TULIP</h1>
+  <p class="subtitle">A Biblical Examination of the Five Points of Calvinism</p>
+  <p class="lede">
+    TULIP summarizes the five central doctrines that emerged from the Synod of Dort
+    and have become a defining expression of Reformed soteriology.
+  </p>
+  <div class="divider"></div>
+</header>
+
+<section class="intro">
+  <p>
+    This section explains each doctrine as Calvinists themselves understand it,
+    before examining the biblical evidence, the historical context, and the
+    principal objections raised by non-Calvinist Christians.
+  </p>
+  <div class="goal-box">
+    <p>
+      Our goal is not to caricature Calvinism, but to present each point fairly
+      and evaluate whether it reflects the whole counsel of Scripture.
+    </p>
+  </div>
+</section>
+
+<section class="explore">
+  <div class="explore-heading">
+    <h2>Explore Each Doctrine</h2>
+    <div class="rule"></div>
+  </div>
+
+  <div class="tulip-grid">
+
+    <a href="total-depravity.html" class="doctrine-card">
+      <div class="letter-badge">T</div>
+      <div class="card-text">
+        <h3>Total Depravity <span class="term">— T</span></h3>
+        <p>Can spiritually dead sinners respond to God's call, or must regeneration precede faith?</p>
+      </div>
+      <span class="card-arrow">&rarr;</span>
+    </a>
+
+    <a href="unconditional-election.html" class="doctrine-card">
+      <div class="letter-badge">U</div>
+      <div class="card-text">
+        <h3>Unconditional Election <span class="term">— U</span></h3>
+        <p>Does God choose individuals for salvation apart from any response of faith?</p>
+      </div>
+      <span class="card-arrow">&rarr;</span>
+    </a>
+
+    <a href="limited-atonement.html" class="doctrine-card">
+      <div class="letter-badge">L</div>
+      <div class="card-text">
+        <h3>Limited Atonement <span class="term">— L</span></h3>
+        <p>Did Christ die only for the elect, or for the sins of the whole world?</p>
+      </div>
+      <span class="card-arrow">&rarr;</span>
+    </a>
+
+    <a href="irresistible-grace.html" class="doctrine-card">
+      <div class="letter-badge">I</div>
+      <div class="card-text">
+        <h3>Irresistible Grace <span class="term">— I</span></h3>
+        <p>Can God's saving grace be resisted, or is every person whom God calls inevitably brought to faith?</p>
+      </div>
+      <span class="card-arrow">&rarr;</span>
+    </a>
+
+    <a href="perseverance-of-the-saints.html" class="doctrine-card">
+      <div class="letter-badge">P</div>
+      <div class="card-text">
+        <h3>Perseverance of the Saints <span class="term">— P</span></h3>
+        <p>Does every true believer inevitably persevere to the end &mdash; and what does Scripture actually teach about assurance and perseverance?</p>
+      </div>
+      <span class="card-arrow">&rarr;</span>
+    </a>
+
+  </div>
+
+  <div class="footer-note">
+    <p>&ldquo;Test everything; hold fast what is good.&rdquo; &mdash; 1 Thessalonians 5:21</p>
+  </div>
+</section>
+
+</body>
+</html>
