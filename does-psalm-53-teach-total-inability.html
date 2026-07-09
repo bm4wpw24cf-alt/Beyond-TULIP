@@ -1,94 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Does Psalm 53 Teach Total Inability? | Beyond TULIP</title>
-  <meta name="description" content="An article examining whether Psalm 53 teaches the Calvinistic doctrine of total inability." />
-  <link rel="stylesheet" href="assets/css/style.css" />
-  <style>
-    body {
-      margin: 0;
-      font-family: Inter, sans-serif;
-      background: #f6f0e1;
-      color: #2c2417;
-      line-height: 1.7;
-    }
-    main {
-      max-width: 860px;
-      margin: 0 auto;
-      padding: 48px 24px 80px;
-    }
-    h1, h2, h3 {
-      font-family: "EB Garamond", serif;
-      line-height: 1.25;
-      color: #2c2417;
-    }
-    h1 { font-size: 2.2rem; margin-bottom: 12px; }
-    .meta {
-      color: #6e2f2f;
-      font-weight: 600;
-      margin-bottom: 28px;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      font-size: 0.8rem;
-    }
-    p, li {
-      font-size: 1rem;
-      margin-bottom: 16px;
-    }
-    blockquote {
-      margin: 20px 0;
-      padding: 16px 20px;
-      border-left: 4px solid #b08d57;
-      background: #fffdf8;
-      font-style: italic;
-    }
-    a { color: #6e2f2f; }
-    .back-link {
-      display: inline-block;
-      margin-bottom: 24px;
-      font-weight: 600;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Does Psalm 53 Teach Total Inability? — Beyond TULIP</title>
+<meta name="description" content="A Scripture-focused article examining whether Psalm 53 teaches the Calvinistic doctrine of total inability.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --parchment:#f6f0e1;
+    --paper:#fffdf8;
+    --ink:#2c2417;
+    --ink-soft:#5b5142;
+    --gold:#b08d57;
+    --gold-deep:#8a6a3c;
+    --wine:#6e2f2f;
+    --line:#ddd0b3;
+    --line-soft:#e9e0c9;
+    --max:860px;
+    --max-wide:1180px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;background:var(--parchment);color:var(--ink);
+    font-family:'Inter',sans-serif;line-height:1.75;-webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3{font-family:'EB Garamond',serif;font-weight:600;color:var(--ink);margin:0;}
+  a{color:inherit;text-decoration:none;}
+  .eyebrow{
+    font-family:'Inter',sans-serif;font-size:.72rem;font-weight:600;
+    letter-spacing:.14em;text-transform:uppercase;color:var(--gold-deep);
+  }
+  .wrap{max-width:var(--max);margin:0 auto;padding:0 24px;}
+
+  header{
+    position:sticky;top:0;z-index:60;background:rgba(246,240,225,.92);
+    backdrop-filter:blur(6px);border-bottom:1px solid var(--line);
+  }
+  .header-inner{
+    max-width:var(--max-wide);margin:0 auto;padding:16px 24px;
+    display:flex;align-items:center;justify-content:space-between;
+  }
+  .logo{font-family:'EB Garamond',serif;font-size:1.45rem;font-weight:600;letter-spacing:.01em;color:var(--ink);}
+  .logo .beyond{color:var(--ink);} .logo .tulip{color:var(--gold-deep);font-style:italic;}
+  .back-link{font-size:.85rem;font-weight:600;color:var(--ink-soft);} .back-link:hover{color:var(--wine);}
+
+  .page-hero{padding:64px 0 40px;border-bottom:1px solid var(--line);text-align:center;}
+  .page-hero h1{font-size:2.3rem;margin-top:14px;}
+  .page-hero p{font-family:'EB Garamond',serif;font-style:italic;color:var(--ink-soft);font-size:1.08rem;max-width:680px;margin:16px auto 0;}
+
+  main{padding:56px 0 70px;}
+  article{display:flex;flex-direction:column;gap:22px;}
+  article h2{font-size:1.6rem;margin-top:10px;}
+  article p, article li{font-size:1rem;color:var(--ink-soft);margin:0;}
+  article strong{color:var(--ink);} 
+  .article-intro{font-size:1.02rem;line-height:1.8;}
+  .callout{
+    background:var(--paper);border:1px solid var(--line);border-left:4px solid var(--gold);
+    padding:18px 20px;border-radius:3px;
+  }
+  .callout p{font-size:0.97rem;}
+  ul{margin:8px 0 0 20px;padding:0;display:grid;gap:8px;}
+
+  footer{padding:40px 0;border-top:1px solid var(--line);margin-top:20px;}
+  .footer-bottom{max-width:var(--max-wide);margin:0 auto;padding:0 24px;font-size:.78rem;color:var(--ink-soft);display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;}
+
+  @media (max-width:600px){ .page-hero h1{font-size:1.9rem;} }
+</style>
 </head>
 <body>
-  <main>
-    <a class="back-link" href="index.html">← Back to Home</a>
-    <p class="meta">Article</p>
+
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="logo"><span class="beyond">Beyond</span> <span class="tulip">TULIP</span></a>
+    <a href="index.html" class="back-link">← Back to Home</a>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="wrap">
+    <span class="eyebrow">Article</span>
     <h1>Does Psalm 53 Teach Total Inability?</h1>
-    <p>Psalm 53 is often cited in support of the Calvinistic doctrine of <strong>Total Inability</strong>. The argument is that because the psalm says, <em>“There is none who seeks God,”</em> fallen humanity must be spiritually incapable of responding to God until first regenerated by the Holy Spirit.</p>
-    <p>But does the text actually say that?</p>
+    <p>A Scripture-focused article examining whether Psalm 53 supports the Calvinistic doctrine of total inability.</p>
+  </div>
+</section>
 
-    <h2>What the Psalm Says</h2>
-    <p>Psalm 53 presents a sweeping indictment of fallen humanity. God looks down from heaven and finds a race characterized by corruption, rebellion, and evil. Humanity has turned aside, become corrupt, and no one seeks God.</p>
-    <p>The emphasis, however, is on what people <strong>do</strong>, not on what they are <strong>unable</strong> to do. The psalm describes humanity’s actual condition and behavior; it never states that sinners are constitutionally incapable of responding when God reveals Himself.</p>
-    <p>This distinction is crucial. Saying that <strong>no one seeks God</strong> is not the same as saying <strong>no one can seek God</strong>. The first describes human conduct; the second is a theological conclusion that must be demonstrated from the text itself. Psalm 53 never makes that statement.</p>
+<main>
+  <div class="wrap">
+    <article>
+      <p class="article-intro">Psalm 53 is often cited in support of the Calvinistic doctrine of <strong>Total Inability</strong>. The argument is that because the psalm says, <em>“There is none who seeks God,”</em> fallen humanity must be spiritually incapable of responding to God until first regenerated by the Holy Spirit.</p>
+      <p class="article-intro">But does the text actually say that?</p>
 
-    <h2>Universal Sinfulness, Not Total Inability</h2>
-    <p>The purpose of the psalm is to expose the universal sinfulness of mankind. It portrays a world in rebellion against God, where evil has become the norm. God is not conducting an investigation into human ability but declaring humanity’s moral corruption.</p>
-    <p>This is exactly how the passage functions when Paul quotes its parallel, Psalm 14, in Romans 3. His purpose is to prove that both Jews and Gentiles are under sin and therefore stand guilty before God. His conclusion is, <strong>“For all have sinned and fall short of the glory of God.”</strong></p>
-    <p>Significantly, Paul does not conclude that no one is able to believe. Instead, immediately after establishing universal guilt, he proclaims that God’s righteousness is available <strong>through faith in Jesus Christ for all who believe</strong> (Romans 3:21–26). The emphasis moves from universal condemnation to the universal offer of justification through faith.</p>
+      <h2>What the Psalm Says</h2>
+      <p>Psalm 53 presents a sweeping indictment of fallen humanity. God looks down from heaven and finds a race characterized by corruption, rebellion, and evil. Humanity has turned aside, become corrupt, and no one seeks God.</p>
+      <p>The emphasis, however, is on what people <strong>do</strong>, not on what they are <strong>unable</strong> to do. The psalm describes humanity’s actual condition and behavior; it never states that sinners are constitutionally incapable of responding when God reveals Himself.</p>
+      <p>This distinction is crucial. Saying that <strong>no one seeks God</strong> is not the same as saying <strong>no one can seek God</strong>. The first describes human conduct; the second is a theological conclusion that must be demonstrated from the text itself. Psalm 53 never makes that statement.</p>
 
-    <h2>Seeking God and Responding to God</h2>
-    <p>Scripture consistently teaches that sinners do not seek God on their own initiative. Left to themselves, they suppress the truth, love darkness, and pursue sin.</p>
-    <p>Yet this is different from asking whether sinners can respond when <strong>God takes the initiative</strong>.</p>
-    <p>Throughout Scripture, God seeks sinners. He reveals Himself through creation, conscience, His Word, and supremely through the gospel of Jesus Christ. He commands all people to repent, calls them through the preaching of the gospel, and convicts them by the Holy Spirit.</p>
-    <p>Psalm 53 does not address whether sinners can respond to God’s gracious call. It simply states that they do not seek Him by their own initiative.</p>
+      <h2>Universal Sinfulness, Not Total Inability</h2>
+      <p>The purpose of the psalm is to expose the universal sinfulness of mankind. It portrays a world in rebellion against God, where evil has become the norm. God is not conducting an investigation into human ability but declaring humanity’s moral corruption.</p>
+      <p>This is exactly how the passage functions when Paul quotes its parallel, Psalm 14, in Romans 3. His purpose is to prove that both Jews and Gentiles are under sin and therefore stand guilty before God. His conclusion is, <strong>“For all have sinned and fall short of the glory of God.”</strong></p>
+      <p>Significantly, Paul does not conclude that no one is able to believe. Instead, immediately after establishing universal guilt, he proclaims that God’s righteousness is available <strong>through faith in Jesus Christ for all who believe</strong> (Romans 3:21–26). The emphasis moves from universal condemnation to the universal offer of justification through faith.</p>
 
-    <h2>The Missing Premise</h2>
-    <p>The Calvinistic argument depends on an unstated premise:</p>
-    <ul>
-      <li>No one seeks God.</li>
-      <li>Therefore, no one is able to respond to God unless first regenerated.</li>
-    </ul>
-    <p>The conclusion does not follow from the text itself. The word <strong>cannot</strong> never appears, nor does the psalm discuss regeneration, effectual calling, or spiritual inability. Those concepts must be imported from elsewhere rather than derived from Psalm 53.</p>
-    <p>The burden of proof therefore rests on those who claim that the psalm teaches more than it explicitly says.</p>
+      <h2>Seeking God and Responding to God</h2>
+      <p>Scripture consistently teaches that sinners do not seek God on their own initiative. Left to themselves, they suppress the truth, love darkness, and pursue sin.</p>
+      <p>Yet this is different from asking whether sinners can respond when <strong>God takes the initiative</strong>.</p>
+      <p>Throughout Scripture, God seeks sinners. He reveals Himself through creation, conscience, His Word, and supremely through the gospel of Jesus Christ. He commands all people to repent, calls them through the preaching of the gospel, and convicts them by the Holy Spirit.</p>
+      <p>Psalm 53 does not address whether sinners can respond to God’s gracious call. It simply states that they do not seek Him by their own initiative.</p>
 
-    <h2>Conclusion</h2>
-    <p>Psalm 53 is a powerful declaration of humanity’s universal corruption and rebellion. It teaches that no one naturally seeks God and that all stand guilty before Him.</p>
-    <p>What it does <strong>not</strong> teach is the Calvinistic doctrine of Total Inability. The psalm describes what sinners actually <strong>do</strong>, not what they are inherently <strong>incapable</strong> of doing when confronted with God’s revelation through the gospel.</p>
-    <p>The safest interpretation is to let the text speak for itself. Psalm 53 clearly teaches universal sinfulness; it does not explicitly teach that fallen people are unable to respond to God’s gracious call apart from a prior act of regeneration.</p>
-  </main>
+      <h2>The Missing Premise</h2>
+      <p>The Calvinistic argument depends on an unstated premise:</p>
+      <ul>
+        <li>No one seeks God.</li>
+        <li>Therefore, no one is able to respond to God unless first regenerated.</li>
+      </ul>
+      <p>The conclusion does not follow from the text itself. The word <strong>cannot</strong> never appears, nor does the psalm discuss regeneration, effectual calling, or spiritual inability. Those concepts must be imported from elsewhere rather than derived from Psalm 53.</p>
+      <p>The burden of proof therefore rests on those who claim that the psalm teaches more than it explicitly says.</p>
+
+      <div class="callout">
+        <p><strong>Conclusion:</strong> Psalm 53 clearly teaches universal sinfulness and rebellion. It does not explicitly teach that fallen people are unable to respond to God’s gracious call apart from a prior act of regeneration.</p>
+      </div>
+    </article>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-bottom">
+    <span>© 2026 Beyond TULIP</span>
+    <span>“Search the Scriptures” — John 5:39</span>
+  </div>
+</footer>
+
 </body>
 </html>
