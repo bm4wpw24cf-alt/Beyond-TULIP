@@ -101,6 +101,20 @@ header{
   max-width:600px;margin:22px auto 0;line-height:1.55;text-align:center;
 }
 .hero-actions{display:flex;gap:14px;margin-top:34px;flex-wrap:wrap;justify-content:center;}
+.article-page .hero{padding:56px 0 34px;border-bottom:1px solid var(--line);}
+.article-page .hero .lede{max-width:700px;margin-top:20px;}
+.article-page main{padding:56px 0 70px;}
+.article-page article{display:flex;flex-direction:column;gap:24px;}
+.article-page article h2{font-size:1.55rem;margin-top:8px;}
+.article-page article p,
+.article-page article li{font-size:1rem;color:var(--ink-soft);margin:0;line-height:1.75;}
+.article-page article strong{color:var(--ink);} 
+.article-page .callout{
+  background:var(--paper);border:1px solid var(--line);border-left:4px solid var(--gold);
+  padding:18px 20px;border-radius:3px;
+}
+.article-page .callout p{font-size:.98rem;}
+.article-page ul{margin:0 0 0 20px;padding:0;display:grid;gap:8px;}
 .btn{
   display:inline-block;padding:13px 24px;font-size:.88rem;font-weight:600;
   letter-spacing:.03em;border-radius:2px;
