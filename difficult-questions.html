@@ -486,14 +486,18 @@ function renderQuestions(){
   resultsNote.textContent = `${filtered.length} question${filtered.length === 1 ? "" : "s"} — ${availableCount} available now`;
 
   filtered.forEach(q => {
-    const card = document.createElement(q.available ? "a" : "div");
-    card.className = "question-card" + (q.available ? "" : " soon");
+    const isAvailable = Boolean(q.available);
+    const card = document.createElement(isAvailable ? "a" : "div");
+    card.className = "question-card" + (isAvailable ? "" : " soon");
 
-    if (q.available) {
+    if (isAvailable) {
       card.href = `${q.slug}.html`;
       card.setAttribute("aria-label", `Read more about ${q.title}`);
       card.setAttribute("role", "link");
       card.setAttribute("tabindex", "0");
+      card.addEventListener("click", () => {
+        window.location.href = card.href;
+      });
       card.addEventListener("keydown", (event) => {
         if (event.key === "Enter" || event.key === " ") {
           event.preventDefault();
@@ -506,7 +510,7 @@ function renderQuestions(){
       <span class="question-cat">${CATEGORY_LABELS[q.category]}</span>
       <h3>${q.title}</h3>
       <p>${q.description}</p>
-      <span class="question-arrow">${q.available ? "Read more →" : "Coming Soon"}</span>
+      <span class="question-arrow">${isAvailable ? "Read more →" : "Coming Soon"}</span>
     `;
     questionGrid.appendChild(card);
   });
