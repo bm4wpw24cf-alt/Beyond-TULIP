@@ -32,6 +32,14 @@ window.articleEntries = [
     dateLabel: "Jul 2026"
   },
   {
+    href: "claim03.html",
+    title: "\"Romans 9 Teaches Double Predestination\"",
+    description: "Romans 9 is frequently cited in support of double predestination, but when read within its literary, historical, and biblical context, it teaches God's faithfulness to His covenant promises rather than unconditional eternal destinies.",
+    category: "responding-to-calvinist-claims",
+    categoryLabel: "Responding to Calvinist Claims · Claim 03",
+    dateLabel: "Jul 2026"
+  },
+  {
     href: "christ-alone.html",
     title: "Christ Alone",
     description: "Christianity is not founded upon a philosophy, a moral code, or a theological system. It is founded upon the person and work of Jesus Christ.",
