@@ -1,0 +1,37 @@
+name: PR Guardrails
+
+on:
+  pull_request:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Show changed files
+        run: git diff --name-only "origin/${{ github.base_ref }}...HEAD"
+
+      - name: Block merge conflict markers
+        run: |
+          if git grep -nE '^(<<<<<<<|=======|>>>>>>>)' -- '*.html' '*.css' '*.js' '*.json' '*.md'; then
+            echo 'Conflict markers found. Resolve them before merging.'
+            exit 1
+          fi
+
+      - name: Prevent backup file edits in pull requests
+        run: |
+          changed="$(git diff --name-only "origin/${{ github.base_ref }}...HEAD")"
+          if printf '%s\n' "$changed" | grep -E '\.bak([0-9]+)?$' > /dev/null; then
+            echo 'Pull requests should not modify backup files (*.bak, *.bak2, ...).'
+            printf '%s\n' "$changed" | grep -E '\.bak([0-9]+)?$'
+            exit 1
+          fi
