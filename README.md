@@ -12,3 +12,9 @@ The site is published to GitHub Pages through the workflow in [.github/workflows
 - Pull requests are validated by `.github/workflows/pr-guardrails.yml` before merge.
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for the pull request checklist and branch naming guide.
+
+## Quick start
+1. Create a feature branch from `main`.
+2. Commit and push your changes to that branch.
+3. Open a pull request to `main`.
+4. Merge after requirements are met.
